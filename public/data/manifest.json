@@ -31,16 +31,6 @@
       "bytes": 1055
     },
     {
-      "path": "data_quality.json",
-      "sha256": "a6bf8398a72c1f19bfac35ee43c1c7f864dafe61344d5cbe32684c66ad5da09a",
-      "bytes": 849
-    },
-    {
-      "path": "diagnostics.json",
-      "sha256": "b440a19e4d111515dbaf11777830d93dfcd0fe374a80948cd5bf2b0c90b1fb04",
-      "bytes": 1066
-    },
-    {
       "path": "overview.json",
       "sha256": "6f31675d3b9a3da0e9c933e8694a4c4539e4b459213976d161c4a674e2f49e18",
       "bytes": 655

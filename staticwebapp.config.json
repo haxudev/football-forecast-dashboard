@@ -1,1 +1,29 @@
-{"platform":{"apiRuntime":null},"routes":[{"route":"/data/*","headers":{"cache-control":"public, max-age=60"}}],"navigationFallback":{"rewrite":"/index.html","exclude":["/data/*","/_next/*","/icons/*"]},"globalHeaders":{"x-content-type-options":"nosniff","x-frame-options":"DENY","referrer-policy":"strict-origin-when-cross-origin","permissions-policy":"camera=(), microphone=(), geolocation=()"}}
+{
+  "platform": { "apiRuntime": null },
+  "routes": [
+    { "route": "/data/*", "headers": { "cache-control": "public, max-age=60" } },
+    { "route": "/sample/*", "headers": { "cache-control": "public, max-age=60" } },
+    { "route": "/model-diagnostics", "redirect": "/about/", "statusCode": 301 },
+    { "route": "/model-diagnostics/*", "redirect": "/about/", "statusCode": 301 },
+    { "route": "/data-quality", "redirect": "/about/", "statusCode": 301 },
+    { "route": "/data-quality/*", "redirect": "/about/", "statusCode": 301 },
+    { "route": "/source-code", "redirect": "/about/", "statusCode": 301 },
+    { "route": "/source-code/*", "redirect": "/about/", "statusCode": 301 },
+    { "route": "/en/model-diagnostics", "redirect": "/en/about/", "statusCode": 301 },
+    { "route": "/en/model-diagnostics/*", "redirect": "/en/about/", "statusCode": 301 },
+    { "route": "/en/data-quality", "redirect": "/en/about/", "statusCode": 301 },
+    { "route": "/en/data-quality/*", "redirect": "/en/about/", "statusCode": 301 },
+    { "route": "/en/source-code", "redirect": "/en/about/", "statusCode": 301 },
+    { "route": "/en/source-code/*", "redirect": "/en/about/", "statusCode": 301 }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/data/*", "/sample/*", "/_next/*", "/icons/*"]
+  },
+  "globalHeaders": {
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "permissions-policy": "camera=(), microphone=(), geolocation=()"
+  }
+}
