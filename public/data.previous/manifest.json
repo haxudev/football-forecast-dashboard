@@ -1,0 +1,94 @@
+{
+  "pack_version": "p2.1.0",
+  "schema_version": "forecast-pack-v1",
+  "generated_at": "2026-05-08T11:05:44.070006+00:00",
+  "run_id": "export-20260508T110544Z",
+  "model_version": {
+    "world_cup_2026": "football_ensemble@local",
+    "premier_league": "football_ensemble@local",
+    "champions_league": "football_ensemble@local"
+  },
+  "data_truth_mode": {
+    "world_cup_2026": "SAMPLE_ONLY",
+    "premier_league": "SAMPLE_ONLY",
+    "champions_league": "SAMPLE_ONLY"
+  },
+  "source_freshness": {
+    "sample_football_fixtures": "FRESH"
+  },
+  "warnings": [
+    {
+      "code": "SAMPLE_ONLY",
+      "scope": "pack",
+      "detail": "Local P2 sample forecast pack; not betting advice.",
+      "severity": "warning"
+    }
+  ],
+  "files": [
+    {
+      "path": "competitions.json",
+      "sha256": "21ad4195bd6278d6f1c30fe9046bcf55675cf8839c0dca0a92e8eaa84370f586",
+      "bytes": 1055
+    },
+    {
+      "path": "data_quality.json",
+      "sha256": "9e5c179fdfe4c2ad8b32cf6b583739b71f7a170140625eb60de1c811c955b84d",
+      "bytes": 849
+    },
+    {
+      "path": "diagnostics.json",
+      "sha256": "9c5a660539a2013fcf662594a0d6560da1c3ce19353770b6a91618a798b0a778",
+      "bytes": 1066
+    },
+    {
+      "path": "overview.json",
+      "sha256": "79975fbdd35eb2599b32d8cf58c7106f00c46d58b1680f38acf1194b6968e2aa",
+      "bytes": 655
+    },
+    {
+      "path": "predictions/champions_league.json",
+      "sha256": "902f00d08ce82c7527adcdfde3ca1acb5bea4403f7dcf30a817d25c8fc3c3ead",
+      "bytes": 1936
+    },
+    {
+      "path": "predictions/premier_league.json",
+      "sha256": "f3777426a8f80511a684e2b0cc7a62e6b509b3a527a6b798379f942c8cffa4d8",
+      "bytes": 1930
+    },
+    {
+      "path": "predictions/world_cup_2026.json",
+      "sha256": "341d5c89e6edf9dae6fe40966fcf2dec74b34062003d3f9405450396ea09465f",
+      "bytes": 3283
+    },
+    {
+      "path": "team_compare.json",
+      "sha256": "9979ffae609816b4ea0f5ed2d03e79a6e44e1aefd1f118245dcb20b418d7e6c1",
+      "bytes": 1391
+    },
+    {
+      "path": "teams.json",
+      "sha256": "9979ffae609816b4ea0f5ed2d03e79a6e44e1aefd1f118245dcb20b418d7e6c1",
+      "bytes": 1391
+    },
+    {
+      "path": "tournaments/champions_league.json",
+      "sha256": "1ae58ad7c762a23ede0bce8b2f265fdc5ebc40c5ffe806e8186685e4290f91bd",
+      "bytes": 660
+    },
+    {
+      "path": "tournaments/world_cup_2026.json",
+      "sha256": "9008868b7cfdd138cdad47a5dcd8d68d2ddabd8cc36c4fc88b58704fc0624e48",
+      "bytes": 767
+    }
+  ],
+  "competitions": [
+    "world_cup_2026",
+    "premier_league",
+    "champions_league"
+  ],
+  "retention": {
+    "keep_days": 365,
+    "pinned": false
+  },
+  "exported_by": "scripts/export_forecast_pack.py p2"
+}
