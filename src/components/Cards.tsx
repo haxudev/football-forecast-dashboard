@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import { ThemeLanguageControls } from '@/components/ThemeLanguageControls';
 import type { Prediction } from '@/lib/schemas';
+import type { Dictionary, Locale } from '@/lib/i18n';
 import { isPackStale, isPredictorDisabled, packAgeLabel } from '@/lib/status';
 
 export function formatCompetitionId(value: string): string {
@@ -11,20 +13,21 @@ export function TruthChip({ value }: { value: string }) {
   return <span className={`chip ${tone}`}>{value.replace('SAMPLE_ONLY', 'SAMPLE')}</span>;
 }
 
-export function ConfidenceChip({ value }: { value: string }) {
-  return <span className={`chip confidence-${value.toLowerCase()}`}>{value}</span>;
+export function ConfidenceChip({ value, t }: { value: string; t?: Dictionary }) {
+  const label = value === 'HIGH' ? t?.common.high : value === 'MED' ? t?.common.med : value === 'LOW' ? t?.common.low : value;
+  return <span className={`chip confidence-${value.toLowerCase()}`}>{label ?? value}</span>;
 }
 
-export function StatusStrip({ truth = 'SAMPLE_ONLY', model = 'football_ensemble@local', generatedAt }: { truth?: string; model?: string; generatedAt?: string }) {
+export function StatusStrip({ truth = 'SAMPLE_ONLY', model = 'football_ensemble@local', generatedAt, t }: { truth?: string; model?: string; generatedAt?: string; t: Dictionary }) {
   const stale = generatedAt ? isPackStale(generatedAt) : false;
   return (
     <div className="status-strip" role="status" aria-live="polite">
       <span className={stale ? 'text-[#F59E0B]' : 'text-[#10B981]'}>●</span>
-      <span>System {stale ? 'stale' : 'healthy'}</span>
+      <span>{stale ? t.common.systemStale : t.common.systemHealthy}</span>
       <span className="hidden sm:inline">|</span>
-      <span>Truth: <b className="text-[#F59E0B]">{truth.replace('SAMPLE_ONLY', 'SAMPLE')}</b></span>
-      {generatedAt && <span className="hidden min-[520px]:inline">| Pack: {packAgeLabel(generatedAt)}</span>}
-      <span className="hidden md:inline">| Model: {model}</span>
+      <span>{t.common.truth}: <b className="text-[#F59E0B]">{truth.replace('SAMPLE_ONLY', 'SAMPLE')}</b></span>
+      {generatedAt && <span className="hidden min-[520px]:inline">| {t.common.pack}: {packAgeLabel(generatedAt)}</span>}
+      <span className="hidden md:inline">| {t.common.model}: {model}</span>
     </div>
   );
 }
@@ -33,13 +36,16 @@ export function WarningBanner({ children, tone = 'warn' }: { children: React.Rea
   return <div className={`notice notice-${tone}`} role={tone === 'err' ? 'alert' : 'status'}>{children}</div>;
 }
 
-export function ProbabilityBar({ p }: { p: Prediction }) {
-  const label = `Win/draw/loss probabilities: home ${(p.p_home * 100).toFixed(1)} percent, draw ${(p.p_draw * 100).toFixed(1)} percent, away ${(p.p_away * 100).toFixed(1)} percent.`;
-  const rows = [['Home', p.p_home], ['Draw', p.p_draw], ['Away', p.p_away]] as const;
+export function ProbabilityBar({ p, t }: { p: Prediction; t?: Dictionary }) {
+  const home = t?.common.home ?? 'Home';
+  const draw = t?.common.draw ?? 'Draw';
+  const away = t?.common.away ?? 'Away';
+  const label = `${home}/${draw}/${away} probabilities: ${(p.p_home * 100).toFixed(1)} percent, ${(p.p_draw * 100).toFixed(1)} percent, ${(p.p_away * 100).toFixed(1)} percent.`;
+  const rows = [[home, p.p_home, 'home'], [draw, p.p_draw, 'draw'], [away, p.p_away, 'away']] as const;
   return (
     <div role="img" aria-label={label} className="min-w-0">
       <div className="space-y-2 sm:hidden">
-        {rows.map(([name, value]) => <div className="prob-mobile-row grid gap-1" key={name}><div className="font-mono text-xs">{name} {(value * 100).toFixed(1)}%</div><div className="probbar"><span style={{ width: name === 'Home' ? `${value * 100}%` : '0%' }} /><span style={{ width: name === 'Draw' ? `${value * 100}%` : '0%' }} /><span style={{ width: name === 'Away' ? `${value * 100}%` : '0%' }} /></div></div>)}
+        {rows.map(([name, value, key]) => <div className="prob-mobile-row grid gap-1" key={name}><div className="font-mono text-xs">{name} {(value * 100).toFixed(1)}%</div><div className="probbar"><span style={{ width: key === 'home' ? `${value * 100}%` : '0%' }} /><span style={{ width: key === 'draw' ? `${value * 100}%` : '0%' }} /><span style={{ width: key === 'away' ? `${value * 100}%` : '0%' }} /></div></div>)}
       </div>
       <div className="hidden sm:block">
         <div className="prob-label-row">
@@ -49,12 +55,12 @@ export function ProbabilityBar({ p }: { p: Prediction }) {
         </div>
         <div className="probbar"><span style={{ width: `${p.p_home * 100}%` }} /><span style={{ width: `${p.p_draw * 100}%` }} /><span style={{ width: `${p.p_away * 100}%` }} /></div>
       </div>
-      <table className="sr-only"><caption>Probability table</caption><tbody><tr><th scope="row">Home</th><td>{p.p_home}</td></tr><tr><th scope="row">Draw</th><td>{p.p_draw}</td></tr><tr><th scope="row">Away</th><td>{p.p_away}</td></tr></tbody></table>
+      <table className="sr-only"><caption>Probability table</caption><tbody><tr><th scope="row">{home}</th><td>{p.p_home}</td></tr><tr><th scope="row">{draw}</th><td>{p.p_draw}</td></tr><tr><th scope="row">{away}</th><td>{p.p_away}</td></tr></tbody></table>
     </div>
   );
 }
 
-export function MatchCard({ p }: { p: Prediction }) {
+export function MatchCard({ p, t }: { p: Prediction; t?: Dictionary }) {
   return (
     <article className="card min-w-0" aria-label={`${p.home_team ?? p.home_team_id} versus ${p.away_team ?? p.away_team_id}`}>
       <div className="mb-3 flex min-w-0 flex-wrap items-start justify-between gap-2">
@@ -64,23 +70,24 @@ export function MatchCard({ p }: { p: Prediction }) {
         </div>
         <TruthChip value={p.data_truth_mode} />
       </div>
-      <ProbabilityBar p={p} />
+      <ProbabilityBar p={p} t={t} />
       <div className="prob-mobile-row mt-3 flex min-w-0 flex-wrap justify-between gap-2 text-xs text-[#A8B4C8]">
-        <ConfidenceChip value={p.confidence_label} />
+        <ConfidenceChip value={p.confidence_label} t={t} />
         <span className="min-w-0 break-words font-mono">xG {p.expected_goals_home.toFixed(2)} – {p.expected_goals_away.toFixed(2)}</span>
       </div>
     </article>
   );
 }
 
-export function DataStatePanel({ generatedAt }: { generatedAt: string }) {
+export function DataStatePanel({ generatedAt, t }: { generatedAt: string; t?: Dictionary }) {
   const disabled = isPredictorDisabled(generatedAt);
   const stale = isPackStale(generatedAt);
   if (!stale) return null;
-  return <WarningBanner tone={disabled ? 'err' : 'warn'}>{disabled ? 'Forecast pack is older than 72h. Match Predictor run controls are disabled; showing last-known static data.' : 'Forecast pack is stale (>24h). Treat predictions as lower confidence last-known data.'}</WarningBanner>;
+  return <WarningBanner tone={disabled ? 'err' : 'warn'}>{disabled ? (t ? '预测数据包超过 72 小时。单场查询控件已停用；展示最后一次静态数据。' : 'Forecast pack is older than 72h. Match Predictor run controls are disabled; showing last-known static data.') : (t ? '预测数据包超过 24 小时。请按较低置信度的最后静态数据理解。' : 'Forecast pack is stale (>24h). Treat predictions as lower confidence last-known data.')}</WarningBanner>;
 }
 
-export function Nav() {
-  const items = [['/', 'Overview'], ['/competitions', 'Competitions'], ['/match-predictor', 'Match Predictor'], ['/tournament-simulator/world_cup_2026', 'Tournament Simulator'], ['/team-comparison', 'Team Comparison'], ['/model-diagnostics', 'Model Diagnostics'], ['/data-quality', 'Data Quality']];
-  return <nav aria-label="Primary" className="nav-scroll">{items.map(([href, label]) => <Link className="nav-link" key={href} href={href}>{label}</Link>)}</nav>;
+export function Nav({ locale, t }: { locale: Locale; t: Dictionary }) {
+  const prefix = locale === 'en' ? '/en' : '';
+  const items = [['/', t.nav.overview], ['/competitions', t.nav.competitions], ['/match-predictor', t.nav.matchPredictor], ['/tournament-simulator/world_cup_2026', t.nav.tournamentSimulator], ['/team-comparison', t.nav.teamComparison], ['/model-diagnostics', t.nav.modelDiagnostics], ['/data-quality', t.nav.dataQuality]];
+  return <div className="nav-shell"><nav aria-label="Primary" className="nav-scroll">{items.map(([href, label]) => <Link className="nav-link" key={href} href={`${prefix}${href === '/' ? '' : href}` || '/'}>{label}</Link>)}</nav><ThemeLanguageControls locale={locale} t={t} /></div>;
 }
