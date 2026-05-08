@@ -216,12 +216,32 @@ export function translateConfidence(value: string, t: Dictionary): string {
   return value;
 }
 
+export function formatWarningDetail(detail: string, locale: Locale): string {
+  if (locale === 'en') return detail;
+  const map: Record<string, string> = {
+    'Local P2 sample forecast pack; not betting advice.': '本地 P2 示例预测数据包；不构成投注建议。',
+    'Sample fixtures used for P2 baseline.': 'P2 基线使用示例赛程数据。',
+  };
+  return map[detail] ?? detail;
+}
+
+export function formatSourceName(source: string, locale: Locale): string {
+  if (locale === 'en') return source;
+  const map: Record<string, string> = {
+    sample_football_fixtures: '示例足球赛程',
+  };
+  return map[source] ?? source;
+}
+
 export function formatCompetitionName(name: string, locale: Locale): string {
   if (locale === 'en') return name;
   const map: Record<string, string> = {
     'FIFA World Cup 2026': '2026 世界杯',
+    'World Cup 2026': '2026 世界杯',
     'English Premier League': '英格兰超级联赛',
+    'Premier League': '英格兰超级联赛',
     'UEFA Champions League': '欧洲冠军联赛',
+    'Champions League': '欧洲冠军联赛',
   };
   return map[name] ?? name;
 }
