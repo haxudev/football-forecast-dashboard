@@ -4,6 +4,7 @@ import { loadAllPredictions, loadOverview } from '@/lib/data';
 import {
   format,
   getDictionary,
+  localizedCompetitionShortName,
   localizedTeamFromId,
   localizedTeamName,
   type Locale,
@@ -60,7 +61,7 @@ export function MatchPredictorView({ locale }: { locale: Locale }) {
         <div className="picker-grid">
           <select aria-label={t.nav.competitions} className="select-control">
             {Array.from(new Set(preds.map((x) => x.competition_id))).map((id) => (
-              <option key={id} value={id}>{id.replaceAll('_', ' ')}</option>
+              <option key={id} value={id}>{localizedCompetitionShortName(id, id.replaceAll('_', ' '), locale)}</option>
             ))}
           </select>
           <select aria-label={t.team.teamA} className="select-control" defaultValue={p.home_team_id}>
