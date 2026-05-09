@@ -1,7 +1,7 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T04:19:32.459569+00:00",
+  "generated_at": "2026-05-09T04:19:43.290958+00:00",
   "competition_id": "champions_league",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "SAMPLE_ONLY",
@@ -21,23 +21,23 @@
   "simulations": [
     {
       "team_id": "club:global:real_madrid",
-      "champion_probability": 0.416,
-      "advance_probability": 0.832
+      "champion_probability": 0.446,
+      "advance_probability": 0.892
     },
     {
       "team_id": "club:global:psg",
-      "champion_probability": 0.396,
-      "advance_probability": 0.792
+      "champion_probability": 0.376,
+      "advance_probability": 0.752
     },
     {
       "team_id": "club:global:bayern_munich",
-      "champion_probability": 0.122,
-      "advance_probability": 0.244
+      "champion_probability": 0.11,
+      "advance_probability": 0.22
     },
     {
       "team_id": "club:global:inter_milan",
-      "champion_probability": 0.066,
-      "advance_probability": 0.132
+      "champion_probability": 0.068,
+      "advance_probability": 0.136
     }
   ]
 }
