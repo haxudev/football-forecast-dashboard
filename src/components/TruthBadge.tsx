@@ -1,35 +1,41 @@
 import type { TruthMode } from '@/lib/schemas';
 
-const STYLES: Record<string, { label_en: string; label_zh: string; cls: string }> = {
+const STYLES: Record<string, { label_en: string; label_zh: string; bg: string; fg: string }> = {
   REAL: {
     label_en: 'REAL',
     label_zh: '真实数据',
-    cls: 'bg-emerald-500 text-white',
+    bg: '#10B981', // emerald-500
+    fg: '#FFFFFF',
   },
   REAL_DERIVED: {
     label_en: 'REAL_DERIVED',
     label_zh: '真实派生',
-    cls: 'bg-sky-500 text-white',
+    bg: '#0EA5E9', // sky-500
+    fg: '#FFFFFF',
   },
   MIXED: {
     label_en: 'MIXED',
     label_zh: '混合',
-    cls: 'bg-amber-500 text-black',
+    bg: '#F59E0B', // amber-500
+    fg: '#000000',
   },
   SAMPLE_ONLY: {
     label_en: 'SAMPLE_ONLY',
     label_zh: '示例数据',
-    cls: 'bg-gray-400 text-white',
+    bg: '#9CA3AF', // gray-400
+    fg: '#FFFFFF',
   },
   FIXTURE_FALLBACK: {
     label_en: 'FIXTURE',
     label_zh: '占位数据',
-    cls: 'bg-gray-400 text-white',
+    bg: '#9CA3AF',
+    fg: '#FFFFFF',
   },
   UNKNOWN: {
     label_en: 'UNKNOWN',
     label_zh: '未知',
-    cls: 'bg-gray-300 text-gray-800',
+    bg: '#D1D5DB', // gray-300
+    fg: '#1F2937', // gray-800
   },
 };
 
@@ -47,6 +53,9 @@ interface TruthBadgeProps {
  *   REAL_DERIVED → sky (derived from real public sources, e.g. Elo)
  *   MIXED → amber (partial real + fallback)
  *   SAMPLE_ONLY → gray (no real backbone)
+ *
+ * Uses inline styles so colors are guaranteed to render regardless of
+ * Tailwind purge configuration.
  */
 export function TruthBadge({ mode, locale = 'en', label }: TruthBadgeProps) {
   const style = STYLES[mode] ?? STYLES.UNKNOWN;
@@ -55,7 +64,12 @@ export function TruthBadge({ mode, locale = 'en', label }: TruthBadgeProps) {
     <span
       data-testid="truth-badge"
       data-truth-mode={mode}
-      className={`inline-flex items-center rounded px-2 py-0.5 text-xs font-medium ${style.cls}`}
+      className="inline-flex items-center rounded text-xs font-medium"
+      style={{
+        backgroundColor: style.bg,
+        color: style.fg,
+        padding: '2px 8px',
+      }}
       title={`data_truth_mode = ${mode}`}
     >
       {text}
