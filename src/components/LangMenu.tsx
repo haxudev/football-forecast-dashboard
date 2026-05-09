@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { Dictionary, Locale } from '@/lib/i18n';
+import siteConfig from '../../public/site-config.json';
 
 const STORAGE_KEY = 'ff-locale';
 
@@ -53,10 +54,21 @@ export function LangMenu({ locale, t }: { locale: Locale; t: Dictionary }) {
   }, [open]);
 
   const triggerLabel = locale === 'en' ? t.common.langEn : t.common.langZh;
-  const items: { code: Locale; label: string; sub: string; href: string }[] = [
-    { code: 'zh', label: '中文', sub: 'Chinese', href: targetForLocale(pathname, locale, 'zh') },
-    { code: 'en', label: 'English', sub: '英文', href: targetForLocale(pathname, locale, 'en') },
-  ];
+  const items = useMemo(
+    () => {
+      const all: { code: Locale; label: string; sub: string; href: string }[] = [
+        { code: 'zh', label: '中文', sub: 'Chinese', href: targetForLocale(pathname, locale, 'zh') },
+        { code: 'en', label: 'English', sub: '英文', href: targetForLocale(pathname, locale, 'en') },
+      ];
+      return all.filter((it) => (siteConfig.available_locales as string[]).includes(it.code));
+    },
+    [pathname, locale],
+  );
+
+  // EPL-only refactor: when only one locale is configured, hide the entire LangMenu.
+  if (items.length <= 1) {
+    return null;
+  }
 
   return (
     <div className="menu-root">

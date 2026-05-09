@@ -3,18 +3,23 @@
   "routes": [
     { "route": "/data/*", "headers": { "cache-control": "public, max-age=60" } },
     { "route": "/sample/*", "headers": { "cache-control": "public, max-age=60" } },
+
+    { "route": "/en", "redirect": "/", "statusCode": 301 },
+    { "route": "/en/*", "redirect": "/", "statusCode": 301 },
+
+    { "route": "/competitions/world_cup_2026", "redirect": "/competitions/premier_league/", "statusCode": 301 },
+    { "route": "/competitions/world_cup_2026/*", "redirect": "/competitions/premier_league/", "statusCode": 301 },
+    { "route": "/competitions/champions_league", "redirect": "/competitions/premier_league/", "statusCode": 301 },
+    { "route": "/competitions/champions_league/*", "redirect": "/competitions/premier_league/", "statusCode": 301 },
+    { "route": "/tournament-simulator", "redirect": "/competitions/premier_league/", "statusCode": 301 },
+    { "route": "/tournament-simulator/*", "redirect": "/competitions/premier_league/", "statusCode": 301 },
+
     { "route": "/model-diagnostics", "redirect": "/about/", "statusCode": 301 },
     { "route": "/model-diagnostics/*", "redirect": "/about/", "statusCode": 301 },
     { "route": "/data-quality", "redirect": "/about/", "statusCode": 301 },
     { "route": "/data-quality/*", "redirect": "/about/", "statusCode": 301 },
     { "route": "/source-code", "redirect": "/about/", "statusCode": 301 },
-    { "route": "/source-code/*", "redirect": "/about/", "statusCode": 301 },
-    { "route": "/en/model-diagnostics", "redirect": "/en/about/", "statusCode": 301 },
-    { "route": "/en/model-diagnostics/*", "redirect": "/en/about/", "statusCode": 301 },
-    { "route": "/en/data-quality", "redirect": "/en/about/", "statusCode": 301 },
-    { "route": "/en/data-quality/*", "redirect": "/en/about/", "statusCode": 301 },
-    { "route": "/en/source-code", "redirect": "/en/about/", "statusCode": 301 },
-    { "route": "/en/source-code/*", "redirect": "/en/about/", "statusCode": 301 }
+    { "route": "/source-code/*", "redirect": "/about/", "statusCode": 301 }
   ],
   "navigationFallback": {
     "rewrite": "/index.html",

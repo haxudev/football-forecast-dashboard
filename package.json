@@ -8,7 +8,10 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "validate:data": "tsx scripts/validate-data.ts",
-    "build": "next build"
+    "prebuild:prune": "tsx scripts/prebuild-prune.ts",
+    "postbuild:restore": "tsx scripts/postbuild-restore.ts",
+    "build:next": "next build",
+    "build": "pnpm prebuild:prune && (pnpm build:next; ec=$?; pnpm postbuild:restore; exit $ec)"
   },
   "dependencies": {
     "@types/node": "latest",

@@ -6,3 +6,10 @@ tsconfig.tsbuildinfo
 !.env.example
 .DS_Store
 *.log
+# SWA EPL-only refactor: prebuild prune state file (transient)
+.route-prune-state.json
+# Source tree must never be committed in pruned form
+src/app/_disabled_*
+src/app/(zh)/competitions/_disabled_*
+src/app/(zh)/tournament-simulator/_disabled_*
+

@@ -11,16 +11,21 @@ import {
   type Locale,
 } from '@/lib/i18n';
 import { friendlyFreshness, deriveMatchStage } from '@/lib/status';
+import { isCompetitionEnabled } from '@/lib/site-config';
 import type { Prediction } from '@/lib/schemas';
 
 export function Nav({ locale, t, brandName }: { locale: Locale; t: Dictionary; brandName?: string }) {
   const prefix = locale === 'en' ? '/en' : '';
   const brand = brandName ?? t.common.footerCopy;
+  const showTournament = isCompetitionEnabled('world_cup') || isCompetitionEnabled('champions_league');
+  const tournamentTarget = isCompetitionEnabled('world_cup') ? 'world_cup_2026' : 'champions_league';
   const items: [string, string][] = [
     ['/', t.nav.overview],
     ['/competitions', t.nav.competitions],
     ['/match-predictor', t.nav.matchPredictor],
-    ['/tournament-simulator/world_cup_2026', t.nav.tournamentSimulator],
+    ...(showTournament
+      ? ([[`/tournament-simulator/${tournamentTarget}`, t.nav.tournamentSimulator]] as [string, string][])
+      : ([] as [string, string][])),
     ['/team-comparison', t.nav.teamComparison],
     ['/sentiment', t.nav.sentiment],
     ['/about', t.nav.about],

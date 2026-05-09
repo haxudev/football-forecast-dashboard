@@ -8,15 +8,19 @@ import { TruthBadge } from '@/components/TruthBadge';
 import { loadAllPredictions, loadCompetitions, loadManifest, loadOverview } from '@/lib/data';
 import { format, getDictionary, type Locale } from '@/lib/i18n';
 import { deriveMatchStage } from '@/lib/status';
+import { isCompetitionEnabled, isCompetitionRouteEnabled } from '@/lib/site-config';
 
 export function OverviewView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const prefix = locale === 'en' ? '/en' : '';
   const overview = loadOverview();
   const preds = loadAllPredictions();
-  const competitions = loadCompetitions();
+  const allCompetitions = loadCompetitions();
+  const competitions = allCompetitions.filter((c) => isCompetitionRouteEnabled(c.competition_id));
   const manifest = loadManifest();
   const isSample = overview.data_truth_mode_summary === 'SAMPLE_ONLY';
+  const showTournament = isCompetitionEnabled('world_cup') || isCompetitionEnabled('champions_league');
+  const tournamentTarget = isCompetitionEnabled('world_cup') ? 'world_cup_2026' : 'champions_league';
 
   // Group matches: PRE first, sorted by kickoff ascending
   const now = new Date();
@@ -52,7 +56,9 @@ export function OverviewView({ locale }: { locale: Locale }) {
           <p className="hero-sub">{heroSubtitle}</p>
           <div className="mt-2 flex flex-wrap items-center gap-2" data-testid="truth-badges">
             <TruthBadge mode={overview.data_truth_mode_summary} locale={locale} />
-            {Object.entries(manifest.data_truth_mode).map(([cid, mode]) => (
+            {Object.entries(manifest.data_truth_mode)
+              .filter(([cid]) => isCompetitionRouteEnabled(cid))
+              .map(([cid, mode]) => (
               <TruthBadge
                 key={cid}
                 mode={String(mode)}
@@ -65,7 +71,9 @@ export function OverviewView({ locale }: { locale: Locale }) {
         <div className="hero-actions" aria-label={t.overview.quickActions}>
           <Link className="hero-action" href={`${prefix}/competitions`}>{t.nav.competitions}</Link>
           <Link className="hero-action" href={`${prefix}/match-predictor`}>{t.overview.quickMatch}</Link>
-          <Link className="hero-action" href={`${prefix}/tournament-simulator/world_cup_2026`}>{t.overview.quickTournament}</Link>
+          {showTournament && (
+            <Link className="hero-action" href={`${prefix}/tournament-simulator/${tournamentTarget}`}>{t.overview.quickTournament}</Link>
+          )}
           <Link className="hero-action" href={`${prefix}/team-comparison`}>{t.overview.quickTeam}</Link>
           <Link className="hero-action" href={`${prefix}/sentiment`}>{t.overview.quickSentiment}</Link>
         </div>
