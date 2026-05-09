@@ -44,6 +44,61 @@ function pct(v: number | undefined): string {
   return `${(v * 100).toFixed(1)}%`;
 }
 
+function SwissSectionTable({
+  title,
+  rows,
+  accent,
+  t,
+  teamLabel,
+  rowAnnotation,
+}: {
+  title: string;
+  rows: SwissRow[];
+  accent: string;
+  t: ReturnType<typeof getDictionary>;
+  teamLabel: (tid: string) => string;
+  rowAnnotation: (tid: string) => string;
+}) {
+  return (
+    <section className="card" aria-labelledby={`section-${title}`}>
+      <h2 id={`section-${title}`} className="font-semibold mb-3" style={{ color: accent }}>
+        {title} <span className="text-sm text-[var(--text-secondary)]">· {rows.length}</span>
+      </h2>
+      <div className="overflow-x-auto">
+        <table className="min-w-full text-sm" data-testid="cl-swiss-table">
+          <thead>
+            <tr className="text-left text-[var(--text-secondary)]">
+              <th className="px-2 py-1">#</th>
+              <th className="px-2 py-1">{t.cl.colTeam}</th>
+              <th className="px-2 py-1 text-right">{t.cl.colExpectedPoints}</th>
+              <th className="px-2 py-1 text-right">{t.cl.colPTop8}</th>
+              <th className="px-2 py-1 text-right">{t.cl.colPPlayoff}</th>
+              <th className="px-2 py-1 text-right">{t.cl.colPDropout}</th>
+              <th className="px-2 py-1 text-right">{t.cl.colRemaining}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r, i) => (
+              <tr key={r.team_id} className="border-t border-[var(--border-subtle)]">
+                <td className="px-2 py-1 font-mono text-[var(--text-secondary)]">{i + 1}</td>
+                <td className="px-2 py-1">
+                  <div className="font-medium">{teamLabel(r.team_id)}</div>
+                  <div className="text-xs text-[var(--text-secondary)]">{rowAnnotation(r.team_id)}</div>
+                </td>
+                <td className="px-2 py-1 text-right font-mono">{r.expected_points.toFixed(1)}</td>
+                <td className="px-2 py-1 text-right font-mono">{pct(r.p_top8)}</td>
+                <td className="px-2 py-1 text-right font-mono">{pct(r.p_playoff)}</td>
+                <td className="px-2 py-1 text-right font-mono">{pct(r.p_dropout)}</td>
+                <td className="px-2 py-1 text-right font-mono">{r.remaining_games}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 export function ChampionsLeagueView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const overview = loadOverview();
@@ -107,45 +162,6 @@ export function ChampionsLeagueView({ locale }: { locale: Locale }) {
     return parts.join(' · ');
   };
 
-  const SectionTable = ({ title, rows, accent }: { title: string; rows: SwissRow[]; accent: string }) => (
-    <section className="card" aria-labelledby={`section-${title}`}>
-      <h2 id={`section-${title}`} className="font-semibold mb-3" style={{ color: accent }}>
-        {title} <span className="text-sm text-[var(--text-secondary)]">· {rows.length}</span>
-      </h2>
-      <div className="overflow-x-auto">
-        <table className="min-w-full text-sm" data-testid="cl-swiss-table">
-          <thead>
-            <tr className="text-left text-[var(--text-secondary)]">
-              <th className="px-2 py-1">#</th>
-              <th className="px-2 py-1">{t.cl.colTeam}</th>
-              <th className="px-2 py-1 text-right">{t.cl.colExpectedPoints}</th>
-              <th className="px-2 py-1 text-right">{t.cl.colPTop8}</th>
-              <th className="px-2 py-1 text-right">{t.cl.colPPlayoff}</th>
-              <th className="px-2 py-1 text-right">{t.cl.colPDropout}</th>
-              <th className="px-2 py-1 text-right">{t.cl.colRemaining}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r, i) => (
-              <tr key={r.team_id} className="border-t border-[var(--border-subtle)]">
-                <td className="px-2 py-1 font-mono text-[var(--text-secondary)]">{i + 1}</td>
-                <td className="px-2 py-1">
-                  <div className="font-medium">{teamLabel(r.team_id)}</div>
-                  <div className="text-xs text-[var(--text-secondary)]">{rowAnnotation(r.team_id)}</div>
-                </td>
-                <td className="px-2 py-1 text-right font-mono">{r.expected_points.toFixed(1)}</td>
-                <td className="px-2 py-1 text-right font-mono">{pct(r.p_top8)}</td>
-                <td className="px-2 py-1 text-right font-mono">{pct(r.p_playoff)}</td>
-                <td className="px-2 py-1 text-right font-mono">{pct(r.p_dropout)}</td>
-                <td className="px-2 py-1 text-right font-mono">{r.remaining_games}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </section>
-  );
-
   return (
     <div className="space-y-6">
       <header className="page-header">
@@ -166,9 +182,9 @@ export function ChampionsLeagueView({ locale }: { locale: Locale }) {
       <section aria-labelledby="cl-swiss-h">
         <h2 id="cl-swiss-h" className="section-title">{t.cl.tabSwiss}</h2>
         <div className="space-y-4">
-          <SectionTable title={t.cl.swissDirect} rows={direct} accent="#10B981" />
-          <SectionTable title={t.cl.swissPlayoff} rows={playoffZone} accent="#F59E0B" />
-          <SectionTable title={t.cl.swissDropout} rows={dropout} accent="#9CA3AF" />
+          <SwissSectionTable title={t.cl.swissDirect} rows={direct} accent="#10B981" t={t} teamLabel={teamLabel} rowAnnotation={rowAnnotation} />
+          <SwissSectionTable title={t.cl.swissPlayoff} rows={playoffZone} accent="#F59E0B" t={t} teamLabel={teamLabel} rowAnnotation={rowAnnotation} />
+          <SwissSectionTable title={t.cl.swissDropout} rows={dropout} accent="#9CA3AF" t={t} teamLabel={teamLabel} rowAnnotation={rowAnnotation} />
         </div>
       </section>
 
