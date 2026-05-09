@@ -13,7 +13,29 @@ export const CommonHeader = z.object({
 export const LatestSchema = z.object({ pack_version: z.string(), generated_at: z.string(), manifest_path: z.literal('manifest.json'), manifest_sha256: z.string(), data_truth_mode_summary: TruthMode, model_version_summary: z.string(), warnings_count: z.number() });
 export const ManifestSchema = z.object({ pack_version: z.string(), schema_version: z.literal('forecast-pack-v1'), generated_at: z.string(), run_id: z.string(), model_version: z.record(z.string(), z.string()), data_truth_mode: z.record(z.string(), TruthMode), source_freshness: z.record(z.string(), z.string()), warnings: z.array(Warning), files: z.array(z.object({ path: z.string(), sha256: z.string(), bytes: z.number() })), competitions: z.array(z.string()), retention: z.object({ keep_days: z.number(), pinned: z.boolean() }), exported_by: z.string() });
 export const Competition = z.object({ competition_id: z.string(), name: z.string(), scope: z.string(), format: z.string(), source_origin: z.string().optional() });
-export const Team = z.object({ team_id: z.string(), canonical_name: z.string(), scope: z.string().optional() });
+export const Player = z.object({
+  player_id: z.string().nullable().optional(),
+  name: z.string().optional(),
+  name_zh: z.string().nullable().optional(),
+  position: z.string().nullable().optional(),
+  nationality: z.string().nullable().optional(),
+  dob: z.string().nullable().optional(),
+});
+export const Team = z.object({
+  team_id: z.string(),
+  canonical_name: z.string(),
+  canonical_name_zh: z.string().nullable().optional(),
+  scope: z.string().optional(),
+  country: z.string().nullable().optional(),
+  fifa_code: z.string().nullable().optional(),
+  tla: z.string().nullable().optional(),
+  venue: z.string().nullable().optional(),
+  founded: z.number().nullable().optional(),
+  coach_name: z.string().nullable().optional(),
+  coach_name_zh: z.string().nullable().optional(),
+  players: z.array(Player).default([]),
+  squad_size: z.number().nullable().optional(),
+});
 export const Prediction = z.object({ prediction_id: z.string(), fixture_id: z.string(), competition_id: z.string(), season_id: z.string(), kickoff_utc: z.string(), home_team_id: z.string(), away_team_id: z.string(), home_team: z.string().nullable().optional(), away_team: z.string().nullable().optional(), model_version: z.string(), generated_at: z.string(), p_home: z.number().min(0).max(1), p_draw: z.number().min(0).max(1), p_away: z.number().min(0).max(1), expected_goals_home: z.number(), expected_goals_away: z.number(), scoreline_top3: z.array(z.object({ home_goals: z.number(), away_goals: z.number(), probability: z.number().min(0).max(1) })).max(3), top_drivers: z.array(z.object({ name: z.string(), impact: z.number() })).max(10), confidence_label: Confidence, data_completeness: z.string(), data_truth_mode: TruthMode, source_freshness_summary: z.record(z.string(), z.string()).optional(), warnings: z.array(z.string()) }).refine(p => Math.abs(p.p_home + p.p_draw + p.p_away - 1) < 1e-6, 'probabilities must sum to 1');
 export const OverviewSchema = CommonHeader.extend({ system_status: z.string(), data_truth_mode_summary: TruthMode, model_version_summary: z.string(), highlight_fixture_ids: z.array(z.string()) });
 export const CompetitionsSchema = CommonHeader.extend({ data_truth_mode_summary: TruthMode, model_version_summary: z.string().optional(), competitions: z.array(Competition) });
