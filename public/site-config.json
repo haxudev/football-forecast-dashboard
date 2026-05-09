@@ -1,0 +1,8 @@
+{
+  "enabled_competitions": ["premier_league"],
+  "display_locale": "zh",
+  "available_locales": ["zh"],
+  "brand_name": "英超预测台",
+  "brand_short_name": "英超台",
+  "default_landing": "/"
+}
