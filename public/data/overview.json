@@ -1,7 +1,7 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T04:19:32.459569+00:00",
+  "generated_at": "2026-05-09T04:19:43.290958+00:00",
   "system_status": "healthy",
   "data_truth_mode_summary": "MIXED",
   "model_version_summary": "football_ensemble@local",
@@ -19,10 +19,10 @@
     }
   ],
   "highlight_fixture_ids": [
+    "fx_72ef572d07ca4232",
+    "fx_3bb82897f03dc477",
     "fx_edde2b2d9bd94504",
-    "fx_28eaf8abd13ce700",
     "fx_7fd7a83cf680ceb1",
-    "fx_c5b460a5305e51c6",
-    "fx_72ef572d07ca4232"
+    "fx_28eaf8abd13ce700"
   ]
 }

@@ -1,11 +1,43 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T04:19:32.459569+00:00",
+  "generated_at": "2026-05-09T04:19:43.290958+00:00",
   "teams": [
+    {
+      "team_id": "club:global:real_madrid",
+      "canonical_name": "Real Madrid",
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
+    },
+    {
+      "team_id": "club:global:chelsea",
+      "canonical_name": "Chelsea",
+      "competition_id": "premier_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
+    },
     {
       "team_id": "club:global:inter_milan",
       "canonical_name": "Inter Milan",
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
+    },
+    {
+      "team_id": "club:global:psg",
+      "canonical_name": "PSG",
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
+    },
+    {
+      "team_id": "club:global:bayern_munich",
+      "canonical_name": "Bayern Munich",
       "competition_id": "champions_league",
       "scope": "club",
       "wikidata_qid": null,
@@ -28,40 +60,8 @@
       "alias_list": []
     },
     {
-      "team_id": "club:global:bayern_munich",
-      "canonical_name": "Bayern Munich",
-      "competition_id": "champions_league",
-      "scope": "club",
-      "wikidata_qid": null,
-      "alias_list": []
-    },
-    {
-      "team_id": "club:global:real_madrid",
-      "canonical_name": "Real Madrid",
-      "competition_id": "champions_league",
-      "scope": "club",
-      "wikidata_qid": null,
-      "alias_list": []
-    },
-    {
       "team_id": "club:global:arsenal",
       "canonical_name": "Arsenal",
-      "competition_id": "premier_league",
-      "scope": "club",
-      "wikidata_qid": null,
-      "alias_list": []
-    },
-    {
-      "team_id": "club:global:psg",
-      "canonical_name": "PSG",
-      "competition_id": "champions_league",
-      "scope": "club",
-      "wikidata_qid": null,
-      "alias_list": []
-    },
-    {
-      "team_id": "club:global:chelsea",
-      "canonical_name": "Chelsea",
       "competition_id": "premier_league",
       "scope": "club",
       "wikidata_qid": null,
