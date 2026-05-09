@@ -1,8 +1,8 @@
 {
   "pack_version": "p2.1.0",
-  "generated_at": "2026-05-09T04:15:58.897824+00:00",
+  "generated_at": "2026-05-09T04:19:32.459569+00:00",
   "manifest_path": "manifest.json",
-  "manifest_sha256": "d6c96cc36d6d7877f91ec565e3ebf96b5503388494a36a0017f01930e1a3172e",
+  "manifest_sha256": "0601ad91ace6683f72e313a4e970a6365cbec2c5997283257106a58f6ba4513c",
   "data_truth_mode_summary": "MIXED",
   "model_version_summary": "football_ensemble@local",
   "warnings_count": 1

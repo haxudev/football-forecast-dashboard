@@ -1,7 +1,7 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T04:15:58.897824+00:00",
+  "generated_at": "2026-05-09T04:19:32.459569+00:00",
   "competition_id": "world_cup_2026",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "REAL_DERIVED",
@@ -14,7 +14,7 @@
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 6/78 fixtures (8%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 6/94 fixtures (6%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
@@ -30,7 +30,7 @@
       "home_team": "Algeria",
       "away_team": "Denmark",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894406+00:00",
+      "generated_at": "2026-05-09T04:19:32.456158+00:00",
       "p_home": 0.300386,
       "p_draw": 0.3059,
       "p_away": 0.393714,
@@ -91,7 +91,7 @@
       "home_team": "Algeria",
       "away_team": "Jamaica",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894448+00:00",
+      "generated_at": "2026-05-09T04:19:32.456204+00:00",
       "p_home": 0.643738,
       "p_draw": 0.2336,
       "p_away": 0.122662,
@@ -152,7 +152,7 @@
       "home_team": "Algeria",
       "away_team": "Qatar",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894482+00:00",
+      "generated_at": "2026-05-09T04:19:32.456240+00:00",
       "p_home": 0.725963,
       "p_draw": 0.2006,
       "p_away": 0.073437,
@@ -213,7 +213,7 @@
       "home_team": "Denmark",
       "away_team": "Jamaica",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894562+00:00",
+      "generated_at": "2026-05-09T04:19:32.456332+00:00",
       "p_home": 0.732784,
       "p_draw": 0.2,
       "p_away": 0.067216,
@@ -274,7 +274,7 @@
       "home_team": "Denmark",
       "away_team": "Qatar",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894592+00:00",
+      "generated_at": "2026-05-09T04:19:32.456363+00:00",
       "p_home": 0.762852,
       "p_draw": 0.2,
       "p_away": 0.037148,
@@ -335,7 +335,7 @@
       "home_team": "Jamaica",
       "away_team": "Qatar",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894621+00:00",
+      "generated_at": "2026-05-09T04:19:32.456394+00:00",
       "p_home": 0.552074,
       "p_draw": 0.263,
       "p_away": 0.184926,
@@ -396,7 +396,7 @@
       "home_team": "Argentina",
       "away_team": "Ecuador",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894649+00:00",
+      "generated_at": "2026-05-09T04:19:32.456424+00:00",
       "p_home": 0.619346,
       "p_draw": 0.242,
       "p_away": 0.138654,
@@ -457,7 +457,7 @@
       "home_team": "Argentina",
       "away_team": "Japan",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894678+00:00",
+      "generated_at": "2026-05-09T04:19:32.456470+00:00",
       "p_home": 0.644582,
       "p_draw": 0.2333,
       "p_away": 0.122118,
@@ -518,7 +518,7 @@
       "home_team": "Argentina",
       "away_team": "Scotland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894733+00:00",
+      "generated_at": "2026-05-09T04:19:32.456505+00:00",
       "p_home": 0.799643,
       "p_draw": 0.2,
       "p_away": 0.000357,
@@ -579,7 +579,7 @@
       "home_team": "Ecuador",
       "away_team": "Japan",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894768+00:00",
+      "generated_at": "2026-05-09T04:19:32.456538+00:00",
       "p_home": 0.464618,
       "p_draw": 0.2873,
       "p_away": 0.248082,
@@ -640,7 +640,7 @@
       "home_team": "Ecuador",
       "away_team": "Scotland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894797+00:00",
+      "generated_at": "2026-05-09T04:19:32.456568+00:00",
       "p_home": 0.798994,
       "p_draw": 0.2,
       "p_away": 0.001006,
@@ -701,7 +701,7 @@
       "home_team": "Japan",
       "away_team": "Scotland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894825+00:00",
+      "generated_at": "2026-05-09T04:19:32.456598+00:00",
       "p_home": 0.798812,
       "p_draw": 0.2,
       "p_away": 0.001188,
@@ -762,7 +762,7 @@
       "home_team": "Australia",
       "away_team": "Egypt",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894854+00:00",
+      "generated_at": "2026-05-09T04:19:32.456628+00:00",
       "p_home": 0.535515,
       "p_draw": 0.2678,
       "p_away": 0.196685,
@@ -823,7 +823,7 @@
       "home_team": "Australia",
       "away_team": "South Korea",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894884+00:00",
+      "generated_at": "2026-05-09T04:19:32.456658+00:00",
       "p_home": 0.466869,
       "p_draw": 0.2867,
       "p_away": 0.246431,
@@ -884,7 +884,7 @@
       "home_team": "Australia",
       "away_team": "Senegal",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894913+00:00",
+      "generated_at": "2026-05-09T04:19:32.456688+00:00",
       "p_home": 0.327483,
       "p_draw": 0.3155,
       "p_away": 0.357017,
@@ -945,7 +945,7 @@
       "home_team": "Egypt",
       "away_team": "South Korea",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894942+00:00",
+      "generated_at": "2026-05-09T04:19:32.456718+00:00",
       "p_home": 0.359298,
       "p_draw": 0.3149,
       "p_away": 0.325802,
@@ -1006,7 +1006,7 @@
       "home_team": "Egypt",
       "away_team": "Senegal",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.894972+00:00",
+      "generated_at": "2026-05-09T04:19:32.456750+00:00",
       "p_home": 0.248082,
       "p_draw": 0.2873,
       "p_away": 0.464618,
@@ -1067,7 +1067,7 @@
       "home_team": "South Korea",
       "away_team": "Senegal",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895000+00:00",
+      "generated_at": "2026-05-09T04:19:32.456781+00:00",
       "p_home": 0.301237,
       "p_draw": 0.3062,
       "p_away": 0.392563,
@@ -1128,7 +1128,7 @@
       "home_team": "Austria",
       "away_team": "England",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895028+00:00",
+      "generated_at": "2026-05-09T04:19:32.456811+00:00",
       "p_home": 0.244783,
       "p_draw": 0.2861,
       "p_away": 0.469117,
@@ -1189,7 +1189,7 @@
       "home_team": "Austria",
       "away_team": "Saudi Arabia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895056+00:00",
+      "generated_at": "2026-05-09T04:19:32.456843+00:00",
       "p_home": 0.684459,
       "p_draw": 0.2183,
       "p_away": 0.097241,
@@ -1250,7 +1250,7 @@
       "home_team": "Austria",
       "away_team": "Serbia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895085+00:00",
+      "generated_at": "2026-05-09T04:19:32.456873+00:00",
       "p_home": 0.495784,
       "p_draw": 0.2789,
       "p_away": 0.225316,
@@ -1311,7 +1311,7 @@
       "home_team": "England",
       "away_team": "Saudi Arabia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895113+00:00",
+      "generated_at": "2026-05-09T04:19:32.456904+00:00",
       "p_home": 0.764253,
       "p_draw": 0.2,
       "p_away": 0.035747,
@@ -1372,7 +1372,7 @@
       "home_team": "England",
       "away_team": "Serbia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895140+00:00",
+      "generated_at": "2026-05-09T04:19:32.456935+00:00",
       "p_home": 0.677613,
       "p_draw": 0.221,
       "p_away": 0.101387,
@@ -1433,7 +1433,7 @@
       "home_team": "Saudi Arabia",
       "away_team": "Serbia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895168+00:00",
+      "generated_at": "2026-05-09T04:19:32.456966+00:00",
       "p_home": 0.237413,
       "p_draw": 0.2834,
       "p_away": 0.479187,
@@ -1494,7 +1494,7 @@
       "home_team": "Belgium",
       "away_team": "Spain",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895197+00:00",
+      "generated_at": "2026-05-09T04:19:32.456996+00:00",
       "p_home": 0.164695,
       "p_draw": 0.2543,
       "p_away": 0.581005,
@@ -1555,7 +1555,7 @@
       "home_team": "Belgium",
       "away_team": "Morocco",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895243+00:00",
+      "generated_at": "2026-05-09T04:19:32.457026+00:00",
       "p_home": 0.482526,
       "p_draw": 0.2825,
       "p_away": 0.234974,
@@ -1616,7 +1616,7 @@
       "home_team": "Belgium",
       "away_team": "Switzerland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895286+00:00",
+      "generated_at": "2026-05-09T04:19:32.457055+00:00",
       "p_home": 0.405225,
       "p_draw": 0.3029,
       "p_away": 0.291875,
@@ -1677,7 +1677,7 @@
       "home_team": "Spain",
       "away_team": "Morocco",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895317+00:00",
+      "generated_at": "2026-05-09T04:19:32.457087+00:00",
       "p_home": 0.735905,
       "p_draw": 0.2,
       "p_away": 0.064095,
@@ -1738,7 +1738,7 @@
       "home_team": "Spain",
       "away_team": "Switzerland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895347+00:00",
+      "generated_at": "2026-05-09T04:19:32.457118+00:00",
       "p_home": 0.697008,
       "p_draw": 0.2132,
       "p_away": 0.089792,
@@ -1799,7 +1799,7 @@
       "home_team": "Morocco",
       "away_team": "Switzerland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895376+00:00",
+      "generated_at": "2026-05-09T04:19:32.457148+00:00",
       "p_home": 0.353601,
       "p_draw": 0.3164,
       "p_away": 0.329999,
@@ -1860,7 +1860,7 @@
       "home_team": "Brazil",
       "away_team": "France",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895403+00:00",
+      "generated_at": "2026-05-09T04:19:32.457176+00:00",
       "p_home": 0.324961,
       "p_draw": 0.3146,
       "p_away": 0.360439,
@@ -1921,7 +1921,7 @@
       "home_team": "Brazil",
       "away_team": "Mexico",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895433+00:00",
+      "generated_at": "2026-05-09T04:19:32.457206+00:00",
       "p_home": 0.568215,
       "p_draw": 0.2582,
       "p_away": 0.173585,
@@ -1982,7 +1982,7 @@
       "home_team": "Brazil",
       "away_team": "Sweden",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895461+00:00",
+      "generated_at": "2026-05-09T04:19:32.457238+00:00",
       "p_home": 0.688945,
       "p_draw": 0.2165,
       "p_away": 0.094555,
@@ -2043,7 +2043,7 @@
       "home_team": "France",
       "away_team": "Mexico",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895489+00:00",
+      "generated_at": "2026-05-09T04:19:32.457269+00:00",
       "p_home": 0.657023,
       "p_draw": 0.2288,
       "p_away": 0.114177,
@@ -2104,7 +2104,7 @@
       "home_team": "France",
       "away_team": "Sweden",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895517+00:00",
+      "generated_at": "2026-05-09T04:19:32.457297+00:00",
       "p_home": 0.742065,
       "p_draw": 0.2,
       "p_away": 0.057935,
@@ -2165,7 +2165,7 @@
       "home_team": "Mexico",
       "away_team": "Sweden",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895545+00:00",
+      "generated_at": "2026-05-09T04:19:32.457326+00:00",
       "p_home": 0.581005,
       "p_draw": 0.2543,
       "p_away": 0.164695,
@@ -2226,7 +2226,7 @@
       "home_team": "Canada",
       "away_team": "Germany",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895574+00:00",
+      "generated_at": "2026-05-09T04:19:32.457355+00:00",
       "p_home": 0.290173,
       "p_draw": 0.3023,
       "p_away": 0.407527,
@@ -2287,7 +2287,7 @@
       "home_team": "Canada",
       "away_team": "Netherlands",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895602+00:00",
+      "generated_at": "2026-05-09T04:19:32.457386+00:00",
       "p_home": 0.258058,
       "p_draw": 0.2909,
       "p_away": 0.451042,
@@ -2348,7 +2348,7 @@
       "home_team": "Canada",
       "away_team": "Tunisia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895629+00:00",
+      "generated_at": "2026-05-09T04:19:32.457416+00:00",
       "p_home": 0.589684,
       "p_draw": 0.2516,
       "p_away": 0.158716,
@@ -2409,7 +2409,7 @@
       "home_team": "Germany",
       "away_team": "Netherlands",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895656+00:00",
+      "generated_at": "2026-05-09T04:19:32.457445+00:00",
       "p_home": 0.38796,
       "p_draw": 0.3074,
       "p_away": 0.30464,
@@ -2470,7 +2470,7 @@
       "home_team": "Germany",
       "away_team": "Tunisia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895684+00:00",
+      "generated_at": "2026-05-09T04:19:32.457473+00:00",
       "p_home": 0.704867,
       "p_draw": 0.2099,
       "p_away": 0.085233,
@@ -2531,7 +2531,7 @@
       "home_team": "Netherlands",
       "away_team": "Tunisia",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895712+00:00",
+      "generated_at": "2026-05-09T04:19:32.457503+00:00",
       "p_home": 0.729153,
       "p_draw": 0.2,
       "p_away": 0.070847,
@@ -2592,7 +2592,7 @@
       "home_team": "Côte d'Ivoire",
       "away_team": "Ghana",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895740+00:00",
+      "generated_at": "2026-05-09T04:19:32.457532+00:00",
       "p_home": 0.611195,
       "p_draw": 0.2447,
       "p_away": 0.144105,
@@ -2653,7 +2653,7 @@
       "home_team": "Côte d'Ivoire",
       "away_team": "Nigeria",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895783+00:00",
+      "generated_at": "2026-05-09T04:19:32.457561+00:00",
       "p_home": 0.344521,
       "p_draw": 0.3188,
       "p_away": 0.336679,
@@ -2714,7 +2714,7 @@
       "home_team": "Côte d'Ivoire",
       "away_team": "Turkey",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895873+00:00",
+      "generated_at": "2026-05-09T04:19:32.457600+00:00",
       "p_home": 0.217397,
       "p_draw": 0.2759,
       "p_away": 0.506703,
@@ -2775,7 +2775,7 @@
       "home_team": "Ghana",
       "away_team": "Nigeria",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895922+00:00",
+      "generated_at": "2026-05-09T04:19:32.457637+00:00",
       "p_home": 0.201955,
       "p_draw": 0.2699,
       "p_away": 0.528145,
@@ -2836,7 +2836,7 @@
       "home_team": "Ghana",
       "away_team": "Turkey",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895954+00:00",
+      "generated_at": "2026-05-09T04:19:32.457669+00:00",
       "p_home": 0.107139,
       "p_draw": 0.2246,
       "p_away": 0.668261,
@@ -2897,7 +2897,7 @@
       "home_team": "Nigeria",
       "away_team": "Turkey",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.895985+00:00",
+      "generated_at": "2026-05-09T04:19:32.457699+00:00",
       "p_home": 0.279974,
       "p_draw": 0.2987,
       "p_away": 0.421326,
@@ -2958,7 +2958,7 @@
       "home_team": "Cameroon",
       "away_team": "Hungary",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896015+00:00",
+      "generated_at": "2026-05-09T04:19:32.457729+00:00",
       "p_home": 0.33251,
       "p_draw": 0.3173,
       "p_away": 0.35019,
@@ -3019,7 +3019,7 @@
       "home_team": "Cameroon",
       "away_team": "Norway",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896045+00:00",
+      "generated_at": "2026-05-09T04:19:32.457760+00:00",
       "p_home": 0.165368,
       "p_draw": 0.2546,
       "p_away": 0.580032,
@@ -3080,7 +3080,7 @@
       "home_team": "Cameroon",
       "away_team": "Ukraine",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896078+00:00",
+      "generated_at": "2026-05-09T04:19:32.457791+00:00",
       "p_home": 0.278278,
       "p_draw": 0.2981,
       "p_away": 0.423622,
@@ -3141,7 +3141,7 @@
       "home_team": "Hungary",
       "away_team": "Norway",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896108+00:00",
+      "generated_at": "2026-05-09T04:19:32.457820+00:00",
       "p_home": 0.231737,
       "p_draw": 0.2813,
       "p_away": 0.486963,
@@ -3202,7 +3202,7 @@
       "home_team": "Hungary",
       "away_team": "Ukraine",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896136+00:00",
+      "generated_at": "2026-05-09T04:19:32.457849+00:00",
       "p_home": 0.358157,
       "p_draw": 0.3152,
       "p_away": 0.326643,
@@ -3263,7 +3263,7 @@
       "home_team": "Norway",
       "away_team": "Ukraine",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896168+00:00",
+      "generated_at": "2026-05-09T04:19:32.457879+00:00",
       "p_home": 0.586807,
       "p_draw": 0.2525,
       "p_away": 0.160693,
@@ -3324,7 +3324,7 @@
       "home_team": "Colombia",
       "away_team": "Iran",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896196+00:00",
+      "generated_at": "2026-05-09T04:19:32.457907+00:00",
       "p_home": 0.649608,
       "p_draw": 0.2315,
       "p_away": 0.118892,
@@ -3385,7 +3385,7 @@
       "home_team": "Colombia",
       "away_team": "Panama",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896227+00:00",
+      "generated_at": "2026-05-09T04:19:32.457951+00:00",
       "p_home": 0.668261,
       "p_draw": 0.2246,
       "p_away": 0.107139,
@@ -3446,7 +3446,7 @@
       "home_team": "Colombia",
       "away_team": "Uruguay",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896256+00:00",
+      "generated_at": "2026-05-09T04:19:32.457984+00:00",
       "p_home": 0.523902,
       "p_draw": 0.2711,
       "p_away": 0.204998,
@@ -3507,7 +3507,7 @@
       "home_team": "Iran",
       "away_team": "Panama",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896285+00:00",
+      "generated_at": "2026-05-09T04:19:32.458014+00:00",
       "p_home": 0.457844,
       "p_draw": 0.2891,
       "p_away": 0.253056,
@@ -3568,7 +3568,7 @@
       "home_team": "Iran",
       "away_team": "Uruguay",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896316+00:00",
+      "generated_at": "2026-05-09T04:19:32.458044+00:00",
       "p_home": 0.296131,
       "p_draw": 0.3044,
       "p_away": 0.399469,
@@ -3629,7 +3629,7 @@
       "home_team": "Panama",
       "away_team": "Uruguay",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896346+00:00",
+      "generated_at": "2026-05-09T04:19:32.458074+00:00",
       "p_home": 0.276583,
       "p_draw": 0.2975,
       "p_away": 0.425917,
@@ -3690,7 +3690,7 @@
       "home_team": "Costa Rica",
       "away_team": "Iraq",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896375+00:00",
+      "generated_at": "2026-05-09T04:19:32.458106+00:00",
       "p_home": 0.438511,
       "p_draw": 0.2942,
       "p_away": 0.267289,
@@ -3751,7 +3751,7 @@
       "home_team": "Costa Rica",
       "away_team": "Poland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896437+00:00",
+      "generated_at": "2026-05-09T04:19:32.458135+00:00",
       "p_home": 0.309738,
       "p_draw": 0.3092,
       "p_away": 0.381062,
@@ -3812,7 +3812,7 @@
       "home_team": "Costa Rica",
       "away_team": "United States",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896471+00:00",
+      "generated_at": "2026-05-09T04:19:32.458163+00:00",
       "p_home": 0.316521,
       "p_draw": 0.3116,
       "p_away": 0.371879,
@@ -3873,7 +3873,7 @@
       "home_team": "Iraq",
       "away_team": "Poland",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896500+00:00",
+      "generated_at": "2026-05-09T04:19:32.458192+00:00",
       "p_home": 0.30464,
       "p_draw": 0.3074,
       "p_away": 0.38796,
@@ -3934,7 +3934,7 @@
       "home_team": "Iraq",
       "away_team": "United States",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896532+00:00",
+      "generated_at": "2026-05-09T04:19:32.458223+00:00",
       "p_home": 0.311436,
       "p_draw": 0.3098,
       "p_away": 0.378764,
@@ -3995,7 +3995,7 @@
       "home_team": "Poland",
       "away_team": "United States",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896561+00:00",
+      "generated_at": "2026-05-09T04:19:32.458252+00:00",
       "p_home": 0.440795,
       "p_draw": 0.2936,
       "p_away": 0.265605,
@@ -4056,7 +4056,7 @@
       "home_team": "Croatia",
       "away_team": "Italy",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896589+00:00",
+      "generated_at": "2026-05-09T04:19:32.458283+00:00",
       "p_home": 0.51427,
       "p_draw": 0.2738,
       "p_away": 0.21193,
@@ -4117,7 +4117,7 @@
       "home_team": "Croatia",
       "away_team": "Portugal",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896619+00:00",
+      "generated_at": "2026-05-09T04:19:32.458313+00:00",
       "p_home": 0.369587,
       "p_draw": 0.3122,
       "p_away": 0.318213,
@@ -4178,7 +4178,7 @@
       "home_team": "Croatia",
       "away_team": "Uzbekistan",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896649+00:00",
+      "generated_at": "2026-05-09T04:19:32.458344+00:00",
       "p_home": 0.63949,
       "p_draw": 0.2351,
       "p_away": 0.12541,
@@ -4239,7 +4239,7 @@
       "home_team": "Italy",
       "away_team": "Portugal",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896680+00:00",
+      "generated_at": "2026-05-09T04:19:32.458373+00:00",
       "p_home": 0.299535,
       "p_draw": 0.3056,
       "p_away": 0.394865,
@@ -4300,7 +4300,7 @@
       "home_team": "Italy",
       "away_team": "Uzbekistan",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896709+00:00",
+      "generated_at": "2026-05-09T04:19:32.458402+00:00",
       "p_home": 0.571193,
       "p_draw": 0.2573,
       "p_away": 0.171507,
@@ -4361,7 +4361,7 @@
       "home_team": "Portugal",
       "away_team": "Uzbekistan",
       "model_version": "wc_elo_poisson@p5-sprint2",
-      "generated_at": "2026-05-09T04:15:58.896746+00:00",
+      "generated_at": "2026-05-09T04:19:32.458442+00:00",
       "p_home": 0.68295,
       "p_draw": 0.2189,
       "p_away": 0.09815,
@@ -4409,6 +4409,950 @@
         "p25": 0.6229,
         "median": 0.6829,
         "p75": 0.7429
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-00",
+      "fixture_id": "WC26-R32-00",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T00:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458446+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-01",
+      "fixture_id": "WC26-R32-01",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T03:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458450+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-02",
+      "fixture_id": "WC26-R32-02",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T06:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458453+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-03",
+      "fixture_id": "WC26-R32-03",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T09:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458455+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-04",
+      "fixture_id": "WC26-R32-04",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T12:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458469+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-05",
+      "fixture_id": "WC26-R32-05",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T15:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458472+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-06",
+      "fixture_id": "WC26-R32-06",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T18:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458476+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-07",
+      "fixture_id": "WC26-R32-07",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-01T21:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458498+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-08",
+      "fixture_id": "WC26-R32-08",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T00:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458500+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-09",
+      "fixture_id": "WC26-R32-09",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T03:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458503+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-10",
+      "fixture_id": "WC26-R32-10",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T06:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458505+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-11",
+      "fixture_id": "WC26-R32-11",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T09:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458508+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-12",
+      "fixture_id": "WC26-R32-12",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T12:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458511+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-13",
+      "fixture_id": "WC26-R32-13",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T15:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458513+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-14",
+      "fixture_id": "WC26-R32-14",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T18:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458515+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
+      }
+    },
+    {
+      "prediction_id": "pred_WC26-R32-15",
+      "fixture_id": "WC26-R32-15",
+      "competition_id": "world_cup_2026",
+      "season_id": "wc:2026",
+      "kickoff_utc": "2026-07-02T21:00:00+00:00",
+      "home_team_id": "nat:tbd",
+      "away_team_id": "nat:tbd",
+      "home_team": "TBD",
+      "away_team": "TBD",
+      "model_version": "wc_elo_poisson@p5-sprint2",
+      "generated_at": "2026-05-09T04:19:32.458517+00:00",
+      "p_home": 0.4,
+      "p_draw": 0.25,
+      "p_away": 0.35,
+      "expected_goals_home": 1.5,
+      "expected_goals_away": 1.5,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.1
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "placeholder",
+          "impact": 0.0
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "placeholder",
+      "data_truth_mode": "REAL_DERIVED",
+      "source_freshness_summary": {
+        "elo_national_teams": "FRESH",
+        "wikidata_team_master": "FRESH"
+      },
+      "warnings": [
+        "Knockout slot — teams unknown until group stage completion"
+      ],
+      "fixture_status": "placeholder",
+      "wc_phase": "pre_draw",
+      "simulation_uncertainty": {
+        "draw_simulations": 50,
+        "p25": 0.3,
+        "median": 0.4,
+        "p75": 0.5
       }
     }
   ]

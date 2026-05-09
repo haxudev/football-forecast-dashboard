@@ -1,8 +1,8 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T04:15:58.897824+00:00",
-  "run_id": "export-20260509T041558Z",
+  "generated_at": "2026-05-09T04:19:32.459569+00:00",
+  "run_id": "export-20260509T041932Z",
   "model_version": {
     "champions_league": "football_ensemble@local",
     "premier_league": "football_ensemble@local",
@@ -22,64 +22,64 @@
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 6/78 fixtures (8%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 6/94 fixtures (6%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "files": [
     {
       "path": "competitions.json",
-      "sha256": "e6032b9fb3dee2ddf5f91a134551a4d8940d220cd409a20a89ecfabfca86ebc1",
+      "sha256": "8580e88e4ce1242afaf28ddb2f70e0cc2d44dd7b59d65bfd1326b11f1b7c06b0",
       "bytes": 1225
     },
     {
       "path": "data_quality.json",
-      "sha256": "4494a133bb29e847aa7831610887deff7fa8cb042cd8669a062547cf39c49b9f",
+      "sha256": "95166558e38ee8379cf1bd306c2eafb0dc9ea597f0d998a7476133d4d77859d2",
       "bytes": 1739
     },
     {
       "path": "diagnostics.json",
-      "sha256": "9edb57585e4c8e7902971749da115b3e47e57c82844d5c0b4d1e83f816494533",
+      "sha256": "b984e5b6113a0dd359373a3fbd437a7be449bb21c8bee0ed201f23786aa86006",
       "bytes": 1452
     },
     {
       "path": "overview.json",
-      "sha256": "d5d1d3088f576d0abb7982b766762610f4a17cdc305f7f7ffffe9dc6a0117413",
+      "sha256": "121ee3b48feb89c981396486f1cab9bbf11c633b9ede5b56d912ce7bb1526cb4",
       "bytes": 791
     },
     {
       "path": "predictions/champions_league.json",
-      "sha256": "3e02b423b01510486b58b8ea712254909b77528471a625d93e07b21659003d0c",
+      "sha256": "a5afcde77954d52ba04dee75f908c91daac32ad4040b43d90fb6b0799695dce1",
       "bytes": 5242
     },
     {
       "path": "predictions/premier_league.json",
-      "sha256": "dc3e8713483e36bfbd65f9b9796c59bb0e535b94d517c95b294ce315dc6f0516",
+      "sha256": "1e9fb3ac924b886328646408a82e0507d639f388a6d203bbf8ab147ff7555d3f",
       "bytes": 5233
     },
     {
       "path": "predictions/world_cup_2026.json",
-      "sha256": "88e35f48a7827749f3830126fd0f3be4f9df0f3fe5cb3cd9948d51d012e8e724",
-      "bytes": 118079
+      "sha256": "bcd6df1662d99c6eb06b3fd7d565c54f3edf39d06af4270fa02c6750a54c39b4",
+      "bytes": 143295
     },
     {
       "path": "team_compare.json",
-      "sha256": "32a8a51f9d2b999de3029c8e584a48df235a199d72a7e9a9f26c019dc135dd67",
+      "sha256": "af8b30bf141543ee8308ba4b9c9f733e880706e320dc5a321b348a854c96fd8e",
       "bytes": 116712
     },
     {
       "path": "teams.json",
-      "sha256": "32a8a51f9d2b999de3029c8e584a48df235a199d72a7e9a9f26c019dc135dd67",
+      "sha256": "af8b30bf141543ee8308ba4b9c9f733e880706e320dc5a321b348a854c96fd8e",
       "bytes": 116712
     },
     {
       "path": "tournaments/champions_league.json",
-      "sha256": "b0516aeb9e297b6a543b92e929102f2e5519f121ed9915db332669b990d072e7",
+      "sha256": "1211e7a57b3d44cfae268e9ea491be73dac40835a35e734d8e60c990c96869e0",
       "bytes": 1161
     },
     {
       "path": "tournaments/world_cup_2026.json",
-      "sha256": "b9859ee274dc047fb7d939b8fb1b70404ecf37f7f684653f9da5b960f56b7cc0",
+      "sha256": "c2ab52ac3e3e20db71a0213b4e0bace644ff92eb1e7642622266be39ddeb0ca4",
       "bytes": 8767
     }
   ],
@@ -105,9 +105,9 @@
     {
       "name": "probability_distinct",
       "passed": true,
-      "metric": 72,
+      "metric": 73,
       "threshold": 4,
-      "detail": "distinct probability tuples = 72"
+      "detail": "distinct probability tuples = 73"
     },
     {
       "name": "latest_rating_real",
@@ -126,9 +126,9 @@
     {
       "name": "scoreline_distinct",
       "passed": true,
-      "metric": 72,
+      "metric": 73,
       "threshold": 4,
-      "detail": "distinct scoreline_top3 = 72"
+      "detail": "distinct scoreline_top3 = 73"
     }
   ],
   "wc_phase": "pre_draw",
