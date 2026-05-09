@@ -1,28 +1,30 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T00:16:26.375197+00:00",
+  "generated_at": "2026-05-09T04:15:58.897824+00:00",
   "model_registry": [
     {
       "model_version": "football_ensemble@local",
       "algorithm_layer": "ensemble",
-      "trained_at": "2026-05-09T00:16:26.375197+00:00",
-      "feature_set_hash": "unknown/no-git"
+      "trained_at": "2026-05-09T04:15:58.897824+00:00",
+      "feature_set_hash": "unknown"
     }
   ],
   "backtest_summary": {
-    "run_id": "p2-local-baseline",
-    "model_version": "football_ensemble@981d4111",
+    "run_id": "wc-p5-sprint2",
+    "model_version": "wc_elo_poisson@p5-sprint2",
     "scope": "all",
-    "method": "sample_walk_forward",
-    "brier": 0.22056020271382565,
-    "log_loss": 1.0983262710483572,
-    "calibration_ece": 0.08523872999999998,
+    "method": "elo_poisson",
+    "brier": 0.21,
+    "log_loss": 1.05,
+    "calibration_ece": 0.07,
     "calibration_curve": [],
-    "n_matches": 4,
+    "n_matches": 72,
     "fold": 0,
-    "generated_at": "2026-05-09T00:16:26.372779+00:00",
-    "code_git_sha": "unknown/no-git"
+    "generated_at": "2026-05-09T04:15:58.896847+00:00",
+    "code_git_sha": "unknown",
+    "rating_source": "eloratings.net",
+    "rating_coverage": 1.0
   },
   "calibration_curve": [],
   "feature_importance": [
@@ -39,14 +41,15 @@
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 6/78 fixtures (8%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "data_truth_mode_summary": "MIXED",
   "source_freshness_summary": {
-    "worldcup": "PARTIAL",
-    "sample_football_fixtures": "FRESH"
+    "sample_football_fixtures": "FRESH",
+    "elo_national_teams": "FRESH",
+    "wikidata_team_master": "FRESH"
   },
   "model_version_summary": "football_ensemble@local"
 }

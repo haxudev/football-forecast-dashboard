@@ -1,82 +1,359 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T00:16:26.375197+00:00",
+  "generated_at": "2026-05-09T04:15:58.897824+00:00",
   "competition_id": "world_cup_2026",
   "model_version_used": "football_ensemble@local",
-  "data_truth_mode": "MIXED",
+  "data_truth_mode": "REAL_DERIVED",
   "source_freshness_summary": {
-    "worldcup": "PARTIAL",
-    "sample_football_fixtures": "FRESH"
+    "sample_football_fixtures": "FRESH",
+    "elo_national_teams": "FRESH",
+    "wikidata_team_master": "FRESH"
   },
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 6/78 fixtures (8%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "simulations": [
     {
-      "team_id": "mexico",
-      "champion_probability": 0.12,
-      "advance_probability": 0.24
+      "team_id": "nat:esp",
+      "team_name": "Spain",
+      "champion_probability": 0.04202,
+      "advance_probability": 0.826667,
+      "elo": 2165.0
     },
     {
-      "team_id": "morocco",
-      "champion_probability": 0.116,
-      "advance_probability": 0.232
+      "team_id": "nat:arg",
+      "team_name": "Argentina",
+      "champion_probability": 0.038127,
+      "advance_probability": 0.792,
+      "elo": 2113.0
     },
     {
-      "team_id": "england",
-      "champion_probability": 0.114,
-      "advance_probability": 0.228
+      "team_id": "nat:fra",
+      "team_name": "France",
+      "champion_probability": 0.035938,
+      "advance_probability": 0.771333,
+      "elo": 2082.0
     },
     {
-      "team_id": "united_states",
-      "champion_probability": 0.098,
-      "advance_probability": 0.196
+      "team_id": "nat:eng",
+      "team_name": "England",
+      "champion_probability": 0.031845,
+      "advance_probability": 0.73,
+      "elo": 2020.0
     },
     {
-      "team_id": "germany",
-      "champion_probability": 0.086,
-      "advance_probability": 0.172
+      "team_id": "nat:bra",
+      "team_name": "Brazil",
+      "champion_probability": 0.029634,
+      "advance_probability": 0.706,
+      "elo": 1984.0
     },
     {
-      "team_id": "argentina",
-      "champion_probability": 0.074,
-      "advance_probability": 0.148
+      "team_id": "nat:por",
+      "team_name": "Portugal",
+      "champion_probability": 0.029634,
+      "advance_probability": 0.706,
+      "elo": 1984.0
     },
     {
-      "team_id": "canada",
-      "champion_probability": 0.074,
-      "advance_probability": 0.148
+      "team_id": "nat:col",
+      "team_name": "Colombia",
+      "champion_probability": 0.0291,
+      "advance_probability": 0.7,
+      "elo": 1975.0
     },
     {
-      "team_id": "france",
-      "champion_probability": 0.072,
-      "advance_probability": 0.144
+      "team_id": "nat:ned",
+      "team_name": "Netherlands",
+      "champion_probability": 0.028284,
+      "advance_probability": 0.690667,
+      "elo": 1961.0
     },
     {
-      "team_id": "senegal",
-      "champion_probability": 0.068,
-      "advance_probability": 0.136
+      "team_id": "nat:ecu",
+      "team_name": "Ecuador",
+      "champion_probability": 0.026703,
+      "advance_probability": 0.672,
+      "elo": 1933.0
     },
     {
-      "team_id": "brazil",
-      "champion_probability": 0.066,
-      "advance_probability": 0.132
+      "team_id": "nat:cro",
+      "team_name": "Croatia",
+      "champion_probability": 0.026537,
+      "advance_probability": 0.67,
+      "elo": 1930.0
     },
     {
-      "team_id": "spain",
-      "champion_probability": 0.06,
-      "advance_probability": 0.12
+      "team_id": "nat:ger",
+      "team_name": "Germany",
+      "champion_probability": 0.026155,
+      "advance_probability": 0.665333,
+      "elo": 1923.0
     },
     {
-      "team_id": "japan",
-      "champion_probability": 0.052,
-      "advance_probability": 0.104
+      "team_id": "nat:nor",
+      "team_name": "Norway",
+      "champion_probability": 0.025561,
+      "advance_probability": 0.658,
+      "elo": 1912.0
+    },
+    {
+      "team_id": "nat:jpn",
+      "team_name": "Japan",
+      "champion_probability": 0.025136,
+      "advance_probability": 0.652667,
+      "elo": 1904.0
+    },
+    {
+      "team_id": "nat:tur",
+      "team_name": "Turkey",
+      "champion_probability": 0.025083,
+      "advance_probability": 0.652,
+      "elo": 1903.0
+    },
+    {
+      "team_id": "nat:uru",
+      "team_name": "Uruguay",
+      "champion_probability": 0.024508,
+      "advance_probability": 0.644667,
+      "elo": 1892.0
+    },
+    {
+      "team_id": "nat:sui",
+      "team_name": "Switzerland",
+      "champion_probability": 0.024353,
+      "advance_probability": 0.642667,
+      "elo": 1889.0
+    },
+    {
+      "team_id": "nat:sen",
+      "team_name": "Senegal",
+      "champion_probability": 0.023791,
+      "advance_probability": 0.635333,
+      "elo": 1878.0
+    },
+    {
+      "team_id": "nat:den",
+      "team_name": "Denmark",
+      "champion_probability": 0.023388,
+      "advance_probability": 0.63,
+      "elo": 1870.0
+    },
+    {
+      "team_id": "nat:bel",
+      "team_name": "Belgium",
+      "champion_probability": 0.023189,
+      "advance_probability": 0.627333,
+      "elo": 1866.0
+    },
+    {
+      "team_id": "nat:mex",
+      "team_name": "Mexico",
+      "champion_probability": 0.022794,
+      "advance_probability": 0.622,
+      "elo": 1858.0
+    },
+    {
+      "team_id": "nat:ita",
+      "team_name": "Italy",
+      "champion_probability": 0.022696,
+      "advance_probability": 0.620667,
+      "elo": 1856.0
+    },
+    {
+      "team_id": "nat:aut",
+      "team_name": "Austria",
+      "champion_probability": 0.02131,
+      "advance_probability": 0.601333,
+      "elo": 1827.0
+    },
+    {
+      "team_id": "nat:mar",
+      "team_name": "Morocco",
+      "champion_probability": 0.021031,
+      "advance_probability": 0.597333,
+      "elo": 1821.0
+    },
+    {
+      "team_id": "nat:can",
+      "team_name": "Canada",
+      "champion_probability": 0.019374,
+      "advance_probability": 0.572667,
+      "elo": 1784.0
+    },
+    {
+      "team_id": "nat:aus",
+      "team_name": "Australia",
+      "champion_probability": 0.01933,
+      "advance_probability": 0.572,
+      "elo": 1783.0
+    },
+    {
+      "team_id": "nat:srb",
+      "team_name": "Serbia",
+      "champion_probability": 0.018773,
+      "advance_probability": 0.563333,
+      "elo": 1770.0
+    },
+    {
+      "team_id": "nat:ukr",
+      "team_name": "Ukraine",
+      "champion_probability": 0.018646,
+      "advance_probability": 0.561333,
+      "elo": 1767.0
+    },
+    {
+      "team_id": "nat:irn",
+      "team_name": "Iran",
+      "champion_probability": 0.018352,
+      "advance_probability": 0.556667,
+      "elo": 1760.0
+    },
+    {
+      "team_id": "nat:kor",
+      "team_name": "South Korea",
+      "champion_probability": 0.01802,
+      "advance_probability": 0.551333,
+      "elo": 1752.0
+    },
+    {
+      "team_id": "nat:nga",
+      "team_name": "Nigeria",
+      "champion_probability": 0.01802,
+      "advance_probability": 0.551333,
+      "elo": 1752.0
+    },
+    {
+      "team_id": "nat:alg",
+      "team_name": "Algeria",
+      "champion_probability": 0.017653,
+      "advance_probability": 0.545333,
+      "elo": 1743.0
+    },
+    {
+      "team_id": "nat:pan",
+      "team_name": "Panama",
+      "champion_probability": 0.017411,
+      "advance_probability": 0.541333,
+      "elo": 1737.0
+    },
+    {
+      "team_id": "nat:pol",
+      "team_name": "Poland",
+      "champion_probability": 0.017093,
+      "advance_probability": 0.536,
+      "elo": 1729.0
+    },
+    {
+      "team_id": "nat:uzb",
+      "team_name": "Uzbekistan",
+      "champion_probability": 0.017014,
+      "advance_probability": 0.534667,
+      "elo": 1727.0
+    },
+    {
+      "team_id": "nat:usa",
+      "team_name": "United States",
+      "champion_probability": 0.016778,
+      "advance_probability": 0.530667,
+      "elo": 1721.0
+    },
+    {
+      "team_id": "nat:swe",
+      "team_name": "Sweden",
+      "champion_probability": 0.016701,
+      "advance_probability": 0.529333,
+      "elo": 1719.0
+    },
+    {
+      "team_id": "nat:hun",
+      "team_name": "Hungary",
+      "champion_probability": 0.016087,
+      "advance_probability": 0.518667,
+      "elo": 1703.0
+    },
+    {
+      "team_id": "nat:egy",
+      "team_name": "Egypt",
+      "champion_probability": 0.015565,
+      "advance_probability": 0.509333,
+      "elo": 1689.0
+    },
+    {
+      "team_id": "nat:civ",
+      "team_name": "Côte d'Ivoire",
+      "champion_probability": 0.015091,
+      "advance_probability": 0.500667,
+      "elo": 1676.0
+    },
+    {
+      "team_id": "nat:tun",
+      "team_name": "Tunisia",
+      "champion_probability": 0.013701,
+      "advance_probability": 0.474,
+      "elo": 1636.0
+    },
+    {
+      "team_id": "nat:cmr",
+      "team_name": "Cameroon",
+      "champion_probability": 0.012979,
+      "advance_probability": 0.459333,
+      "elo": 1614.0
+    },
+    {
+      "team_id": "nat:crc",
+      "team_name": "Costa Rica",
+      "champion_probability": 0.012947,
+      "advance_probability": 0.458667,
+      "elo": 1613.0
+    },
+    {
+      "team_id": "nat:irq",
+      "team_name": "Iraq",
+      "champion_probability": 0.012755,
+      "advance_probability": 0.454667,
+      "elo": 1607.0
+    },
+    {
+      "team_id": "nat:ksa",
+      "team_name": "Saudi Arabia",
+      "champion_probability": 0.011561,
+      "advance_probability": 0.428667,
+      "elo": 1568.0
+    },
+    {
+      "team_id": "nat:jam",
+      "team_name": "Jamaica",
+      "champion_probability": 0.010618,
+      "advance_probability": 0.406667,
+      "elo": 1535.0
+    },
+    {
+      "team_id": "nat:gha",
+      "team_name": "Ghana",
+      "champion_probability": 0.009812,
+      "advance_probability": 0.386667,
+      "elo": 1505.0
+    },
+    {
+      "team_id": "nat:qat",
+      "team_name": "Qatar",
+      "champion_probability": 0.007887,
+      "advance_probability": 0.333333,
+      "elo": 1425.0
+    },
+    {
+      "team_id": "nat:sco",
+      "team_name": "Scotland",
+      "champion_probability": 0.001013,
+      "advance_probability": 0.25,
+      "elo": 853.0
     }
   ]
 }

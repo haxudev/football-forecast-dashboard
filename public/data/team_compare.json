@@ -1,80 +1,8 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T00:16:26.375197+00:00",
+  "generated_at": "2026-05-09T04:15:58.897824+00:00",
   "teams": [
-    {
-      "team_id": "mexico",
-      "canonical_name": "Mexico",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q96",
-      "alias_list": []
-    },
-    {
-      "team_id": "england",
-      "canonical_name": "England",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q21",
-      "alias_list": []
-    },
-    {
-      "team_id": "germany",
-      "canonical_name": "Germany",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q183",
-      "alias_list": []
-    },
-    {
-      "team_id": "france",
-      "canonical_name": "France",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q142",
-      "alias_list": []
-    },
-    {
-      "team_id": "argentina",
-      "canonical_name": "Argentina",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q414",
-      "alias_list": []
-    },
-    {
-      "team_id": "spain",
-      "canonical_name": "Spain",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q29",
-      "alias_list": []
-    },
-    {
-      "team_id": "united_states",
-      "canonical_name": "United States",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q30",
-      "alias_list": []
-    },
-    {
-      "team_id": "brazil",
-      "canonical_name": "Brazil",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q155",
-      "alias_list": []
-    },
-    {
-      "team_id": "canada",
-      "canonical_name": "Canada",
-      "competition_id": "world_cup_2026",
-      "scope": "national_team",
-      "wikidata_qid": "Q16",
-      "alias_list": []
-    },
     {
       "team_id": "club:global:liverpool",
       "canonical_name": "Liverpool",
@@ -84,8 +12,24 @@
       "alias_list": []
     },
     {
+      "team_id": "club:global:arsenal",
+      "canonical_name": "Arsenal",
+      "competition_id": "premier_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
+    },
+    {
       "team_id": "club:global:real_madrid",
       "canonical_name": "Real Madrid",
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
+    },
+    {
+      "team_id": "club:global:bayern_munich",
+      "canonical_name": "Bayern Munich",
       "competition_id": "champions_league",
       "scope": "club",
       "wikidata_qid": null,
@@ -108,8 +52,8 @@
       "alias_list": []
     },
     {
-      "team_id": "club:global:arsenal",
-      "canonical_name": "Arsenal",
+      "team_id": "club:global:manchester_city",
+      "canonical_name": "Manchester City",
       "competition_id": "premier_league",
       "scope": "club",
       "wikidata_qid": null,
@@ -124,34 +68,3841 @@
       "alias_list": []
     },
     {
-      "team_id": "club:global:bayern_munich",
-      "canonical_name": "Bayern Munich",
-      "competition_id": "champions_league",
-      "scope": "club",
-      "wikidata_qid": null,
-      "alias_list": []
+      "team_id": "nat:alg",
+      "canonical_name": "Algeria",
+      "canonical_name_zh": "阿尔及利亚",
+      "scope": "national_team",
+      "country": "ALG",
+      "fifa_code": "ALG",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:alg:adam_ounas",
+          "name": "Adam Ounas",
+          "name_zh": "乌纳斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:alg:andy_delort",
+          "name": "Andy Delort",
+          "name_zh": "德洛尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:alg:aïssa_mandi",
+          "name": "Aïssa Mandi",
+          "name_zh": "曼迪",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:alg:baghdad_bounedjah",
+          "name": "Baghdad Bounedjah",
+          "name_zh": "布内贾",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:alg:houssem_aouar",
+          "name": "Houssem Aouar",
+          "name_zh": "奥亚尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:alg:ismaël_bennacer",
+          "name": "Ismaël Bennacer",
+          "name_zh": "本纳赛尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:alg:ramy_bensebaini",
+          "name": "Ramy Bensebaini",
+          "name_zh": "本塞拜尼",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:alg:raïs_mbolhi",
+          "name": "Raïs M'Bolhi",
+          "name_zh": "姆博利",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:alg:riyad_mahrez",
+          "name": "Riyad Mahrez",
+          "name_zh": "马赫雷斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:alg:sofiane_feghouli",
+          "name": "Sofiane Feghouli",
+          "name_zh": "费古利",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:alg:youcef_atal",
+          "name": "Youcef Atal",
+          "name_zh": "阿塔尔",
+          "position": "defender"
+        }
+      ]
     },
     {
-      "team_id": "club:global:manchester_city",
-      "canonical_name": "Manchester City",
-      "competition_id": "premier_league",
-      "scope": "club",
-      "wikidata_qid": null,
-      "alias_list": []
+      "team_id": "nat:arg",
+      "canonical_name": "Argentina",
+      "canonical_name_zh": "阿根廷",
+      "scope": "national_team",
+      "country": "ARG",
+      "fifa_code": "ARG",
+      "coach_name": "Lionel Scaloni",
+      "coach_name_zh": "莱昂内尔·斯卡洛尼",
+      "players": [
+        {
+          "player_id": "player:manual:arg:alexis_mac_allister",
+          "name": "Alexis Mac Allister",
+          "name_zh": "麦卡利斯特",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:arg:cristian_romero",
+          "name": "Cristian Romero",
+          "name_zh": "克里斯蒂安·罗梅罗",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:arg:emiliano_martínez",
+          "name": "Emiliano Martínez",
+          "name_zh": "埃米利亚诺·马丁内斯",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:arg:enzo_fernández",
+          "name": "Enzo Fernández",
+          "name_zh": "恩佐·费尔南德斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:arg:julián_álvarez",
+          "name": "Julián Álvarez",
+          "name_zh": "胡利安·阿尔瓦雷斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:arg:lautaro_martínez",
+          "name": "Lautaro Martínez",
+          "name_zh": "劳塔罗·马丁内斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "pl:lionel_messi:19870624",
+          "name": "Lionel Messi",
+          "name_zh": "莱昂内尔·梅西",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:arg:nahuel_molina",
+          "name": "Nahuel Molina",
+          "name_zh": "莫利纳",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:arg:nicolás_otamendi",
+          "name": "Nicolás Otamendi",
+          "name_zh": "奥塔门迪",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:arg:rodrigo_de_paul",
+          "name": "Rodrigo De Paul",
+          "name_zh": "罗德里戈·德保罗",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:arg:thiago_almada",
+          "name": "Thiago Almada",
+          "name_zh": "阿尔马达",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:aus",
+      "canonical_name": "Australia",
+      "canonical_name_zh": "澳大利亚",
+      "scope": "national_team",
+      "country": "AUS",
+      "fifa_code": "AUS",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:aus:aiden_oneill",
+          "name": "Aiden O'Neill",
+          "name_zh": "奥尼尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aus:awer_mabil",
+          "name": "Awer Mabil",
+          "name_zh": "马比尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:aus:cameron_burgess",
+          "name": "Cameron Burgess",
+          "name_zh": "伯吉斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:aus:connor_metcalfe",
+          "name": "Connor Metcalfe",
+          "name_zh": "梅特卡夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aus:craig_goodwin",
+          "name": "Craig Goodwin",
+          "name_zh": "古德温",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aus:harry_souttar",
+          "name": "Harry Souttar",
+          "name_zh": "索特",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:aus:jackson_irvine",
+          "name": "Jackson Irvine",
+          "name_zh": "欧文",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aus:kusini_yengi",
+          "name": "Kusini Yengi",
+          "name_zh": "扬吉",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:aus:mathew_ryan",
+          "name": "Mathew Ryan",
+          "name_zh": "瑞恩",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:aus:mitchell_duke",
+          "name": "Mitchell Duke",
+          "name_zh": "杜克",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:aus:riley_mcgree",
+          "name": "Riley McGree",
+          "name_zh": "麦格里",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:aut",
+      "canonical_name": "Austria",
+      "canonical_name_zh": "奥地利",
+      "scope": "national_team",
+      "country": "AUT",
+      "fifa_code": "AUT",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:aut:christoph_baumgartner",
+          "name": "Christoph Baumgartner",
+          "name_zh": "鲍姆加特纳",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aut:david_alaba",
+          "name": "David Alaba",
+          "name_zh": "阿拉巴",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:aut:florian_grillitsch",
+          "name": "Florian Grillitsch",
+          "name_zh": "格里利奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aut:gernot_trauner",
+          "name": "Gernot Trauner",
+          "name_zh": "特劳纳",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:aut:konrad_laimer",
+          "name": "Konrad Laimer",
+          "name_zh": "莱默尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aut:marcel_sabitzer",
+          "name": "Marcel Sabitzer",
+          "name_zh": "扎比策",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:aut:marko_arnautović",
+          "name": "Marko Arnautović",
+          "name_zh": "阿瑙托维奇",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:aut:maximilian_wöber",
+          "name": "Maximilian Wöber",
+          "name_zh": "韦贝尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:aut:patrick_pentz",
+          "name": "Patrick Pentz",
+          "name_zh": "彭茨",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:aut:phillipp_mwene",
+          "name": "Phillipp Mwene",
+          "name_zh": "姆韦内",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:aut:romano_schmid",
+          "name": "Romano Schmid",
+          "name_zh": "施密德",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:bel",
+      "canonical_name": "Belgium",
+      "canonical_name_zh": "比利时",
+      "scope": "national_team",
+      "country": "BEL",
+      "fifa_code": "BEL",
+      "coach_name": "Domenico Tedesco",
+      "coach_name_zh": "特代斯科",
+      "players": [
+        {
+          "player_id": "player:manual:bel:amadou_onana",
+          "name": "Amadou Onana",
+          "name_zh": "奥纳纳",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:bel:axel_witsel",
+          "name": "Axel Witsel",
+          "name_zh": "维特塞尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:bel:charles_de_ketelaere",
+          "name": "Charles De Ketelaere",
+          "name_zh": "德凯特拉雷",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:bel:jérémy_doku",
+          "name": "Jérémy Doku",
+          "name_zh": "多库",
+          "position": "forward"
+        },
+        {
+          "player_id": "pl:kevin_de_bruyne:19910628",
+          "name": "Kevin De Bruyne",
+          "name_zh": "凯文·德布劳内",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:bel:leandro_trossard",
+          "name": "Leandro Trossard",
+          "name_zh": "特罗萨德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:bel:loïs_openda",
+          "name": "Loïs Openda",
+          "name_zh": "奥彭达",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:bel:romelu_lukaku",
+          "name": "Romelu Lukaku",
+          "name_zh": "卢卡库",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:bel:thibaut_courtois",
+          "name": "Thibaut Courtois",
+          "name_zh": "库尔图瓦",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:bel:timothy_castagne",
+          "name": "Timothy Castagne",
+          "name_zh": "卡斯塔涅",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:bel:wout_faes",
+          "name": "Wout Faes",
+          "name_zh": "法埃斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:bel:youri_tielemans",
+          "name": "Youri Tielemans",
+          "name_zh": "蒂勒曼斯",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:bra",
+      "canonical_name": "Brazil",
+      "canonical_name_zh": "巴西",
+      "scope": "national_team",
+      "country": "BRA",
+      "fifa_code": "BRA",
+      "coach_name": "Dorival Júnior",
+      "coach_name_zh": "多里瓦尔·儒尼奥尔",
+      "players": [
+        {
+          "player_id": "player:manual:bra:alisson_becker",
+          "name": "Alisson Becker",
+          "name_zh": "阿利松·贝克尔",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:bra:bruno_guimarães",
+          "name": "Bruno Guimarães",
+          "name_zh": "布鲁诺·吉马良斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:bra:casemiro",
+          "name": "Casemiro",
+          "name_zh": "卡塞米罗",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:bra:eder_militão",
+          "name": "Eder Militão",
+          "name_zh": "埃德尔·米利唐",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:bra:gabriel_magalhães",
+          "name": "Gabriel Magalhães",
+          "name_zh": "加布里埃尔·马加良斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:bra:lucas_paquetá",
+          "name": "Lucas Paquetá",
+          "name_zh": "卢卡斯·帕奎塔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:bra:marquinhos",
+          "name": "Marquinhos",
+          "name_zh": "马尔基尼奥斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "pl:neymar:19920205",
+          "name": "Neymar",
+          "name_zh": "内马尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:bra:raphinha",
+          "name": "Raphinha",
+          "name_zh": "拉菲尼亚",
+          "position": "forward"
+        },
+        {
+          "player_id": "pl:rodrygo:20010109",
+          "name": "Rodrygo",
+          "name_zh": "罗德里戈",
+          "position": "forward"
+        },
+        {
+          "player_id": "pl:vin_cius_j_nior:20000712",
+          "name": "Vinícius Júnior",
+          "name_zh": "维尼修斯",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:can",
+      "canonical_name": "Canada",
+      "canonical_name_zh": "加拿大",
+      "scope": "national_team",
+      "country": "CAN",
+      "fifa_code": "CAN",
+      "coach_name": "Jesse Marsch",
+      "coach_name_zh": "马什",
+      "players": [
+        {
+          "player_id": "player:manual:can:alistair_johnston",
+          "name": "Alistair Johnston",
+          "name_zh": "约翰斯顿",
+          "position": "defender"
+        },
+        {
+          "player_id": "pl:alphonso_davies:20001102",
+          "name": "Alphonso Davies",
+          "name_zh": "戴维斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:can:atiba_hutchinson",
+          "name": "Atiba Hutchinson",
+          "name_zh": "哈钦森",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:can:cyle_larin",
+          "name": "Cyle Larin",
+          "name_zh": "拉林",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:can:ismaël_koné",
+          "name": "Ismaël Koné",
+          "name_zh": "科内",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:can:jacob_shaffelburg",
+          "name": "Jacob Shaffelburg",
+          "name_zh": "沙费尔伯格",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:can:jonathan_david",
+          "name": "Jonathan David",
+          "name_zh": "戴维",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:can:jonathan_osorio",
+          "name": "Jonathan Osorio",
+          "name_zh": "奥索里奥",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:can:junior_hoilett",
+          "name": "Junior Hoilett",
+          "name_zh": "霍伊勒特",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:can:maxime_crépeau",
+          "name": "Maxime Crépeau",
+          "name_zh": "克雷波",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:can:stephen_eustáquio",
+          "name": "Stephen Eustáquio",
+          "name_zh": "尤斯塔基奥",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:can:tajon_buchanan",
+          "name": "Tajon Buchanan",
+          "name_zh": "布坎南",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:civ",
+      "canonical_name": "Côte d'Ivoire",
+      "canonical_name_zh": "科特迪瓦",
+      "scope": "national_team",
+      "country": "CIV",
+      "fifa_code": "CIV",
+      "coach_name": "Emerse Faé",
+      "coach_name_zh": "法埃",
+      "players": [
+        {
+          "player_id": "player:manual:civ:eric_bailly",
+          "name": "Eric Bailly",
+          "name_zh": "巴伊",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:civ:franck_kessié",
+          "name": "Franck Kessié",
+          "name_zh": "凯西",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:civ:ibrahim_sangaré",
+          "name": "Ibrahim Sangaré",
+          "name_zh": "桑加雷",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:civ:jean-philippe_krasso",
+          "name": "Jean-Philippe Krasso",
+          "name_zh": "克拉索",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:civ:nicolas_pépé",
+          "name": "Nicolas Pépé",
+          "name_zh": "佩佩",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:civ:seko_fofana",
+          "name": "Seko Fofana",
+          "name_zh": "塞科·福法纳",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:civ:serge_aurier",
+          "name": "Serge Aurier",
+          "name_zh": "奥里耶",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:civ:simon_adingra",
+          "name": "Simon Adingra",
+          "name_zh": "阿丁格拉",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:civ:sébastien_haller",
+          "name": "Sébastien Haller",
+          "name_zh": "阿莱",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:civ:wilfried_zaha",
+          "name": "Wilfried Zaha",
+          "name_zh": "扎哈",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:civ:yahia_fofana",
+          "name": "Yahia Fofana",
+          "name_zh": "福法纳",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:cmr",
+      "canonical_name": "Cameroon",
+      "canonical_name_zh": "喀麦隆",
+      "scope": "national_team",
+      "country": "CMR",
+      "fifa_code": "CMR",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:cmr:andré_onana",
+          "name": "André Onana",
+          "name_zh": "安德烈·奥纳纳",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:cmr:bryan_mbeumo",
+          "name": "Bryan Mbeumo",
+          "name_zh": "姆博莫",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:cmr:collins_fai",
+          "name": "Collins Fai",
+          "name_zh": "法伊",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:cmr:enzo_ebosse",
+          "name": "Enzo Ebosse",
+          "name_zh": "埃博塞",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:cmr:eric_maxim_choupo-moting",
+          "name": "Eric Maxim Choupo-Moting",
+          "name_zh": "乔波-莫廷",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:cmr:frank_magri",
+          "name": "Frank Magri",
+          "name_zh": "马格里",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:cmr:jean-charles_castelletto",
+          "name": "Jean-Charles Castelletto",
+          "name_zh": "卡斯泰莱托",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:cmr:karl_toko_ekambi",
+          "name": "Karl Toko Ekambi",
+          "name_zh": "托科·埃坎比",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:cmr:olivier_ntcham",
+          "name": "Olivier Ntcham",
+          "name_zh": "恩特沙姆",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:cmr:pierre_kunde",
+          "name": "Pierre Kunde",
+          "name_zh": "孔德",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:cmr:vincent_aboubakar",
+          "name": "Vincent Aboubakar",
+          "name_zh": "阿布巴卡尔",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:col",
+      "canonical_name": "Colombia",
+      "canonical_name_zh": "哥伦比亚",
+      "scope": "national_team",
+      "country": "COL",
+      "fifa_code": "COL",
+      "coach_name": "Néstor Lorenzo",
+      "coach_name_zh": "洛伦索",
+      "players": [
+        {
+          "player_id": "player:manual:col:camilo_vargas",
+          "name": "Camilo Vargas",
+          "name_zh": "巴尔加斯",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:col:daniel_muñoz",
+          "name": "Daniel Muñoz",
+          "name_zh": "穆尼奥斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:col:davinson_sánchez",
+          "name": "Davinson Sánchez",
+          "name_zh": "桑切斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:col:james_rodríguez",
+          "name": "James Rodríguez",
+          "name_zh": "J·罗德里格斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:col:jefferson_lerma",
+          "name": "Jefferson Lerma",
+          "name_zh": "莱尔马",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:col:jhon_arias",
+          "name": "Jhon Arias",
+          "name_zh": "阿里亚斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:col:jhon_córdoba",
+          "name": "Jhon Córdoba",
+          "name_zh": "科尔多瓦",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:col:luis_díaz",
+          "name": "Luis Díaz",
+          "name_zh": "路易斯·迪亚斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:col:mateus_uribe",
+          "name": "Mateus Uribe",
+          "name_zh": "乌里韦",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:col:richard_ríos",
+          "name": "Richard Ríos",
+          "name_zh": "里奥斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:col:yerry_mina",
+          "name": "Yerry Mina",
+          "name_zh": "米纳",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:crc",
+      "canonical_name": "Costa Rica",
+      "canonical_name_zh": "哥斯达黎加",
+      "scope": "national_team",
+      "country": "CRC",
+      "fifa_code": "CRC",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:crc:anthony_contreras",
+          "name": "Anthony Contreras",
+          "name_zh": "孔特雷拉斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:crc:brandon_aguilera",
+          "name": "Brandon Aguilera",
+          "name_zh": "阿吉莱拉",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:crc:bryan_ruiz",
+          "name": "Bryan Ruiz",
+          "name_zh": "布莱恩·鲁伊斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:crc:celso_borges",
+          "name": "Celso Borges",
+          "name_zh": "博尔赫斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:crc:francisco_calvo",
+          "name": "Francisco Calvo",
+          "name_zh": "卡尔沃",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:crc:jewison_bennette",
+          "name": "Jewison Bennette",
+          "name_zh": "贝内特",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:crc:joel_campbell",
+          "name": "Joel Campbell",
+          "name_zh": "坎贝尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:crc:kendall_waston",
+          "name": "Kendall Waston",
+          "name_zh": "瓦斯顿",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:crc:keylor_navas",
+          "name": "Keylor Navas",
+          "name_zh": "纳瓦斯",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:crc:manfred_ugalde",
+          "name": "Manfred Ugalde",
+          "name_zh": "乌加尔德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:crc:yeltsin_tejeda",
+          "name": "Yeltsin Tejeda",
+          "name_zh": "特赫达",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:cro",
+      "canonical_name": "Croatia",
+      "canonical_name_zh": "克罗地亚",
+      "scope": "national_team",
+      "country": "CRO",
+      "fifa_code": "CRO",
+      "coach_name": "Zlatko Dalić",
+      "coach_name_zh": "达利奇",
+      "players": [
+        {
+          "player_id": "player:manual:cro:andrej_kramarić",
+          "name": "Andrej Kramarić",
+          "name_zh": "克拉马里奇",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:cro:ante_budimir",
+          "name": "Ante Budimir",
+          "name_zh": "布迪米尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:cro:borna_sosa",
+          "name": "Borna Sosa",
+          "name_zh": "索萨",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:cro:dominik_livaković",
+          "name": "Dominik Livaković",
+          "name_zh": "利瓦科维奇",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:cro:ivan_perišić",
+          "name": "Ivan Perišić",
+          "name_zh": "佩里西奇",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:cro:joško_gvardiol",
+          "name": "Joško Gvardiol",
+          "name_zh": "格瓦迪奥尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:cro:lovro_majer",
+          "name": "Lovro Majer",
+          "name_zh": "马耶尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:luka_modri:19850909",
+          "name": "Luka Modrić",
+          "name_zh": "莫德里奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:cro:luka_sučić",
+          "name": "Luka Sučić",
+          "name_zh": "苏契奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:cro:marcelo_brozović",
+          "name": "Marcelo Brozović",
+          "name_zh": "布罗佐维奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:cro:mario_pašalić",
+          "name": "Mario Pašalić",
+          "name_zh": "帕沙利奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:cro:mateo_kovačić",
+          "name": "Mateo Kovačić",
+          "name_zh": "科瓦契奇",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:den",
+      "canonical_name": "Denmark",
+      "canonical_name_zh": "丹麦",
+      "scope": "national_team",
+      "country": "DEN",
+      "fifa_code": "DEN",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:den:anders_christiansen",
+          "name": "Anders Christiansen",
+          "name_zh": "克里斯蒂安森",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:den:andreas_christensen",
+          "name": "Andreas Christensen",
+          "name_zh": "克里斯滕森",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:den:christian_eriksen",
+          "name": "Christian Eriksen",
+          "name_zh": "埃里克森",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:den:joachim_andersen",
+          "name": "Joachim Andersen",
+          "name_zh": "安德森",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:den:joakim_mæhle",
+          "name": "Joakim Mæhle",
+          "name_zh": "马勒",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:den:jonas_wind",
+          "name": "Jonas Wind",
+          "name_zh": "温德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:den:kasper_schmeichel",
+          "name": "Kasper Schmeichel",
+          "name_zh": "舒梅切尔",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:den:mikkel_damsgaard",
+          "name": "Mikkel Damsgaard",
+          "name_zh": "达姆斯高",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:den:pierre-emile_højbjerg",
+          "name": "Pierre-Emile Højbjerg",
+          "name_zh": "霍伊别尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:den:rasmus_højlund",
+          "name": "Rasmus Højlund",
+          "name_zh": "霍伊伦德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:den:yussuf_poulsen",
+          "name": "Yussuf Poulsen",
+          "name_zh": "保尔森",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:ecu",
+      "canonical_name": "Ecuador",
+      "canonical_name_zh": "厄瓜多尔",
+      "scope": "national_team",
+      "country": "ECU",
+      "fifa_code": "ECU",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:ecu:alan_franco",
+          "name": "Alan Franco",
+          "name_zh": "弗兰科",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ecu:enner_valencia",
+          "name": "Enner Valencia",
+          "name_zh": "瓦伦西亚",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ecu:felix_torres",
+          "name": "Felix Torres",
+          "name_zh": "托雷斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ecu:gonzalo_plata",
+          "name": "Gonzalo Plata",
+          "name_zh": "普拉塔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ecu:hernán_galíndez",
+          "name": "Hernán Galíndez",
+          "name_zh": "加林德斯",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:ecu:jeremy_sarmiento",
+          "name": "Jeremy Sarmiento",
+          "name_zh": "萨米恩托",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ecu:kendry_páez",
+          "name": "Kendry Páez",
+          "name_zh": "派斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ecu:moisés_caicedo",
+          "name": "Moisés Caicedo",
+          "name_zh": "凯塞多",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ecu:pervis_estupiñán",
+          "name": "Pervis Estupiñán",
+          "name_zh": "埃斯图皮尼安",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ecu:piero_hincapié",
+          "name": "Piero Hincapié",
+          "name_zh": "因卡皮耶",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ecu:ángel_mena",
+          "name": "Ángel Mena",
+          "name_zh": "梅纳",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:egy",
+      "canonical_name": "Egypt",
+      "canonical_name_zh": "埃及",
+      "scope": "national_team",
+      "country": "EGY",
+      "fifa_code": "EGY",
+      "coach_name": "Rui Vitória",
+      "coach_name_zh": "维托利亚",
+      "players": [
+        {
+          "player_id": "player:manual:egy:ahmed_hegazi",
+          "name": "Ahmed Hegazi",
+          "name_zh": "赫加齐",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:egy:ahmed_sayed_zizo",
+          "name": "Ahmed Sayed Zizo",
+          "name_zh": "齐佐",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:egy:amr_el_solia",
+          "name": "Amr El Solia",
+          "name_zh": "索利亚",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:egy:mahmoud_hassan",
+          "name": "Mahmoud Hassan",
+          "name_zh": "马哈茂德·哈桑",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:egy:mohamed_el-shenawy",
+          "name": "Mohamed El-Shenawy",
+          "name_zh": "谢纳维",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:egy:mohamed_elneny",
+          "name": "Mohamed Elneny",
+          "name_zh": "埃尔内尼",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:mohamed_salah:19920615",
+          "name": "Mohamed Salah",
+          "name_zh": "萨拉赫",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:egy:mostafa_fathi",
+          "name": "Mostafa Fathi",
+          "name_zh": "法蒂",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:egy:mostafa_mohamed",
+          "name": "Mostafa Mohamed",
+          "name_zh": "穆斯塔法·穆罕默德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:egy:omar_marmoush",
+          "name": "Omar Marmoush",
+          "name_zh": "马尔莫什",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:egy:ramy_rabia",
+          "name": "Ramy Rabia",
+          "name_zh": "拉比亚",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:egy:trezeguet",
+          "name": "Trezeguet",
+          "name_zh": "特雷泽盖",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:eng",
+      "canonical_name": "England",
+      "canonical_name_zh": "英格兰",
+      "scope": "national_team",
+      "country": "ENG",
+      "fifa_code": "ENG",
+      "coach_name": "Thomas Tuchel",
+      "coach_name_zh": "图赫尔",
+      "players": [
+        {
+          "player_id": "pl:bukayo_saka:20010905",
+          "name": "Bukayo Saka",
+          "name_zh": "布卡约·萨卡",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:eng:cole_palmer",
+          "name": "Cole Palmer",
+          "name_zh": "科尔·帕尔默",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:eng:declan_rice",
+          "name": "Declan Rice",
+          "name_zh": "德克兰·赖斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:harry_kane:19930728",
+          "name": "Harry Kane",
+          "name_zh": "哈里·凯恩",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:eng:harry_maguire",
+          "name": "Harry Maguire",
+          "name_zh": "马奎尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:eng:john_stones",
+          "name": "John Stones",
+          "name_zh": "约翰·斯通斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:eng:jordan_pickford",
+          "name": "Jordan Pickford",
+          "name_zh": "乔丹·皮克福德",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "pl:jude_bellingham:20030629",
+          "name": "Jude Bellingham",
+          "name_zh": "贝林厄姆",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:eng:luke_shaw",
+          "name": "Luke Shaw",
+          "name_zh": "卢克·肖",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:eng:marc_guéhi",
+          "name": "Marc Guéhi",
+          "name_zh": "马克·盖伊",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:eng:phil_foden",
+          "name": "Phil Foden",
+          "name_zh": "菲尔·福登",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:eng:trent_alexander-arnold",
+          "name": "Trent Alexander-Arnold",
+          "name_zh": "亚历山大-阿诺德",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:esp",
+      "canonical_name": "Spain",
+      "canonical_name_zh": "西班牙",
+      "scope": "national_team",
+      "country": "ESP",
+      "fifa_code": "ESP",
+      "coach_name": "Luis de la Fuente",
+      "coach_name_zh": "拉富恩特",
+      "players": [
+        {
+          "player_id": "player:manual:esp:aymeric_laporte",
+          "name": "Aymeric Laporte",
+          "name_zh": "拉波尔特",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:esp:dani_carvajal",
+          "name": "Dani Carvajal",
+          "name_zh": "卡瓦哈尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:esp:dani_olmo",
+          "name": "Dani Olmo",
+          "name_zh": "丹尼·奥尔莫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:esp:joselu",
+          "name": "Joselu",
+          "name_zh": "何塞卢",
+          "position": "forward"
+        },
+        {
+          "player_id": "pl:lamine_yamal:20070713",
+          "name": "Lamine Yamal",
+          "name_zh": "拉明·亚马尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:esp:mikel_merino",
+          "name": "Mikel Merino",
+          "name_zh": "梅里诺",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:esp:mikel_oyarzabal",
+          "name": "Mikel Oyarzabal",
+          "name_zh": "奥亚萨瓦尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:esp:nico_williams",
+          "name": "Nico Williams",
+          "name_zh": "尼科·威廉姆斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "pl:pedri:20021125",
+          "name": "Pedri",
+          "name_zh": "佩德里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:esp:rodri",
+          "name": "Rodri",
+          "name_zh": "罗德里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:esp:unai_simón",
+          "name": "Unai Simón",
+          "name_zh": "乌奈·西蒙",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:esp:álvaro_morata",
+          "name": "Álvaro Morata",
+          "name_zh": "莫拉塔",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:fra",
+      "canonical_name": "France",
+      "canonical_name_zh": "法国",
+      "scope": "national_team",
+      "country": "FRA",
+      "fifa_code": "FRA",
+      "coach_name": "Didier Deschamps",
+      "coach_name_zh": "迪迪埃·德尚",
+      "players": [
+        {
+          "player_id": "player:manual:fra:adrien_rabiot",
+          "name": "Adrien Rabiot",
+          "name_zh": "拉比奥",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:antoine_griezmann:19910321",
+          "name": "Antoine Griezmann",
+          "name_zh": "格列兹曼",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:fra:aurélien_tchouaméni",
+          "name": "Aurélien Tchouaméni",
+          "name_zh": "楚阿梅尼",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:fra:eduardo_camavinga",
+          "name": "Eduardo Camavinga",
+          "name_zh": "卡马文加",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:fra:ibrahima_konaté",
+          "name": "Ibrahima Konaté",
+          "name_zh": "孔纳特",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:fra:jules_kounde",
+          "name": "Jules Koundé",
+          "name_zh": "孔德",
+          "position": "defender"
+        },
+        {
+          "player_id": "pl:kylian_mbapp:19981220",
+          "name": "Kylian Mbappé",
+          "name_zh": "基利安·姆巴佩",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:fra:marcus_thuram",
+          "name": "Marcus Thuram",
+          "name_zh": "马库斯·图拉姆",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:fra:mike_maignan",
+          "name": "Mike Maignan",
+          "name_zh": "迈克·迈尼昂",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:fra:ousmane_dembélé",
+          "name": "Ousmane Dembélé",
+          "name_zh": "乌斯曼·登贝莱",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:fra:theo_hernández",
+          "name": "Theo Hernández",
+          "name_zh": "特奥·埃尔南德斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:fra:william_saliba",
+          "name": "William Saliba",
+          "name_zh": "萨利巴",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:ger",
+      "canonical_name": "Germany",
+      "canonical_name_zh": "德国",
+      "scope": "national_team",
+      "country": "GER",
+      "fifa_code": "GER",
+      "coach_name": "Julian Nagelsmann",
+      "coach_name_zh": "纳格尔斯曼",
+      "players": [
+        {
+          "player_id": "player:manual:ger:antonio_rüdiger",
+          "name": "Antonio Rüdiger",
+          "name_zh": "吕迪格",
+          "position": "defender"
+        },
+        {
+          "player_id": "pl:florian_wirtz:20030503",
+          "name": "Florian Wirtz",
+          "name_zh": "维尔茨",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:jamal_musiala:20030226",
+          "name": "Jamal Musiala",
+          "name_zh": "穆夏拉",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ger:joshua_kimmich",
+          "name": "Joshua Kimmich",
+          "name_zh": "基米希",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ger:kai_havertz",
+          "name": "Kai Havertz",
+          "name_zh": "哈弗茨",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ger:leroy_sané",
+          "name": "Leroy Sané",
+          "name_zh": "萨内",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ger:manuel_neuer",
+          "name": "Manuel Neuer",
+          "name_zh": "诺伊尔",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:ger:niclas_füllkrug",
+          "name": "Niclas Füllkrug",
+          "name_zh": "菲尔克鲁格",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ger:robin_koch",
+          "name": "Robin Koch",
+          "name_zh": "科赫",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ger:thomas_müller",
+          "name": "Thomas Müller",
+          "name_zh": "托马斯·穆勒",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ger:toni_kroos",
+          "name": "Toni Kroos",
+          "name_zh": "克罗斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ger:ilkay_gundogan",
+          "name": "İlkay Gündoğan",
+          "name_zh": "京多安",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:gha",
+      "canonical_name": "Ghana",
+      "canonical_name_zh": "加纳",
+      "scope": "national_team",
+      "country": "GHA",
+      "fifa_code": "GHA",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:gha:alexander_djiku",
+          "name": "Alexander Djiku",
+          "name_zh": "吉库",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:gha:andré_ayew",
+          "name": "André Ayew",
+          "name_zh": "安德烈·阿尤",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:gha:antoine_semenyo",
+          "name": "Antoine Semenyo",
+          "name_zh": "塞门约",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:gha:daniel_amartey",
+          "name": "Daniel Amartey",
+          "name_zh": "阿马蒂",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:gha:gideon_mensah",
+          "name": "Gideon Mensah",
+          "name_zh": "门萨",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:gha:inaki_williams",
+          "name": "Inaki Williams",
+          "name_zh": "伊纳基·威廉姆斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:gha:jeffrey_schlupp",
+          "name": "Jeffrey Schlupp",
+          "name_zh": "施卢普",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:gha:jordan_ayew",
+          "name": "Jordan Ayew",
+          "name_zh": "乔丹·阿尤",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:gha:lawrence_ati-zigi",
+          "name": "Lawrence Ati-Zigi",
+          "name_zh": "阿蒂-齐吉",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:gha:mohammed_kudus",
+          "name": "Mohammed Kudus",
+          "name_zh": "库杜斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:gha:thomas_partey",
+          "name": "Thomas Partey",
+          "name_zh": "帕尔特伊",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:hun",
+      "canonical_name": "Hungary",
+      "canonical_name_zh": "匈牙利",
+      "scope": "national_team",
+      "country": "HUN",
+      "fifa_code": "HUN",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:hun:adam_szalai",
+          "name": "Adam Szalai",
+          "name_zh": "绍洛伊",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:hun:attila_fiola",
+          "name": "Attila Fiola",
+          "name_zh": "菲奥拉",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:hun:barnabás_varga",
+          "name": "Barnabás Varga",
+          "name_zh": "瓦尔加",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:hun:dominik_szoboszlai",
+          "name": "Dominik Szoboszlai",
+          "name_zh": "索博斯洛伊",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:hun:kevin_csoboth",
+          "name": "Kevin Csoboth",
+          "name_zh": "乔博特",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:hun:loïc_négo",
+          "name": "Loïc Négo",
+          "name_zh": "内戈",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:hun:milos_kerkez",
+          "name": "Milos Kerkez",
+          "name_zh": "凯尔凯兹",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:hun:péter_gulácsi",
+          "name": "Péter Gulácsi",
+          "name_zh": "古拉奇",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:hun:roland_sallai",
+          "name": "Roland Sallai",
+          "name_zh": "绍洛伊",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:hun:willi_orbán",
+          "name": "Willi Orbán",
+          "name_zh": "奥尔班",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:hun:ádám_nagy",
+          "name": "Ádám Nagy",
+          "name_zh": "瑙吉",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:irn",
+      "canonical_name": "Iran",
+      "canonical_name_zh": "伊朗",
+      "scope": "national_team",
+      "country": "IRN",
+      "fifa_code": "IRN",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:irn:alireza_beiranvand",
+          "name": "Alireza Beiranvand",
+          "name_zh": "贝兰万德",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:irn:ehsan_hajsafi",
+          "name": "Ehsan Hajsafi",
+          "name_zh": "哈伊萨菲",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:irn:karim_ansarifard",
+          "name": "Karim Ansarifard",
+          "name_zh": "安萨里法德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irn:mehdi_taremi",
+          "name": "Mehdi Taremi",
+          "name_zh": "塔雷米",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irn:mehdi_torabi",
+          "name": "Mehdi Torabi",
+          "name_zh": "托拉比",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:irn:milad_mohammadi",
+          "name": "Milad Mohammadi",
+          "name_zh": "穆罕默迪",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:irn:saeid_ezatolahi",
+          "name": "Saeid Ezatolahi",
+          "name_zh": "埃扎托拉希",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:irn:saman_ghoddos",
+          "name": "Saman Ghoddos",
+          "name_zh": "古杜斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:irn:saman_mahmoudi",
+          "name": "Saman Mahmoudi",
+          "name_zh": "马哈茂迪",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:irn:sardar_azmoun",
+          "name": "Sardar Azmoun",
+          "name_zh": "阿兹蒙",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irn:shojae_khalilzadeh",
+          "name": "Shojae Khalilzadeh",
+          "name_zh": "哈利尔扎德",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:irq",
+      "canonical_name": "Iraq",
+      "canonical_name_zh": "伊拉克",
+      "scope": "national_team",
+      "country": "IRQ",
+      "fifa_code": "IRQ",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:irq:ahmad_yasin",
+          "name": "Ahmad Yasin",
+          "name_zh": "亚辛",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irq:ali_al-hamadi",
+          "name": "Ali Al-Hamadi",
+          "name_zh": "哈马迪",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irq:amjad_attwan",
+          "name": "Amjad Attwan",
+          "name_zh": "阿特万",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:irq:aymen_hussein",
+          "name": "Aymen Hussein",
+          "name_zh": "侯赛因",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irq:bashar_resan",
+          "name": "Bashar Resan",
+          "name_zh": "雷桑",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:irq:frans_putros",
+          "name": "Frans Putros",
+          "name_zh": "普特罗斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:irq:jalal_hassan",
+          "name": "Jalal Hassan",
+          "name_zh": "哈桑",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:irq:justin_meram",
+          "name": "Justin Meram",
+          "name_zh": "梅拉姆",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irq:mohanad_ali",
+          "name": "Mohanad Ali",
+          "name_zh": "穆罕纳德·阿里",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:irq:rebin_sulaka",
+          "name": "Rebin Sulaka",
+          "name_zh": "苏拉卡",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:irq:sherko_karim",
+          "name": "Sherko Karim",
+          "name_zh": "卡里姆",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:ita",
+      "canonical_name": "Italy",
+      "canonical_name_zh": "意大利",
+      "scope": "national_team",
+      "country": "ITA",
+      "fifa_code": "ITA",
+      "coach_name": "Mauro Camoranesi",
+      "coach_name_zh": "卡莫拉内西",
+      "players": [
+        {
+          "player_id": "player:manual:ita:alessandro_bastoni",
+          "name": "Alessandro Bastoni",
+          "name_zh": "巴斯托尼",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ita:davide_frattesi",
+          "name": "Davide Frattesi",
+          "name_zh": "弗拉泰西",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ita:federico_chiesa",
+          "name": "Federico Chiesa",
+          "name_zh": "基耶萨",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ita:gianluca_mancini",
+          "name": "Gianluca Mancini",
+          "name_zh": "曼奇尼",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ita:gianluigi_donnarumma",
+          "name": "Gianluigi Donnarumma",
+          "name_zh": "多纳鲁马",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:ita:giovanni_di_lorenzo",
+          "name": "Giovanni Di Lorenzo",
+          "name_zh": "迪洛伦佐",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ita:lorenzo_pellegrini",
+          "name": "Lorenzo Pellegrini",
+          "name_zh": "佩莱格里尼",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ita:mateo_retegui",
+          "name": "Mateo Retegui",
+          "name_zh": "雷特吉",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ita:matteo_politano",
+          "name": "Matteo Politano",
+          "name_zh": "波利塔诺",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ita:nicolò_barella",
+          "name": "Nicolò Barella",
+          "name_zh": "巴雷拉",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ita:riccardo_calafiori",
+          "name": "Riccardo Calafiori",
+          "name_zh": "卡拉菲奥里",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:jam",
+      "canonical_name": "Jamaica",
+      "canonical_name_zh": "牙买加",
+      "scope": "national_team",
+      "country": "JAM",
+      "fifa_code": "JAM",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:jam:andre_blake",
+          "name": "Andre Blake",
+          "name_zh": "布莱克",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:jam:bobby_de_cordova-reid",
+          "name": "Bobby De Cordova-Reid",
+          "name_zh": "雷德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jam:damion_lowe",
+          "name": "Damion Lowe",
+          "name_zh": "洛",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:jam:demarai_gray",
+          "name": "Demarai Gray",
+          "name_zh": "格雷",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:jam:greg_leigh",
+          "name": "Greg Leigh",
+          "name_zh": "李",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:jam:kasey_palmer",
+          "name": "Kasey Palmer",
+          "name_zh": "帕尔默",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:jam:leon_bailey",
+          "name": "Leon Bailey",
+          "name_zh": "贝利",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jam:michail_antonio",
+          "name": "Michail Antonio",
+          "name_zh": "安东尼奥",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jam:ravel_morrison",
+          "name": "Ravel Morrison",
+          "name_zh": "莫里森",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:jam:shamar_nicholson",
+          "name": "Shamar Nicholson",
+          "name_zh": "尼科尔森",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jam:tyrese_hall",
+          "name": "Tyrese Hall",
+          "name_zh": "霍尔",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:jpn",
+      "canonical_name": "Japan",
+      "canonical_name_zh": "日本",
+      "scope": "national_team",
+      "country": "JPN",
+      "fifa_code": "JPN",
+      "coach_name": "Hajime Moriyasu",
+      "coach_name_zh": "森保一",
+      "players": [
+        {
+          "player_id": "player:manual:jpn:ayase_ueda",
+          "name": "Ayase Ueda",
+          "name_zh": "上田绫世",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jpn:daichi_kamada",
+          "name": "Daichi Kamada",
+          "name_zh": "镰田大地",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:jpn:hidemasa_morita",
+          "name": "Hidemasa Morita",
+          "name_zh": "守田英正",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:jpn:junya_ito",
+          "name": "Junya Ito",
+          "name_zh": "伊东纯也",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jpn:kaoru_mitoma",
+          "name": "Kaoru Mitoma",
+          "name_zh": "三笘薰",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jpn:ko_itakura",
+          "name": "Ko Itakura",
+          "name_zh": "板仓滉",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:jpn:takefusa_kubo",
+          "name": "Takefusa Kubo",
+          "name_zh": "久保建英",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jpn:takehiro_tomiyasu",
+          "name": "Takehiro Tomiyasu",
+          "name_zh": "富安健洋",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:jpn:takumi_minamino",
+          "name": "Takumi Minamino",
+          "name_zh": "南野拓实",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:jpn:wataru_endo",
+          "name": "Wataru Endo",
+          "name_zh": "远藤航",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:jpn:zion_suzuki",
+          "name": "Zion Suzuki",
+          "name_zh": "铃木彩艳",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:kor",
+      "canonical_name": "South Korea",
+      "canonical_name_zh": "韩国",
+      "scope": "national_team",
+      "country": "KOR",
+      "fifa_code": "KOR",
+      "coach_name": "Jürgen Klinsmann",
+      "coach_name_zh": "克林斯曼",
+      "players": [
+        {
+          "player_id": "player:manual:kor:cho_gue-sung",
+          "name": "Cho Gue-sung",
+          "name_zh": "曹圭成",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:kor:hwang_hee-chan",
+          "name": "Hwang Hee-chan",
+          "name_zh": "黄喜灿",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:kor:hwang_in-beom",
+          "name": "Hwang In-beom",
+          "name_zh": "黄仁范",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:kor:hwang_ui-jo",
+          "name": "Hwang Ui-jo",
+          "name_zh": "黄义助",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:kor:jo_hyeon-woo",
+          "name": "Jo Hyeon-woo",
+          "name_zh": "曺贤祐",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:kor:kim_jin-su",
+          "name": "Kim Jin-su",
+          "name_zh": "金珍洙",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:kor:kim_min-jae",
+          "name": "Kim Min-jae",
+          "name_zh": "金玟哉",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:kor:kim_young-gwon",
+          "name": "Kim Young-gwon",
+          "name_zh": "金英权",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:kor:lee_jae-sung",
+          "name": "Lee Jae-sung",
+          "name_zh": "李在城",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:kor:lee_kang-in",
+          "name": "Lee Kang-in",
+          "name_zh": "李刚仁",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:kor:park_yong-woo",
+          "name": "Park Yong-woo",
+          "name_zh": "朴勇宇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:son_heung_min:19920708",
+          "name": "Son Heung-min",
+          "name_zh": "孙兴慜",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:ksa",
+      "canonical_name": "Saudi Arabia",
+      "canonical_name_zh": "沙特阿拉伯",
+      "scope": "national_team",
+      "country": "KSA",
+      "fifa_code": "KSA",
+      "coach_name": "Hervé Renard",
+      "coach_name_zh": "勒纳尔",
+      "players": [
+        {
+          "player_id": "player:manual:ksa:abdulellah_al-malki",
+          "name": "Abdulellah Al-Malki",
+          "name_zh": "马尔基",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ksa:ali_al-bulaihi",
+          "name": "Ali Al-Bulaihi",
+          "name_zh": "布莱希",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ksa:firas_al-buraikan",
+          "name": "Firas Al-Buraikan",
+          "name_zh": "布赖坎",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ksa:hassan_al-tambakti",
+          "name": "Hassan Al-Tambakti",
+          "name_zh": "塔姆巴克提",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ksa:mohamed_kanno",
+          "name": "Mohamed Kanno",
+          "name_zh": "卡诺",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ksa:mohammed_al-owais",
+          "name": "Mohammed Al-Owais",
+          "name_zh": "奥韦斯",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:ksa:nasser_al-dawsari",
+          "name": "Nasser Al-Dawsari",
+          "name_zh": "纳赛尔·道萨里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ksa:saleh_al-shehri",
+          "name": "Saleh Al-Shehri",
+          "name_zh": "谢赫里",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ksa:salem_al-dawsari",
+          "name": "Salem Al-Dawsari",
+          "name_zh": "阿尔-道萨里",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ksa:saud_abdulhamid",
+          "name": "Saud Abdulhamid",
+          "name_zh": "阿卜杜勒哈米德",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ksa:sultan_al-ghannam",
+          "name": "Sultan Al-Ghannam",
+          "name_zh": "甘南姆",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:mar",
+      "canonical_name": "Morocco",
+      "canonical_name_zh": "摩洛哥",
+      "scope": "national_team",
+      "country": "MAR",
+      "fifa_code": "MAR",
+      "coach_name": "Walid Regragui",
+      "coach_name_zh": "雷格拉吉",
+      "players": [
+        {
+          "player_id": "player:manual:mar:abde_ezzalzouli",
+          "name": "Abde Ezzalzouli",
+          "name_zh": "埃扎尔祖利",
+          "position": "forward"
+        },
+        {
+          "player_id": "pl:achraf_hakimi:19981104",
+          "name": "Achraf Hakimi",
+          "name_zh": "阿什拉夫·哈基米",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:mar:azzedine_ounahi",
+          "name": "Azzedine Ounahi",
+          "name_zh": "乌纳希",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mar:bilal_el_khannouss",
+          "name": "Bilal El Khannouss",
+          "name_zh": "汉努斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mar:brahim_díaz",
+          "name": "Brahim Díaz",
+          "name_zh": "布拉欣·迪亚斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:mar:hakim_ziyech",
+          "name": "Hakim Ziyech",
+          "name_zh": "齐耶赫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mar:ilias_chair",
+          "name": "Ilias Chair",
+          "name_zh": "沙伊尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mar:nayef_aguerd",
+          "name": "Nayef Aguerd",
+          "name_zh": "阿格尔德",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:mar:romain_saïss",
+          "name": "Romain Saïss",
+          "name_zh": "赛斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:mar:sofyan_amrabat",
+          "name": "Sofyan Amrabat",
+          "name_zh": "阿姆拉巴特",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mar:yassine_bounou",
+          "name": "Yassine Bounou",
+          "name_zh": "布努",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:mar:youssef_en-nesyri",
+          "name": "Youssef En-Nesyri",
+          "name_zh": "恩内西里",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:mex",
+      "canonical_name": "Mexico",
+      "canonical_name_zh": "墨西哥",
+      "scope": "national_team",
+      "country": "MEX",
+      "fifa_code": "MEX",
+      "coach_name": "Javier Aguirre",
+      "coach_name_zh": "阿吉雷",
+      "players": [
+        {
+          "player_id": "player:manual:mex:cesar_montes",
+          "name": "Cesar Montes",
+          "name_zh": "蒙特斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:mex:edson_álvarez",
+          "name": "Edson Álvarez",
+          "name_zh": "埃德森·阿尔瓦雷斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mex:guillermo_ochoa",
+          "name": "Guillermo Ochoa",
+          "name_zh": "奥乔亚",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:mex:henry_martín",
+          "name": "Henry Martín",
+          "name_zh": "马丁",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:mex:hirving_lozano",
+          "name": "Hirving Lozano",
+          "name_zh": "洛萨诺",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:mex:jesús_gallardo",
+          "name": "Jesús Gallardo",
+          "name_zh": "加亚多",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:mex:luis_chávez",
+          "name": "Luis Chávez",
+          "name_zh": "查韦斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mex:luis_romo",
+          "name": "Luis Romo",
+          "name_zh": "罗莫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mex:orbelín_pineda",
+          "name": "Orbelín Pineda",
+          "name_zh": "皮内达",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:mex:raúl_jiménez",
+          "name": "Raúl Jiménez",
+          "name_zh": "希门尼斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:mex:santiago_giménez",
+          "name": "Santiago Giménez",
+          "name_zh": "希门尼斯",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:ned",
+      "canonical_name": "Netherlands",
+      "canonical_name_zh": "荷兰",
+      "scope": "national_team",
+      "country": "NED",
+      "fifa_code": "NED",
+      "coach_name": "Ronald Koeman",
+      "coach_name_zh": "科曼",
+      "players": [
+        {
+          "player_id": "player:manual:ned:bart_verbruggen",
+          "name": "Bart Verbruggen",
+          "name_zh": "维布鲁根",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:ned:cody_gakpo",
+          "name": "Cody Gakpo",
+          "name_zh": "加克波",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ned:denzel_dumfries",
+          "name": "Denzel Dumfries",
+          "name_zh": "邓弗里斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ned:donyell_malen",
+          "name": "Donyell Malen",
+          "name_zh": "马伦",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ned:frenkie_de_jong",
+          "name": "Frenkie de Jong",
+          "name_zh": "弗伦基·德容",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ned:memphis_depay",
+          "name": "Memphis Depay",
+          "name_zh": "孟菲斯·德佩",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ned:nathan_aké",
+          "name": "Nathan Aké",
+          "name_zh": "阿克",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ned:stefan_de_vrij",
+          "name": "Stefan de Vrij",
+          "name_zh": "德弗赖",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ned:tijjani_reijnders",
+          "name": "Tijjani Reijnders",
+          "name_zh": "雷恩德斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ned:virgil_van_dijk",
+          "name": "Virgil van Dijk",
+          "name_zh": "范戴克",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ned:xavi_simons",
+          "name": "Xavi Simons",
+          "name_zh": "哈维·西蒙斯",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:nga",
+      "canonical_name": "Nigeria",
+      "canonical_name_zh": "尼日利亚",
+      "scope": "national_team",
+      "country": "NGA",
+      "fifa_code": "NGA",
+      "coach_name": "José Peseiro",
+      "coach_name_zh": "佩塞罗",
+      "players": [
+        {
+          "player_id": "player:manual:nga:ademola_lookman",
+          "name": "Ademola Lookman",
+          "name_zh": "卢克曼",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nga:alex_iwobi",
+          "name": "Alex Iwobi",
+          "name_zh": "伊沃比",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:nga:calvin_bassey",
+          "name": "Calvin Bassey",
+          "name_zh": "巴西",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:nga:frank_onyeka",
+          "name": "Frank Onyeka",
+          "name_zh": "奥尼卡",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:nga:moses_simon",
+          "name": "Moses Simon",
+          "name_zh": "西蒙",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nga:ola_aina",
+          "name": "Ola Aina",
+          "name_zh": "艾纳",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:nga:samuel_chukwueze",
+          "name": "Samuel Chukwueze",
+          "name_zh": "丘库伊泽",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nga:stanley_nwabali",
+          "name": "Stanley Nwabali",
+          "name_zh": "恩瓦巴利",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:nga:victor_osimhen",
+          "name": "Victor Osimhen",
+          "name_zh": "奥斯梅恩",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nga:wilfred_ndidi",
+          "name": "Wilfred Ndidi",
+          "name_zh": "恩迪迪",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:nga:william_troost-ekong",
+          "name": "William Troost-Ekong",
+          "name_zh": "特罗斯特-埃孔",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:nor",
+      "canonical_name": "Norway",
+      "canonical_name_zh": "挪威",
+      "scope": "national_team",
+      "country": "NOR",
+      "fifa_code": "NOR",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:nor:alexander_sørloth",
+          "name": "Alexander Sørloth",
+          "name_zh": "瑟尔洛特",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nor:antonio_nusa",
+          "name": "Antonio Nusa",
+          "name_zh": "努萨",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nor:birger_meling",
+          "name": "Birger Meling",
+          "name_zh": "梅林",
+          "position": "defender"
+        },
+        {
+          "player_id": "pl:erling_haaland:20000721",
+          "name": "Erling Haaland",
+          "name_zh": "埃尔林·哈兰德",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nor:kristoffer_ajer",
+          "name": "Kristoffer Ajer",
+          "name_zh": "阿耶尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:nor:leo_skiri_østigård",
+          "name": "Leo Skiri Østigård",
+          "name_zh": "厄斯蒂高",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:nor:martin_ødegaard",
+          "name": "Martin Ødegaard",
+          "name_zh": "厄德高",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:nor:mohamed_elyounoussi",
+          "name": "Mohamed Elyounoussi",
+          "name_zh": "埃尔尤努西",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:nor:patrick_berg",
+          "name": "Patrick Berg",
+          "name_zh": "贝里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:nor:sander_berge",
+          "name": "Sander Berge",
+          "name_zh": "贝里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:nor:stefan_strandberg",
+          "name": "Stefan Strandberg",
+          "name_zh": "斯特兰德伯格",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:nor:ørjan_nyland",
+          "name": "Ørjan Nyland",
+          "name_zh": "尼兰",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:pan",
+      "canonical_name": "Panama",
+      "canonical_name_zh": "巴拿马",
+      "scope": "national_team",
+      "country": "PAN",
+      "fifa_code": "PAN",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:pan:adalberto_carrasquilla",
+          "name": "Adalberto Carrasquilla",
+          "name_zh": "卡拉斯基亚",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pan:andrés_andrade",
+          "name": "Andrés Andrade",
+          "name_zh": "安德拉德",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pan:aníbal_godoy",
+          "name": "Aníbal Godoy",
+          "name_zh": "戈多伊",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pan:cecilio_waterman",
+          "name": "Cecilio Waterman",
+          "name_zh": "沃特曼",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:pan:césar_yanis",
+          "name": "César Yanis",
+          "name_zh": "亚尼斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:pan:edgar_yoel_bárcenas",
+          "name": "Edgar Yoel Bárcenas",
+          "name_zh": "巴尔塞纳斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pan:eduardo_guerrero",
+          "name": "Eduardo Guerrero",
+          "name_zh": "格雷罗",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:pan:fidel_escobar",
+          "name": "Fidel Escobar",
+          "name_zh": "埃斯科瓦尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:pan:josé_fajardo",
+          "name": "José Fajardo",
+          "name_zh": "法哈多",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:pan:michael_murillo",
+          "name": "Michael Murillo",
+          "name_zh": "穆里略",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:pan:orlando_mosquera",
+          "name": "Orlando Mosquera",
+          "name_zh": "莫斯克拉",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:pol",
+      "canonical_name": "Poland",
+      "canonical_name_zh": "波兰",
+      "scope": "national_team",
+      "country": "POL",
+      "fifa_code": "POL",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:pol:bartosz_bereszyński",
+          "name": "Bartosz Bereszyński",
+          "name_zh": "贝雷申斯基",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:pol:jakub_kiwior",
+          "name": "Jakub Kiwior",
+          "name_zh": "基维奥尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:pol:jakub_moder",
+          "name": "Jakub Moder",
+          "name_zh": "莫德尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pol:karol_linetty",
+          "name": "Karol Linetty",
+          "name_zh": "利涅蒂",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pol:karol_świderski",
+          "name": "Karol Świderski",
+          "name_zh": "希维代尔斯基",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:pol:nicola_zalewski",
+          "name": "Nicola Zalewski",
+          "name_zh": "扎莱夫斯基",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:pol:piotr_zieliński",
+          "name": "Piotr Zieliński",
+          "name_zh": "兹林斯基",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pol:robert_lewandowski",
+          "name": "Robert Lewandowski",
+          "name_zh": "莱万多夫斯基",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:pol:sebastian_szymański",
+          "name": "Sebastian Szymański",
+          "name_zh": "希曼斯基",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:pol:sebastian_walukiewicz",
+          "name": "Sebastian Walukiewicz",
+          "name_zh": "瓦卢凯维奇",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:pol:wojciech_szczęsny",
+          "name": "Wojciech Szczęsny",
+          "name_zh": "什琴斯尼",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:por",
+      "canonical_name": "Portugal",
+      "canonical_name_zh": "葡萄牙",
+      "scope": "national_team",
+      "country": "POR",
+      "fifa_code": "POR",
+      "coach_name": "Roberto Martínez",
+      "coach_name_zh": "罗伯托·马丁内斯",
+      "players": [
+        {
+          "player_id": "pl:bernardo_silva:19940810",
+          "name": "Bernardo Silva",
+          "name_zh": "贝纳尔多·席尔瓦",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:por:bruno_fernandes",
+          "name": "Bruno Fernandes",
+          "name_zh": "布鲁诺·费尔南德斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:por:bruno_guimarães",
+          "name": "Bruno Guimarães",
+          "name_zh": "B·吉马良斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:cristiano_ronaldo:19850205",
+          "name": "Cristiano Ronaldo",
+          "name_zh": "克里斯蒂亚诺·罗纳尔多",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:por:diogo_costa",
+          "name": "Diogo Costa",
+          "name_zh": "迪奥戈·科斯塔",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:por:diogo_jota",
+          "name": "Diogo Jota",
+          "name_zh": "若塔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:por:joao_cancelo",
+          "name": "João Cancelo",
+          "name_zh": "坎塞洛",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:por:joão_félix",
+          "name": "João Félix",
+          "name_zh": "若昂·费利克斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:por:pepe",
+          "name": "Pepe",
+          "name_zh": "佩佩",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:por:rafael_leão",
+          "name": "Rafael Leão",
+          "name_zh": "拉法埃尔·莱昂",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:por:rúben_dias",
+          "name": "Rúben Dias",
+          "name_zh": "鲁本·迪亚斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:por:vitinha",
+          "name": "Vitinha",
+          "name_zh": "维蒂尼亚",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:qat",
+      "canonical_name": "Qatar",
+      "canonical_name_zh": "卡塔尔",
+      "scope": "national_team",
+      "country": "QAT",
+      "fifa_code": "QAT",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:qat:abdelaziz_hatem",
+          "name": "Abdelaziz Hatem",
+          "name_zh": "哈特姆",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:qat:ahmed_alaaeldin",
+          "name": "Ahmed Alaaeldin",
+          "name_zh": "阿拉丁",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:qat:akram_afif",
+          "name": "Akram Afif",
+          "name_zh": "阿菲夫",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:qat:almoez_ali",
+          "name": "Almoez Ali",
+          "name_zh": "阿莫兹·阿里",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:qat:bassam_al-rawi",
+          "name": "Bassam Al-Rawi",
+          "name_zh": "拉维",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:qat:boualem_khoukhi",
+          "name": "Boualem Khoukhi",
+          "name_zh": "库希",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:qat:hassan_al-haydos",
+          "name": "Hassan Al-Haydos",
+          "name_zh": "海多斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:qat:karim_boudiaf",
+          "name": "Karim Boudiaf",
+          "name_zh": "布迪亚夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:qat:pedro_miguel",
+          "name": "Pedro Miguel",
+          "name_zh": "佩德罗·米格尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:qat:saad_al-sheeb",
+          "name": "Saad Al-Sheeb",
+          "name_zh": "谢卜",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:qat:tarek_salman",
+          "name": "Tarek Salman",
+          "name_zh": "萨尔曼",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:sco",
+      "canonical_name": "Scotland",
+      "canonical_name_zh": "苏格兰",
+      "scope": "national_team",
+      "country": "SCO",
+      "fifa_code": "SCO",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:sco:andrew_robertson",
+          "name": "Andrew Robertson",
+          "name_zh": "罗伯逊",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:sco:angus_gunn",
+          "name": "Angus Gunn",
+          "name_zh": "冈恩",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:sco:callum_mcgregor",
+          "name": "Callum McGregor",
+          "name_zh": "麦克格雷戈",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sco:ché_adams",
+          "name": "Ché Adams",
+          "name_zh": "亚当斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sco:jack_hendry",
+          "name": "Jack Hendry",
+          "name_zh": "亨德里",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:sco:john_mcginn",
+          "name": "John McGinn",
+          "name_zh": "麦金",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sco:kieran_tierney",
+          "name": "Kieran Tierney",
+          "name_zh": "蒂尔尼",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:sco:lyndon_dykes",
+          "name": "Lyndon Dykes",
+          "name_zh": "戴克斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sco:ryan_christie",
+          "name": "Ryan Christie",
+          "name_zh": "克里斯蒂",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sco:scott_mctominay",
+          "name": "Scott McTominay",
+          "name_zh": "麦克托米奈",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sco:stuart_armstrong",
+          "name": "Stuart Armstrong",
+          "name_zh": "阿姆斯特朗",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:sen",
+      "canonical_name": "Senegal",
+      "canonical_name_zh": "塞内加尔",
+      "scope": "national_team",
+      "country": "SEN",
+      "fifa_code": "SEN",
+      "coach_name": "Aliou Cissé",
+      "coach_name_zh": "西塞",
+      "players": [
+        {
+          "player_id": "player:manual:sen:boulaye_dia",
+          "name": "Boulaye Dia",
+          "name_zh": "迪亚",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sen:habib_diallo",
+          "name": "Habib Diallo",
+          "name_zh": "迪亚洛",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sen:idrissa_gueye",
+          "name": "Idrissa Gueye",
+          "name_zh": "盖伊",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sen:ilimane_ndiaye",
+          "name": "Ilimane Ndiaye",
+          "name_zh": "恩迪亚耶",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sen:ismaïla_sarr",
+          "name": "Ismaïla Sarr",
+          "name_zh": "萨尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sen:kalidou_koulibaly",
+          "name": "Kalidou Koulibaly",
+          "name_zh": "库利巴利",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:sen:krépin_diatta",
+          "name": "Krépin Diatta",
+          "name_zh": "迪亚塔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sen:lamine_camara",
+          "name": "Lamine Camara",
+          "name_zh": "卡马拉",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sen:nicolas_jackson",
+          "name": "Nicolas Jackson",
+          "name_zh": "杰克逊",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sen:pape_matar_sarr",
+          "name": "Pape Matar Sarr",
+          "name_zh": "帕普·萨尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "pl:sadio_man:19920410",
+          "name": "Sadio Mané",
+          "name_zh": "萨迪奥·马内",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sen:édouard_mendy",
+          "name": "Édouard Mendy",
+          "name_zh": "门迪",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:srb",
+      "canonical_name": "Serbia",
+      "canonical_name_zh": "塞尔维亚",
+      "scope": "national_team",
+      "country": "SRB",
+      "fifa_code": "SRB",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:srb:aleksandar_mitrović",
+          "name": "Aleksandar Mitrović",
+          "name_zh": "米特罗维奇",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:srb:andrija_živković",
+          "name": "Andrija Živković",
+          "name_zh": "日夫科维奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:srb:dušan_tadić",
+          "name": "Dušan Tadić",
+          "name_zh": "塔迪奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:srb:dušan_vlahović",
+          "name": "Dušan Vlahović",
+          "name_zh": "弗拉霍维奇",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:srb:filip_kostić",
+          "name": "Filip Kostić",
+          "name_zh": "科斯蒂奇",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:srb:lazar_samardžić",
+          "name": "Lazar Samardžić",
+          "name_zh": "萨马尔季奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:srb:nemanja_maksimović",
+          "name": "Nemanja Maksimović",
+          "name_zh": "马克西莫维奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:srb:nikola_milenković",
+          "name": "Nikola Milenković",
+          "name_zh": "米伦科维奇",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:srb:predrag_rajković",
+          "name": "Predrag Rajković",
+          "name_zh": "拉伊科维奇",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:srb:sergej_milinković-savić",
+          "name": "Sergej Milinković-Savić",
+          "name_zh": "米林科维奇-萨维奇",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:srb:strahinja_pavlović",
+          "name": "Strahinja Pavlović",
+          "name_zh": "帕夫洛维奇",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:sui",
+      "canonical_name": "Switzerland",
+      "canonical_name_zh": "瑞士",
+      "scope": "national_team",
+      "country": "SUI",
+      "fifa_code": "SUI",
+      "coach_name": "Murat Yakın",
+      "coach_name_zh": "亚金",
+      "players": [
+        {
+          "player_id": "player:manual:sui:ardon_jashari",
+          "name": "Ardon Jashari",
+          "name_zh": "亚沙里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sui:breel_embolo",
+          "name": "Breel Embolo",
+          "name_zh": "恩博洛",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sui:dan_ndoye",
+          "name": "Dan Ndoye",
+          "name_zh": "恩多耶",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sui:fabian_schär",
+          "name": "Fabian Schär",
+          "name_zh": "舍尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:sui:granit_xhaka",
+          "name": "Granit Xhaka",
+          "name_zh": "扎卡",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sui:manuel_akanji",
+          "name": "Manuel Akanji",
+          "name_zh": "阿坎吉",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:sui:remo_freuler",
+          "name": "Remo Freuler",
+          "name_zh": "弗罗伊勒",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sui:ricardo_rodríguez",
+          "name": "Ricardo Rodríguez",
+          "name_zh": "罗德里格斯",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:sui:ruben_vargas",
+          "name": "Ruben Vargas",
+          "name_zh": "巴尔加斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:sui:xherdan_shaqiri",
+          "name": "Xherdan Shaqiri",
+          "name_zh": "沙奇里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:sui:yann_sommer",
+          "name": "Yann Sommer",
+          "name_zh": "索默尔",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:swe",
+      "canonical_name": "Sweden",
+      "canonical_name_zh": "瑞典",
+      "scope": "national_team",
+      "country": "SWE",
+      "fifa_code": "SWE",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:swe:albin_ekdal",
+          "name": "Albin Ekdal",
+          "name_zh": "埃克达尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:swe:alexander_isak",
+          "name": "Alexander Isak",
+          "name_zh": "伊萨克",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:swe:anthony_elanga",
+          "name": "Anthony Elanga",
+          "name_zh": "埃兰加",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:swe:daniel_svensson",
+          "name": "Daniel Svensson",
+          "name_zh": "斯文森",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:swe:dejan_kulusevski",
+          "name": "Dejan Kulusevski",
+          "name_zh": "库卢塞夫斯基",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:swe:emil_forsberg",
+          "name": "Emil Forsberg",
+          "name_zh": "福斯贝里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:swe:isak_hien",
+          "name": "Isak Hien",
+          "name_zh": "希恩",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:swe:mattias_svanberg",
+          "name": "Mattias Svanberg",
+          "name_zh": "斯万贝里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:swe:robin_olsen",
+          "name": "Robin Olsen",
+          "name_zh": "奥尔森",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:swe:victor_lindelöf",
+          "name": "Victor Lindelöf",
+          "name_zh": "林德洛夫",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:swe:viktor_gyökeres",
+          "name": "Viktor Gyökeres",
+          "name_zh": "约克雷斯",
+          "position": "forward"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:tun",
+      "canonical_name": "Tunisia",
+      "canonical_name_zh": "突尼斯",
+      "scope": "national_team",
+      "country": "TUN",
+      "fifa_code": "TUN",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:tun:anis_ben_slimane",
+          "name": "Anis Ben Slimane",
+          "name_zh": "本·斯利曼",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tun:aymen_dahmen",
+          "name": "Aymen Dahmen",
+          "name_zh": "达赫曼",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:tun:aïssa_laïdouni",
+          "name": "Aïssa Laïdouni",
+          "name_zh": "莱杜尼",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tun:ellyes_skhiri",
+          "name": "Ellyes Skhiri",
+          "name_zh": "斯希里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tun:ferjani_sassi",
+          "name": "Ferjani Sassi",
+          "name_zh": "萨西",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tun:hannibal_mejbri",
+          "name": "Hannibal Mejbri",
+          "name_zh": "梅吉布里",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tun:issam_jebali",
+          "name": "Issam Jebali",
+          "name_zh": "杰巴利",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:tun:mohamed_drager",
+          "name": "Mohamed Drager",
+          "name_zh": "德拉杰尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:tun:wahbi_khazri",
+          "name": "Wahbi Khazri",
+          "name_zh": "卡兹里",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:tun:wajdi_kechrida",
+          "name": "Wajdi Kechrida",
+          "name_zh": "凯什里达",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:tun:yassine_meriah",
+          "name": "Yassine Meriah",
+          "name_zh": "梅里亚",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:tur",
+      "canonical_name": "Turkey",
+      "canonical_name_zh": "土耳其",
+      "scope": "national_team",
+      "country": "TUR",
+      "fifa_code": "TUR",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:tur:arda_güler",
+          "name": "Arda Güler",
+          "name_zh": "古勒",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tur:barış_alper_yılmaz",
+          "name": "Barış Alper Yılmaz",
+          "name_zh": "耶尔马兹",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:tur:cengiz_ünder",
+          "name": "Cengiz Ünder",
+          "name_zh": "云代尔",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:tur:hakan_çalhanoğlu",
+          "name": "Hakan Çalhanoğlu",
+          "name_zh": "恰尔汉奥卢",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tur:kenan_yıldız",
+          "name": "Kenan Yıldız",
+          "name_zh": "耶尔德兹",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:tur:merih_demiral",
+          "name": "Merih Demiral",
+          "name_zh": "德米拉尔",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:tur:mert_günok",
+          "name": "Mert Günok",
+          "name_zh": "居诺克",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:tur:orkun_kökçü",
+          "name": "Orkun Kökçü",
+          "name_zh": "科克丘",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tur:salih_özcan",
+          "name": "Salih Özcan",
+          "name_zh": "厄兹詹",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tur:yusuf_yazıcı",
+          "name": "Yusuf Yazıcı",
+          "name_zh": "亚兹吉",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:tur:çağlar_söyüncü",
+          "name": "Çağlar Söyüncü",
+          "name_zh": "索云朱",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:ukr",
+      "canonical_name": "Ukraine",
+      "canonical_name_zh": "乌克兰",
+      "scope": "national_team",
+      "country": "UKR",
+      "fifa_code": "UKR",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:ukr:andriy_lunin",
+          "name": "Andriy Lunin",
+          "name_zh": "卢宁",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:ukr:andriy_yarmolenko",
+          "name": "Andriy Yarmolenko",
+          "name_zh": "亚尔莫连科",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ukr:artem_dovbyk",
+          "name": "Artem Dovbyk",
+          "name_zh": "多夫比克",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ukr:heorhiy_sudakov",
+          "name": "Heorhiy Sudakov",
+          "name_zh": "苏达科夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ukr:mykhailo_mudryk",
+          "name": "Mykhailo Mudryk",
+          "name_zh": "穆德里克",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ukr:mykola_matviyenko",
+          "name": "Mykola Matviyenko",
+          "name_zh": "马特维延科",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:ukr:oleksandr_zinchenko",
+          "name": "Oleksandr Zinchenko",
+          "name_zh": "辛琴科",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ukr:ruslan_malinovskyi",
+          "name": "Ruslan Malinovskyi",
+          "name_zh": "马利诺夫斯基",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ukr:taras_stepanenko",
+          "name": "Taras Stepanenko",
+          "name_zh": "斯特帕年科",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:ukr:viktor_tsygankov",
+          "name": "Viktor Tsygankov",
+          "name_zh": "齐甘科夫",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:ukr:vitaliy_mykolenko",
+          "name": "Vitaliy Mykolenko",
+          "name_zh": "米科连科",
+          "position": "defender"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:uru",
+      "canonical_name": "Uruguay",
+      "canonical_name_zh": "乌拉圭",
+      "scope": "national_team",
+      "country": "URU",
+      "fifa_code": "URU",
+      "coach_name": "Marcelo Bielsa",
+      "coach_name_zh": "比尔萨",
+      "players": [
+        {
+          "player_id": "player:manual:uru:darwin_núñez",
+          "name": "Darwin Núñez",
+          "name_zh": "达尔文·努涅斯",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:uru:facundo_pellistri",
+          "name": "Facundo Pellistri",
+          "name_zh": "佩利斯特里",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:uru:federico_valverde",
+          "name": "Federico Valverde",
+          "name_zh": "巴尔韦德",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uru:manuel_ugarte",
+          "name": "Manuel Ugarte",
+          "name_zh": "乌加特",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uru:mathías_olivera",
+          "name": "Mathías Olivera",
+          "name_zh": "奥利维拉",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:uru:maxi_araújo",
+          "name": "Maxi Araújo",
+          "name_zh": "马克西·阿劳霍",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uru:maximiliano_araújo",
+          "name": "Maximiliano Araújo",
+          "name_zh": "M·阿劳霍",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:uru:nahitan_nández",
+          "name": "Nahitan Nández",
+          "name_zh": "南德斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uru:rodrigo_bentancur",
+          "name": "Rodrigo Bentancur",
+          "name_zh": "本坦库尔",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uru:ronald_araújo",
+          "name": "Ronald Araújo",
+          "name_zh": "阿劳霍",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:uru:sergio_rochet",
+          "name": "Sergio Rochet",
+          "name_zh": "罗切特",
+          "position": "goalkeeper"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:usa",
+      "canonical_name": "United States",
+      "canonical_name_zh": "美国",
+      "scope": "national_team",
+      "country": "USA",
+      "fifa_code": "USA",
+      "coach_name": "Mauricio Pochettino",
+      "coach_name_zh": "波切蒂诺",
+      "players": [
+        {
+          "player_id": "player:manual:usa:antonee_robinson",
+          "name": "Antonee Robinson",
+          "name_zh": "罗宾逊",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:usa:chris_richards",
+          "name": "Chris Richards",
+          "name_zh": "理查兹",
+          "position": "defender"
+        },
+        {
+          "player_id": "pl:christian_pulisic:19980918",
+          "name": "Christian Pulisic",
+          "name_zh": "普利西奇",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:usa:folarin_balogun",
+          "name": "Folarin Balogun",
+          "name_zh": "巴洛贡",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:usa:matt_turner",
+          "name": "Matt Turner",
+          "name_zh": "特纳",
+          "position": "goalkeeper"
+        },
+        {
+          "player_id": "player:manual:usa:ricardo_pepi",
+          "name": "Ricardo Pepi",
+          "name_zh": "佩皮",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:usa:sergiño_dest",
+          "name": "Sergiño Dest",
+          "name_zh": "德斯特",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:usa:tim_weah",
+          "name": "Tim Weah",
+          "name_zh": "蒂姆·维阿",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:usa:tyler_adams",
+          "name": "Tyler Adams",
+          "name_zh": "泰勒·亚当斯",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:usa:weston_mckennie",
+          "name": "Weston McKennie",
+          "name_zh": "麦肯尼",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:usa:yunus_musah",
+          "name": "Yunus Musah",
+          "name_zh": "穆萨",
+          "position": "midfielder"
+        }
+      ]
+    },
+    {
+      "team_id": "nat:uzb",
+      "canonical_name": "Uzbekistan",
+      "canonical_name_zh": "乌兹别克斯坦",
+      "scope": "national_team",
+      "country": "UZB",
+      "fifa_code": "UZB",
+      "coach_name": null,
+      "coach_name_zh": null,
+      "players": [
+        {
+          "player_id": "player:manual:uzb:abbosbek_fayzullaev",
+          "name": "Abbosbek Fayzullaev",
+          "name_zh": "法伊祖拉耶夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uzb:diyor_kholmatov",
+          "name": "Diyor Kholmatov",
+          "name_zh": "霍尔马托夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uzb:eldor_shomurodov",
+          "name": "Eldor Shomurodov",
+          "name_zh": "肖穆罗多夫",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:uzb:igor_sergeev",
+          "name": "Igor Sergeev",
+          "name_zh": "谢尔盖耶夫",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:uzb:jaloliddin_masharipov",
+          "name": "Jaloliddin Masharipov",
+          "name_zh": "马沙里波夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uzb:khojiakbar_alijonov",
+          "name": "Khojiakbar Alijonov",
+          "name_zh": "阿利兹诺夫",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:uzb:khusayin_norchaev",
+          "name": "Khusayin Norchaev",
+          "name_zh": "诺尔恰耶夫",
+          "position": "forward"
+        },
+        {
+          "player_id": "player:manual:uzb:otabek_shukurov",
+          "name": "Otabek Shukurov",
+          "name_zh": "舒库罗夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uzb:rustam_ashurmatov",
+          "name": "Rustam Ashurmatov",
+          "name_zh": "阿舒尔马托夫",
+          "position": "defender"
+        },
+        {
+          "player_id": "player:manual:uzb:sherzod_azamov",
+          "name": "Sherzod Azamov",
+          "name_zh": "阿扎莫夫",
+          "position": "midfielder"
+        },
+        {
+          "player_id": "player:manual:uzb:utkir_yusupov",
+          "name": "Utkir Yusupov",
+          "name_zh": "尤苏波夫",
+          "position": "goalkeeper"
+        }
+      ]
     }
   ],
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 6/78 fixtures (8%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "data_truth_mode_summary": "MIXED",
   "source_freshness_summary": {
-    "worldcup": "PARTIAL",
-    "sample_football_fixtures": "FRESH"
+    "sample_football_fixtures": "FRESH",
+    "elo_national_teams": "FRESH",
+    "wikidata_team_master": "FRESH"
   },
   "model_version_summary": "football_ensemble@local"
 }
