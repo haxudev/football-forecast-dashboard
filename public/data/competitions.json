@@ -1,15 +1,8 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T06:31:58.384552+00:00",
+  "generated_at": "2026-05-09T08:12:15.010512+00:00",
   "competitions": [
-    {
-      "competition_id": "champions_league",
-      "name": "Champions League",
-      "scope": "club",
-      "format": "tournament",
-      "source_origin": "sample_fixture"
-    },
     {
       "competition_id": "world_cup_2026",
       "name": "FIFA World Cup 2026",
@@ -25,23 +18,32 @@
       "scope": "club",
       "format": "league",
       "source_origin": "football_data_org+clubelo"
+    },
+    {
+      "competition_id": "champions_league",
+      "name": "UEFA Champions League",
+      "name_zh": "欧洲冠军联赛",
+      "scope": "club",
+      "format": "swiss_plus_knockout",
+      "source_origin": "football_data_org+clubelo"
     }
   ],
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 3/471 fixtures (1%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 173/641 fixtures (27%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "data_truth_mode_summary": "MIXED",
   "source_freshness_summary": {
-    "sample_football_fixtures": "FRESH",
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "FRESH"
+    "clubelo": "PARTIAL",
+    "football_data_org_cl": "FRESH",
+    "clubelo_cl": "STALE"
   },
   "model_version_summary": "football_ensemble@local"
 }

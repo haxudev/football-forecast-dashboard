@@ -1,12 +1,21 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T06:31:58.384552+00:00",
+  "generated_at": "2026-05-09T08:12:15.010512+00:00",
   "data_truth_mode_summary": "MIXED",
   "source_freshness": [
     {
       "source_name": "clubelo",
-      "freshness_status": "FRESH",
+      "freshness_status": "PARTIAL",
+      "forecast_impact": [
+        "elo",
+        "poisson",
+        "ensemble"
+      ]
+    },
+    {
+      "source_name": "clubelo_cl",
+      "freshness_status": "STALE",
       "forecast_impact": [
         "elo",
         "poisson",
@@ -23,7 +32,7 @@
       ]
     },
     {
-      "source_name": "football_data_org_pl",
+      "source_name": "football_data_org_cl",
       "freshness_status": "FRESH",
       "forecast_impact": [
         "elo",
@@ -32,7 +41,7 @@
       ]
     },
     {
-      "source_name": "sample_football_fixtures",
+      "source_name": "football_data_org_pl",
       "freshness_status": "FRESH",
       "forecast_impact": [
         "elo",
@@ -52,12 +61,6 @@
   ],
   "fallback_status": [
     {
-      "code": "SAMPLE_ONLY",
-      "competition_id": "champions_league",
-      "severity": "warning",
-      "detail": "competition champions_league truth_mode=SAMPLE_ONLY"
-    },
-    {
       "code": "REAL_DERIVED",
       "competition_id": "world_cup_2026",
       "severity": "info",
@@ -68,22 +71,29 @@
       "competition_id": "premier_league",
       "severity": "info",
       "detail": "competition premier_league truth_mode=REAL_DERIVED"
+    },
+    {
+      "code": "MIXED",
+      "competition_id": "champions_league",
+      "severity": "warning",
+      "detail": "competition champions_league truth_mode=MIXED"
     }
   ],
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 3/471 fixtures (1%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 173/641 fixtures (27%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "source_freshness_summary": {
-    "sample_football_fixtures": "FRESH",
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "FRESH"
+    "clubelo": "PARTIAL",
+    "football_data_org_cl": "FRESH",
+    "clubelo_cl": "STALE"
   },
   "model_version_summary": "football_ensemble@local"
 }

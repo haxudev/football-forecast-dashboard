@@ -1,99 +1,100 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T06:31:58.384552+00:00",
-  "run_id": "export-20260509T063158Z",
+  "generated_at": "2026-05-09T08:12:15.010512+00:00",
+  "run_id": "export-20260509T081215Z",
   "model_version": {
-    "champions_league": "football_ensemble@local",
     "world_cup_2026": "football_ensemble@local",
-    "premier_league": "football_ensemble@local"
+    "premier_league": "football_ensemble@local",
+    "champions_league": "football_ensemble@local"
   },
   "data_truth_mode": {
-    "champions_league": "SAMPLE_ONLY",
     "world_cup_2026": "REAL_DERIVED",
-    "premier_league": "REAL_DERIVED"
+    "premier_league": "REAL_DERIVED",
+    "champions_league": "MIXED"
   },
   "source_freshness": {
-    "sample_football_fixtures": "FRESH",
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "FRESH"
+    "clubelo": "PARTIAL",
+    "football_data_org_cl": "FRESH",
+    "clubelo_cl": "STALE"
   },
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 3/471 fixtures (1%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 173/641 fixtures (27%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "files": [
     {
       "path": "competitions.json",
-      "sha256": "29cbd9dbe1a19726bc2743da56159af398e4b2d5537792f94c8200f42aa5cfd2",
-      "bytes": 1340
+      "sha256": "18969cc14886e4734b8e030263f6da1af8711d524c542dea616cfa191fa78487",
+      "bytes": 1432
     },
     {
       "path": "data_quality.json",
-      "sha256": "b5e7728e8a20f0dda52701d537521b08b85a698fbe6513294440d92364669974",
-      "bytes": 2149
+      "sha256": "ca4757071b8773affc85bf40b4d3421945ee34346c841cb946d0d0b4731fd5db",
+      "bytes": 2334
     },
     {
       "path": "diagnostics.json",
-      "sha256": "c62146227b245ff1d3c176846f77249cbc88dca4fac0c2a0631d932aed6981e2",
-      "bytes": 1514
+      "sha256": "e99a264c1c9c176a237703d8deccdb94e760626d55a96f5bbe630ae70156672e",
+      "bytes": 1542
     },
     {
       "path": "overview.json",
-      "sha256": "7a8d660fd549b1e19ba2ad301d17ec3c8fe2ff537ed3395235031346de19d44e",
-      "bytes": 839
+      "sha256": "92a087b8abf3092e607688de828fba43ec19304fb5011ff719cece10f0f55b85",
+      "bytes": 846
     },
     {
       "path": "predictions/champions_league.json",
-      "sha256": "91693eb4ac0924c7ff9fb1d27c4181ce6d8cabc79e8728427b0cb1b4c4b32af0",
-      "bytes": 5304
+      "sha256": "028bf431d06642c8b98a7d6ccc92a3bcf1c8b08266d70468a15d10626ad83243",
+      "bytes": 268086
     },
     {
       "path": "predictions/premier_league.json",
-      "sha256": "24db43fae9c9f2ea43c5c1ce4549f53163a914a261a20d31332d75971a9bbaaa",
-      "bytes": 581635
+      "sha256": "421144b3cc4041381641ce1e8442ba7ede3620b35f25950f50934fdbb6ac52e0",
+      "bytes": 582431
     },
     {
       "path": "predictions/world_cup_2026.json",
-      "sha256": "d6c16c54311e8714f8ff5bb25a4f0cc84a547945c0fd268e8dda9c35ec3fdecf",
-      "bytes": 143357
+      "sha256": "4a86553296517bc2d4268f5e382e943c697491157173d8dd25a4772996bb5407",
+      "bytes": 143385
     },
     {
       "path": "team_compare.json",
-      "sha256": "b34660ba814d8a161399c565015a16eb7527c4da2fdbddd2587cd24a6e06da87",
-      "bytes": 251104
+      "sha256": "e01c0d0c6069b5cc9f0ecb5c3372023a6f16042466dc3d9b4ba54ea46b1fcf90",
+      "bytes": 466892
     },
     {
       "path": "teams.json",
-      "sha256": "b34660ba814d8a161399c565015a16eb7527c4da2fdbddd2587cd24a6e06da87",
-      "bytes": 251104
+      "sha256": "e01c0d0c6069b5cc9f0ecb5c3372023a6f16042466dc3d9b4ba54ea46b1fcf90",
+      "bytes": 466892
     },
     {
       "path": "tournaments/champions_league.json",
-      "sha256": "0ff1853f71e64d6828e8482809b7b1ac3de47c8b4a453c47032bd198c08501e2",
-      "bytes": 1223
+      "sha256": "70f87b244fab9d216b2a3fcddb36dc06bb649d1a448a1cdf8aa4f49fb482ad4a",
+      "bytes": 13991
     },
     {
       "path": "tournaments/premier_league.json",
-      "sha256": "ebc81bedc93c947633022a480efd97b152477efb18aa8f1aac3aff9c3bfb4112",
-      "bytes": 4625
+      "sha256": "12a68b026e99a92686187cea1f59a701780c27aef4481e01a0472f703d57dbde",
+      "bytes": 4653
     },
     {
       "path": "tournaments/world_cup_2026.json",
-      "sha256": "5da61648f095ca7d53af5eb2a3933cc3ac2349aaa172b6f455c852a4e4bf6d3e",
-      "bytes": 8829
+      "sha256": "52c49c20940f86057e8f078d36e8db3fd4e39da2fe74096e93a99bae972be25f",
+      "bytes": 8857
     }
   ],
   "competitions": [
-    "champions_league",
     "world_cup_2026",
-    "premier_league"
+    "premier_league",
+    "champions_league"
   ],
   "retention": {
     "keep_days": 365,
@@ -149,9 +150,9 @@
     {
       "name": "probability_distinct",
       "passed": true,
-      "metric": 342,
+      "metric": 343,
       "threshold": 4,
-      "detail": "distinct probability tuples = 342"
+      "detail": "distinct probability tuples = 343"
     },
     {
       "name": "latest_rating_real",
@@ -170,9 +171,9 @@
     {
       "name": "scoreline_distinct",
       "passed": true,
-      "metric": 337,
+      "metric": 339,
       "threshold": 4,
-      "detail": "distinct scoreline_top3 = 337"
+      "detail": "distinct scoreline_top3 = 339"
     }
   ],
   "wc_phase": "pre_draw",
@@ -180,10 +181,675 @@
   "wc_rating_coverage": 1.0,
   "elo_source": {
     "world_cup_2026": "live",
-    "premier_league": "live"
+    "premier_league": "live",
+    "champions_league": "fallback"
   },
-  "pl_rating_source": "clubelo.com",
+  "pl_rating_source": "mixed",
   "pl_rating_coverage": 1.0,
+  "cl_rating_source": "manual_fallback",
+  "cl_rating_coverage": 1.0,
+  "cl_playoff_status": "inferred_from_league_phase",
+  "simulation_variance": {
+    "cl": {
+      "p_top8_std": 0.0,
+      "p_playoff_std": 0.0,
+      "p_champion_std": 0.004101,
+      "iterations_league": 10000,
+      "iterations_ko": 5000
+    }
+  },
+  "cl_league_phase_table": [
+    {
+      "team_id": "club:deu:bayern_munich",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 21.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:eng:arsenal",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 24.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:eng:chelsea",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 16.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:eng:liverpool",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 18.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:eng:man_city",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 16.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:eng:tottenham",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 17.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:esp:fc_barcelona",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 16.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:prt:sporting_cp",
+      "season_id": "cl:2025-26",
+      "p_top8": 1.0,
+      "p_playoff": 0.0,
+      "p_dropout": 0.0,
+      "expected_points": 16.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:deu:leverkusen",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 12.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:deu:dortmund",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 11.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:deu:eintracht_frankfurt",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 4.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:eng:newcastle",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 14.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:esp:athletic",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 8.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:esp:atletico_madrid",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 13.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:esp:real_madrid",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 15.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:esp:villarreal",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 1.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:ita:atalanta",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 13.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:ita:inter",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 15.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:ita:juventus",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 13.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:ita:napoli",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 8.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:fra:olympique_marseille",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 9.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:fra:psg",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 14.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:mco:monaco",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 10.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:tur:galatasaray",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 10.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:aze:qarabag",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 10.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:grc:olympiakos",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 11.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:nld:psv",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 8.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:nld:ajax",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 6.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:bel:club_brugge",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 10.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:cze:slavia_praha",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 3.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:dnk:kobenhavn",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 8.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:prt:sl_benfica",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 9.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:bel:union_sg",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 9.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:nor:bodo_glimt",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 1.0,
+      "p_dropout": 0.0,
+      "expected_points": 9.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:kaz:kairat",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 1.0,
+      "remaining_games": 0
+    },
+    {
+      "team_id": "club:cyp:paphos",
+      "season_id": "cl:2025-26",
+      "p_top8": 0.0,
+      "p_playoff": 0.0,
+      "p_dropout": 1.0,
+      "expected_points": 9.0,
+      "remaining_games": 0
+    }
+  ],
+  "cl_knockout_bracket": [
+    {
+      "team_id": "club:eng:man_city",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.7402,
+      "p_sf": 0.592,
+      "p_final": 0.4172,
+      "p_champion": 0.2276
+    },
+    {
+      "team_id": "club:deu:bayern_munich",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.741,
+      "p_sf": 0.4342,
+      "p_final": 0.2696,
+      "p_champion": 0.1472
+    },
+    {
+      "team_id": "club:eng:arsenal",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.6782,
+      "p_sf": 0.4952,
+      "p_final": 0.222,
+      "p_champion": 0.131
+    },
+    {
+      "team_id": "club:eng:liverpool",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.6074,
+      "p_sf": 0.2798,
+      "p_final": 0.178,
+      "p_champion": 0.1078
+    },
+    {
+      "team_id": "club:esp:fc_barcelona",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.7104,
+      "p_sf": 0.3534,
+      "p_final": 0.157,
+      "p_champion": 0.077
+    },
+    {
+      "team_id": "club:fra:psg",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.668,
+      "p_qf": 0.2562,
+      "p_sf": 0.1816,
+      "p_final": 0.0796,
+      "p_champion": 0.0474
+    },
+    {
+      "team_id": "club:esp:real_madrid",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.6322,
+      "p_qf": 0.2586,
+      "p_sf": 0.1196,
+      "p_final": 0.0752,
+      "p_champion": 0.0434
+    },
+    {
+      "team_id": "club:eng:tottenham",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.5832,
+      "p_sf": 0.3146,
+      "p_final": 0.0976,
+      "p_champion": 0.0334
+    },
+    {
+      "team_id": "club:eng:chelsea",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.6654,
+      "p_sf": 0.2136,
+      "p_final": 0.0674,
+      "p_champion": 0.0314
+    },
+    {
+      "team_id": "club:ita:atalanta",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.7016,
+      "p_qf": 0.1952,
+      "p_sf": 0.131,
+      "p_final": 0.08,
+      "p_champion": 0.0298
+    },
+    {
+      "team_id": "club:ita:inter",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.3678,
+      "p_qf": 0.134,
+      "p_sf": 0.056,
+      "p_final": 0.0328,
+      "p_champion": 0.0184
+    },
+    {
+      "team_id": "club:deu:leverkusen",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.7186,
+      "p_qf": 0.209,
+      "p_sf": 0.0948,
+      "p_final": 0.0452,
+      "p_champion": 0.0178
+    },
+    {
+      "team_id": "club:prt:sporting_cp",
+      "season_id": "cl:2025-26",
+      "p_r16": 1.0,
+      "p_qf": 0.5802,
+      "p_sf": 0.128,
+      "p_final": 0.0624,
+      "p_champion": 0.0176
+    },
+    {
+      "team_id": "club:esp:atletico_madrid",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.49,
+      "p_qf": 0.2202,
+      "p_sf": 0.1254,
+      "p_final": 0.0422,
+      "p_champion": 0.017
+    },
+    {
+      "team_id": "club:deu:dortmund",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.5462,
+      "p_qf": 0.265,
+      "p_sf": 0.0802,
+      "p_final": 0.0458,
+      "p_champion": 0.0134
+    },
+    {
+      "team_id": "club:ita:juventus",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.51,
+      "p_qf": 0.1966,
+      "p_sf": 0.0996,
+      "p_final": 0.0308,
+      "p_champion": 0.009
+    },
+    {
+      "team_id": "club:eng:newcastle",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.5588,
+      "p_qf": 0.1868,
+      "p_sf": 0.0792,
+      "p_final": 0.0258,
+      "p_champion": 0.0078
+    },
+    {
+      "team_id": "club:ita:napoli",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.4788,
+      "p_qf": 0.1782,
+      "p_sf": 0.0486,
+      "p_final": 0.0138,
+      "p_champion": 0.0054
+    },
+    {
+      "team_id": "club:esp:villarreal",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.2984,
+      "p_qf": 0.0646,
+      "p_sf": 0.038,
+      "p_final": 0.0194,
+      "p_champion": 0.0048
+    },
+    {
+      "team_id": "club:mco:monaco",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.4538,
+      "p_qf": 0.1548,
+      "p_sf": 0.0308,
+      "p_final": 0.0146,
+      "p_champion": 0.0044
+    },
+    {
+      "team_id": "club:esp:athletic",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.5212,
+      "p_qf": 0.1564,
+      "p_sf": 0.0314,
+      "p_final": 0.0064,
+      "p_champion": 0.0032
+    },
+    {
+      "team_id": "club:fra:olympique_marseille",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.4412,
+      "p_qf": 0.1028,
+      "p_sf": 0.0278,
+      "p_final": 0.0072,
+      "p_champion": 0.0022
+    },
+    {
+      "team_id": "club:tur:galatasaray",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.2814,
+      "p_qf": 0.05,
+      "p_sf": 0.0156,
+      "p_final": 0.0052,
+      "p_champion": 0.0016
+    },
+    {
+      "team_id": "club:deu:eintracht_frankfurt",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.332,
+      "p_qf": 0.0656,
+      "p_sf": 0.0296,
+      "p_final": 0.0048,
+      "p_champion": 0.0014
+    },
+    {
+      "team_id": "club:aze:qarabag",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:grc:olympiakos",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:nld:psv",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:nld:ajax",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:bel:club_brugge",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:cze:slavia_praha",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:dnk:kobenhavn",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:prt:sl_benfica",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:bel:union_sg",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:nor:bodo_glimt",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:kaz:kairat",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    },
+    {
+      "team_id": "club:cyp:paphos",
+      "season_id": "cl:2025-26",
+      "p_r16": 0.0,
+      "p_qf": 0.0,
+      "p_sf": 0.0,
+      "p_final": 0.0,
+      "p_champion": 0.0
+    }
+  ],
   "coach_name_coverage": 0.5208,
   "team_zh_coverage": 1.0
 }
