@@ -1,5 +1,5 @@
 // src/components/Shell.tsx
-// Phase A — Nav 精简: 赛事 / 舆情 / 关于（删 match-predictor / team-comparison 无参数版本 / tournament-simulator / teams）。
+// Phase A — Nav: 赛事 / 研究 / 对比 / 舆情 / 关于（hotfix: 加入研究 + 对比入口）。
 // preview-env-pill 在 NEXT_PUBLIC_DEPLOY_ENV='preview' 时显示（D-9）。
 import Link from 'next/link';
 import { ThemeMenu } from '@/components/ThemeMenu';
@@ -31,9 +31,11 @@ export function PreviewEnvPill({ t }: { t: Dictionary }) {
 export function Nav({ locale, t, brandName }: { locale: Locale; t: Dictionary; brandName?: string }) {
   const prefix = locale === 'en' ? '/en' : '';
   const brand = brandName ?? t.common.footerCopy;
-  // Phase A 三链精简：赛事 / 舆情 / 关于
+  // Phase A hotfix：赛事 / 研究 / 对比 / 舆情 / 关于
   const items: [string, string][] = [
     ['/', t.nav.overview],
+    ['/research', t.nav.research],
+    ['/team-comparison', t.nav.compare],
     ['/sentiment', t.nav.sentiment],
     ['/about', t.nav.about],
   ];
