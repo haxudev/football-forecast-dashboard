@@ -1,26 +1,42 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-08T11:16:02.678146+00:00",
+  "generated_at": "2026-05-09T00:16:26.375197+00:00",
   "competition_id": "champions_league",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "SAMPLE_ONLY",
   "source_freshness_summary": {
+    "worldcup": "PARTIAL",
     "sample_football_fixtures": "FRESH"
   },
   "warnings": [
     {
-      "code": "SAMPLE_ONLY",
+      "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Local P2 sample forecast pack; not betting advice.",
+      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "simulations": [
     {
       "team_id": "club:global:real_madrid",
-      "champion_probability": 0.45,
+      "champion_probability": 0.466,
+      "advance_probability": 0.932
+    },
+    {
+      "team_id": "club:global:psg",
+      "champion_probability": 0.35,
       "advance_probability": 0.7
+    },
+    {
+      "team_id": "club:global:bayern_munich",
+      "champion_probability": 0.094,
+      "advance_probability": 0.188
+    },
+    {
+      "team_id": "club:global:inter_milan",
+      "champion_probability": 0.09,
+      "advance_probability": 0.18
     }
   ]
 }

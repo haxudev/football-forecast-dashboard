@@ -1,7 +1,7 @@
 import { createHash } from 'crypto';
 import { readFileSync } from 'fs';
 import path from 'path';
-import { CompetitionsSchema, LatestSchema, ManifestSchema, OverviewSchema, PredictionsFileSchema, TeamCompareSchema, TeamsSchema, TournamentFileSchema } from '../src/lib/schemas';
+import { CompetitionsSchema, DataQualitySchema, DiagnosticsSchema, LatestSchema, ManifestSchema, OverviewSchema, PredictionsFileSchema, TeamCompareSchema, TeamsSchema, TournamentFileSchema } from '../src/lib/schemas';
 
 const root = path.join(process.cwd(), 'public', 'data');
 const parseJson = (rel: string) => JSON.parse(readFileSync(path.join(root, rel), 'utf8')) as unknown;
@@ -18,6 +18,8 @@ const validators: Record<string, (data: unknown) => unknown> = {
   'competitions.json': (d) => CompetitionsSchema.parse(d),
   'teams.json': (d) => TeamsSchema.parse(d),
   'team_compare.json': (d) => TeamCompareSchema.parse(d),
+  'data_quality.json': (d) => DataQualitySchema.parse(d),
+  'diagnostics.json': (d) => DiagnosticsSchema.parse(d),
 };
 
 for (const file of manifest.files) {

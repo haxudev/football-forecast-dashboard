@@ -7,6 +7,7 @@ import {
 } from './status';
 import { loadAllPredictions, loadManifest } from './data';
 import { getDictionary } from './i18n';
+import { DataQualitySchema, DiagnosticsSchema } from './schemas';
 
 describe('forecast pack schemas', () => {
   it('loads manifest and predictions', () => {
@@ -66,6 +67,88 @@ describe('friendlyFreshness', () => {
     const now = new Date('2026-05-08T12:30:00Z');
     const v = friendlyFreshness('2026-05-08T12:00:00Z', tZh, now);
     expect(v).not.toMatch(/pack\s*age|freshness=|truth=|sha256/i);
+  });
+});
+
+describe('DataQualitySchema (P0-4)', () => {
+  const validFixture = {
+    pack_version: 'p2.1.0',
+    schema_version: 'forecast-pack-v1',
+    generated_at: '2026-05-09T00:00:00Z',
+    warnings: [],
+    source_freshness_summary: { worldcup: 'PARTIAL' },
+    data_truth_mode_summary: 'MIXED',
+    source_freshness: [
+      { source_name: 'worldcup', freshness_status: 'PARTIAL', forecast_impact: ['elo'] },
+    ],
+    fallback_status: [
+      { code: 'MIXED', competition_id: 'world_cup_2026', severity: 'warning', detail: 'mixed sources' },
+    ],
+  };
+  it('accepts a valid fixture', () => {
+    expect(() => DataQualitySchema.parse(validFixture)).not.toThrow();
+  });
+  it('rejects an unknown truth_mode', () => {
+    expect(() => DataQualitySchema.parse({ ...validFixture, data_truth_mode_summary: 'WHATEVER' })).toThrow();
+  });
+  it('rejects when data_truth_mode_summary is missing', () => {
+    const { data_truth_mode_summary: _omit, ...rest } = validFixture;
+    expect(() => DataQualitySchema.parse(rest)).toThrow();
+  });
+  it('rejects malformed fallback_status entries', () => {
+    expect(() => DataQualitySchema.parse({
+      ...validFixture,
+      fallback_status: [{ code: 123, severity: 'warning', detail: 'x' }],
+    })).toThrow();
+  });
+});
+
+describe('DiagnosticsSchema (P0-4)', () => {
+  const validFixture = {
+    pack_version: 'p2.1.0',
+    schema_version: 'forecast-pack-v1',
+    generated_at: '2026-05-09T00:00:00Z',
+    warnings: [],
+    source_freshness_summary: { worldcup: 'PARTIAL' },
+    data_truth_mode_summary: 'MIXED',
+    model_registry: [
+      { model_version: 'football_ensemble@local', algorithm_layer: 'ensemble', trained_at: '2026-05-09T00:00:00Z', feature_set_hash: 'unknown/no-git' },
+    ],
+    backtest_summary: {
+      run_id: 'p2-local-baseline',
+      model_version: 'football_ensemble@abc',
+      scope: 'all',
+      method: 'sample_walk_forward',
+      brier: 0.22,
+      log_loss: 1.0,
+      calibration_ece: 0.08,
+      calibration_curve: [],
+      n_matches: 4,
+      fold: 0,
+      generated_at: '2026-05-09T00:00:00Z',
+      code_git_sha: 'unknown/no-git',
+    },
+    calibration_curve: [],
+    feature_importance: [{ name: 'rating_diff', importance: 0.42 }],
+  };
+  it('accepts a valid fixture', () => {
+    expect(() => DiagnosticsSchema.parse(validFixture)).not.toThrow();
+  });
+  it('rejects non-finite brier', () => {
+    expect(() => DiagnosticsSchema.parse({
+      ...validFixture,
+      backtest_summary: { ...validFixture.backtest_summary, brier: Number.NaN },
+    })).toThrow();
+  });
+  it('rejects when backtest_summary is missing', () => {
+    const { backtest_summary: _omit, ...rest } = validFixture;
+    expect(() => DiagnosticsSchema.parse(rest)).toThrow();
+  });
+  it('rejects feature_importance with wrong types', () => {
+    expect(() => DiagnosticsSchema.parse({
+      ...validFixture,
+      feature_importance: [{ name: 'x', importance: 'high' }],
+    })).toThrow();
   });
 });
 

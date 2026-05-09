@@ -1,59 +1,156 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-08T11:16:02.678146+00:00",
+  "generated_at": "2026-05-09T00:16:26.375197+00:00",
   "teams": [
     {
-      "team_id": "club:global:arsenal",
-      "canonical_name": "Arsenal",
-      "scope": "club"
+      "team_id": "mexico",
+      "canonical_name": "Mexico",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q96",
+      "alias_list": []
+    },
+    {
+      "team_id": "england",
+      "canonical_name": "England",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q21",
+      "alias_list": []
+    },
+    {
+      "team_id": "germany",
+      "canonical_name": "Germany",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q183",
+      "alias_list": []
+    },
+    {
+      "team_id": "france",
+      "canonical_name": "France",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q142",
+      "alias_list": []
+    },
+    {
+      "team_id": "argentina",
+      "canonical_name": "Argentina",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q414",
+      "alias_list": []
+    },
+    {
+      "team_id": "spain",
+      "canonical_name": "Spain",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q29",
+      "alias_list": []
+    },
+    {
+      "team_id": "united_states",
+      "canonical_name": "United States",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q30",
+      "alias_list": []
+    },
+    {
+      "team_id": "brazil",
+      "canonical_name": "Brazil",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q155",
+      "alias_list": []
+    },
+    {
+      "team_id": "canada",
+      "canonical_name": "Canada",
+      "competition_id": "world_cup_2026",
+      "scope": "national_team",
+      "wikidata_qid": "Q16",
+      "alias_list": []
     },
     {
       "team_id": "club:global:liverpool",
       "canonical_name": "Liverpool",
-      "scope": "club"
+      "competition_id": "premier_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
     },
     {
       "team_id": "club:global:real_madrid",
       "canonical_name": "Real Madrid",
-      "scope": "club"
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
+    },
+    {
+      "team_id": "club:global:chelsea",
+      "canonical_name": "Chelsea",
+      "competition_id": "premier_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
     },
     {
       "team_id": "club:global:psg",
       "canonical_name": "PSG",
-      "scope": "club"
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
     },
     {
-      "team_id": "nat:united_states",
-      "canonical_name": "United States",
-      "scope": "national_team"
+      "team_id": "club:global:arsenal",
+      "canonical_name": "Arsenal",
+      "competition_id": "premier_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
     },
     {
-      "team_id": "nat:mexico",
-      "canonical_name": "Mexico",
-      "scope": "national_team"
+      "team_id": "club:global:inter_milan",
+      "canonical_name": "Inter Milan",
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
     },
     {
-      "team_id": "nat:canada",
-      "canonical_name": "Canada",
-      "scope": "national_team"
+      "team_id": "club:global:bayern_munich",
+      "canonical_name": "Bayern Munich",
+      "competition_id": "champions_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
     },
     {
-      "team_id": "nat:japan",
-      "canonical_name": "Japan",
-      "scope": "national_team"
+      "team_id": "club:global:manchester_city",
+      "canonical_name": "Manchester City",
+      "competition_id": "premier_league",
+      "scope": "club",
+      "wikidata_qid": null,
+      "alias_list": []
     }
   ],
   "warnings": [
     {
-      "code": "SAMPLE_ONLY",
+      "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Local P2 sample forecast pack; not betting advice.",
+      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
-  "data_truth_mode_summary": "SAMPLE_ONLY",
+  "data_truth_mode_summary": "MIXED",
   "source_freshness_summary": {
+    "worldcup": "PARTIAL",
     "sample_football_fixtures": "FRESH"
   },
   "model_version_summary": "football_ensemble@local"

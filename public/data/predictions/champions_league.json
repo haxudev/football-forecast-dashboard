@@ -1,25 +1,136 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-08T11:16:02.678146+00:00",
+  "generated_at": "2026-05-09T00:16:26.375197+00:00",
   "competition_id": "champions_league",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "SAMPLE_ONLY",
   "source_freshness_summary": {
+    "worldcup": "PARTIAL",
     "sample_football_fixtures": "FRESH"
   },
   "warnings": [
     {
-      "code": "SAMPLE_ONLY",
+      "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Local P2 sample forecast pack; not betting advice.",
+      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "predictions": [
     {
-      "prediction_id": "pred_champions_league_1",
-      "fixture_id": "fx_champions_league_1",
+      "prediction_id": "pred_fx_3bb82897f03dc477_981d4111",
+      "fixture_id": "fx_3bb82897f03dc477",
+      "competition_id": "champions_league",
+      "season_id": "champions_league:2025-2026",
+      "kickoff_utc": "2025-09-17T19:00:00Z",
+      "home_team_id": "club:global:psg",
+      "away_team_id": "club:global:inter_milan",
+      "home_team": "PSG",
+      "away_team": "Inter Milan",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "sample",
+      "data_truth_mode": "SAMPLE_ONLY",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL",
+        "sample_football_fixtures": "FRESH"
+      },
+      "warnings": [
+        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
+      ]
+    },
+    {
+      "prediction_id": "pred_fx_28eaf8abd13ce700_981d4111",
+      "fixture_id": "fx_28eaf8abd13ce700",
+      "competition_id": "champions_league",
+      "season_id": "champions_league:2025-2026",
+      "kickoff_utc": "2025-09-10T19:00:00Z",
+      "home_team_id": "club:global:real_madrid",
+      "away_team_id": "club:global:bayern_munich",
+      "home_team": "Real Madrid",
+      "away_team": "Bayern Munich",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "sample",
+      "data_truth_mode": "SAMPLE_ONLY",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL",
+        "sample_football_fixtures": "FRESH"
+      },
+      "warnings": [
+        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
+      ]
+    },
+    {
+      "prediction_id": "pred_fx_72ef572d07ca4232_981d4111",
+      "fixture_id": "fx_72ef572d07ca4232",
       "competition_id": "champions_league",
       "season_id": "champions_league:2025-2026",
       "kickoff_utc": "2025-09-24T19:00:00Z",
@@ -27,43 +138,47 @@
       "away_team_id": "club:global:psg",
       "home_team": "Real Madrid",
       "away_team": "PSG",
-      "model_version": "football_ensemble@fallback",
-      "generated_at": "2026-05-08T11:16:02.678096+00:00",
-      "p_home": 0.44,
-      "p_draw": 0.28,
-      "p_away": 0.28,
-      "expected_goals_home": 1.5,
-      "expected_goals_away": 1.15,
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.39634959,
+      "p_draw": 0.267302,
+      "p_away": 0.33634841,
+      "expected_goals_home": 1.42,
+      "expected_goals_away": 1.1962,
       "scoreline_top3": [
         {
           "home_goals": 1,
           "away_goals": 1,
-          "probability": 0.12
-        },
-        {
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.1
+          "probability": 0.124746
         },
         {
           "home_goals": 1,
           "away_goals": 0,
-          "probability": 0.09
+          "probability": 0.104289
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.08857
         }
       ],
       "top_drivers": [
         {
-          "name": "home_advantage",
-          "impact": 0.08
+          "name": "rating_diff",
+          "impact": -0.075
         },
         {
-          "name": "sample_rating_diff",
-          "impact": 0.04
+          "name": "home_advantage",
+          "impact": 0.08
         }
       ],
       "confidence_label": "LOW",
       "data_completeness": "sample",
       "data_truth_mode": "SAMPLE_ONLY",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL",
+        "sample_football_fixtures": "FRESH"
+      },
       "warnings": [
         "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
       ]

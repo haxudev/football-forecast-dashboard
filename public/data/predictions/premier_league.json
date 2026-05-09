@@ -1,25 +1,81 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-08T11:16:02.678146+00:00",
+  "generated_at": "2026-05-09T00:16:26.375197+00:00",
   "competition_id": "premier_league",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "SAMPLE_ONLY",
   "source_freshness_summary": {
+    "worldcup": "PARTIAL",
     "sample_football_fixtures": "FRESH"
   },
   "warnings": [
     {
-      "code": "SAMPLE_ONLY",
+      "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Local P2 sample forecast pack; not betting advice.",
+      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "predictions": [
     {
-      "prediction_id": "pred_premier_league_0",
-      "fixture_id": "fx_premier_league_0",
+      "prediction_id": "pred_fx_edde2b2d9bd94504_981d4111",
+      "fixture_id": "fx_edde2b2d9bd94504",
+      "competition_id": "premier_league",
+      "season_id": "premier_league:2025-2026",
+      "kickoff_utc": "2025-08-16T14:00:00Z",
+      "home_team_id": "club:global:arsenal",
+      "away_team_id": "club:global:chelsea",
+      "home_team": "Arsenal",
+      "away_team": "Chelsea",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "sample",
+      "data_truth_mode": "SAMPLE_ONLY",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL",
+        "sample_football_fixtures": "FRESH"
+      },
+      "warnings": [
+        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
+      ]
+    },
+    {
+      "prediction_id": "pred_fx_c5b460a5305e51c6_981d4111",
+      "fixture_id": "fx_c5b460a5305e51c6",
       "competition_id": "premier_league",
       "season_id": "premier_league:2025-2026",
       "kickoff_utc": "2025-08-30T14:00:00Z",
@@ -27,43 +83,102 @@
       "away_team_id": "club:global:liverpool",
       "home_team": "Arsenal",
       "away_team": "Liverpool",
-      "model_version": "football_ensemble@fallback",
-      "generated_at": "2026-05-08T11:16:02.678096+00:00",
-      "p_home": 0.42,
-      "p_draw": 0.28,
-      "p_away": 0.3,
-      "expected_goals_home": 1.45,
-      "expected_goals_away": 1.15,
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.43475056,
+      "p_draw": 0.26555548,
+      "p_away": 0.29969396,
+      "expected_goals_home": 1.52,
+      "expected_goals_away": 1.1038,
       "scoreline_top3": [
         {
           "home_goals": 1,
           "away_goals": 1,
-          "probability": 0.12
-        },
-        {
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.1
+          "probability": 0.122384
         },
         {
           "home_goals": 1,
           "away_goals": 0,
-          "probability": 0.09
+          "probability": 0.11087
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.093012
         }
       ],
       "top_drivers": [
         {
-          "name": "home_advantage",
-          "impact": 0.08
+          "name": "rating_diff",
+          "impact": 0.075
         },
         {
-          "name": "sample_rating_diff",
-          "impact": 0.04
+          "name": "home_advantage",
+          "impact": 0.08
         }
       ],
       "confidence_label": "LOW",
       "data_completeness": "sample",
       "data_truth_mode": "SAMPLE_ONLY",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL",
+        "sample_football_fixtures": "FRESH"
+      },
+      "warnings": [
+        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
+      ]
+    },
+    {
+      "prediction_id": "pred_fx_7fd7a83cf680ceb1_981d4111",
+      "fixture_id": "fx_7fd7a83cf680ceb1",
+      "competition_id": "premier_league",
+      "season_id": "premier_league:2025-2026",
+      "kickoff_utc": "2025-08-23T14:00:00Z",
+      "home_team_id": "club:global:liverpool",
+      "away_team_id": "club:global:manchester_city",
+      "home_team": "Liverpool",
+      "away_team": "Manchester City",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "sample",
+      "data_truth_mode": "SAMPLE_ONLY",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL",
+        "sample_football_fixtures": "FRESH"
+      },
       "warnings": [
         "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
       ]

@@ -1,0 +1,52 @@
+{
+  "pack_version": "p2.1.0",
+  "schema_version": "forecast-pack-v1",
+  "generated_at": "2026-05-09T00:16:26.375197+00:00",
+  "model_registry": [
+    {
+      "model_version": "football_ensemble@local",
+      "algorithm_layer": "ensemble",
+      "trained_at": "2026-05-09T00:16:26.375197+00:00",
+      "feature_set_hash": "unknown/no-git"
+    }
+  ],
+  "backtest_summary": {
+    "run_id": "p2-local-baseline",
+    "model_version": "football_ensemble@981d4111",
+    "scope": "all",
+    "method": "sample_walk_forward",
+    "brier": 0.22056020271382565,
+    "log_loss": 1.0983262710483572,
+    "calibration_ece": 0.08523872999999998,
+    "calibration_curve": [],
+    "n_matches": 4,
+    "fold": 0,
+    "generated_at": "2026-05-09T00:16:26.372779+00:00",
+    "code_git_sha": "unknown/no-git"
+  },
+  "calibration_curve": [],
+  "feature_importance": [
+    {
+      "name": "rating_diff",
+      "importance": 0.42
+    },
+    {
+      "name": "home_advantage",
+      "importance": 0.18
+    }
+  ],
+  "warnings": [
+    {
+      "code": "REAL_DATA_PARTIAL",
+      "scope": "pack",
+      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
+      "severity": "warning"
+    }
+  ],
+  "data_truth_mode_summary": "MIXED",
+  "source_freshness_summary": {
+    "worldcup": "PARTIAL",
+    "sample_football_fixtures": "FRESH"
+  },
+  "model_version_summary": "football_ensemble@local"
+}

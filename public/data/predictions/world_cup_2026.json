@@ -1,122 +1,345 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-08T11:16:02.678146+00:00",
+  "generated_at": "2026-05-09T00:16:26.375197+00:00",
   "competition_id": "world_cup_2026",
   "model_version_used": "football_ensemble@local",
-  "data_truth_mode": "SAMPLE_ONLY",
+  "data_truth_mode": "MIXED",
   "source_freshness_summary": {
+    "worldcup": "PARTIAL",
     "sample_football_fixtures": "FRESH"
   },
   "warnings": [
     {
-      "code": "SAMPLE_ONLY",
+      "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Local P2 sample forecast pack; not betting advice.",
+      "detail": "Forecast pack truth_mode=MIXED; 12/12 fixtures (100%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "predictions": [
     {
-      "prediction_id": "pred_world_cup_2026_2",
-      "fixture_id": "fx_world_cup_2026_2",
+      "prediction_id": "pred_F001_981d4111",
+      "fixture_id": "F001",
       "competition_id": "world_cup_2026",
       "season_id": "world_cup_2026:2026",
-      "kickoff_utc": "2026-06-12T20:00:00Z",
-      "home_team_id": "nat:united_states",
-      "away_team_id": "nat:mexico",
-      "home_team": "United States",
-      "away_team": "Mexico",
-      "model_version": "football_ensemble@fallback",
-      "generated_at": "2026-05-08T11:16:02.678096+00:00",
-      "p_home": 0.46,
-      "p_draw": 0.28,
-      "p_away": 0.26,
-      "expected_goals_home": 1.55,
+      "kickoff_utc": "2026-06-11T18:00:00Z",
+      "home_team_id": "mexico",
+      "away_team_id": "france",
+      "home_team": "Mexico",
+      "away_team": "France",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
       "expected_goals_away": 1.15,
       "scoreline_top3": [
         {
           "home_goals": 1,
           "away_goals": 1,
-          "probability": 0.12
-        },
-        {
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.1
+          "probability": 0.123723
         },
         {
           "home_goals": 1,
           "away_goals": 0,
-          "probability": 0.09
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
         }
       ],
       "top_drivers": [
         {
-          "name": "home_advantage",
-          "impact": 0.08
+          "name": "rating_diff",
+          "impact": 0.0
         },
         {
-          "name": "sample_rating_diff",
-          "impact": 0.04
+          "name": "home_advantage",
+          "impact": 0.08
         }
       ],
-      "confidence_label": "LOW",
-      "data_completeness": "sample",
-      "data_truth_mode": "SAMPLE_ONLY",
+      "confidence_label": "MED",
+      "data_completeness": "partial",
+      "data_truth_mode": "MIXED",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL"
+      },
       "warnings": [
-        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
+        "Forecast based on mixed data; treat probabilities as informational only."
       ]
     },
     {
-      "prediction_id": "pred_world_cup_2026_3",
-      "fixture_id": "fx_world_cup_2026_3",
+      "prediction_id": "pred_F002_981d4111",
+      "fixture_id": "F002",
       "competition_id": "world_cup_2026",
       "season_id": "world_cup_2026:2026",
-      "kickoff_utc": "2026-06-13T20:00:00Z",
-      "home_team_id": "nat:canada",
-      "away_team_id": "nat:japan",
-      "home_team": "Canada",
-      "away_team": "Japan",
-      "model_version": "football_ensemble@fallback",
-      "generated_at": "2026-05-08T11:16:02.678096+00:00",
-      "p_home": 0.48,
-      "p_draw": 0.28,
-      "p_away": 0.24,
-      "expected_goals_home": 1.6,
+      "kickoff_utc": "2026-06-12T18:00:00Z",
+      "home_team_id": "united_states",
+      "away_team_id": "brazil",
+      "home_team": "United States",
+      "away_team": "Brazil",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
       "expected_goals_away": 1.15,
       "scoreline_top3": [
         {
           "home_goals": 1,
           "away_goals": 1,
-          "probability": 0.12
-        },
-        {
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.1
+          "probability": 0.123723
         },
         {
           "home_goals": 1,
           "away_goals": 0,
-          "probability": 0.09
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
         }
       ],
       "top_drivers": [
         {
-          "name": "home_advantage",
-          "impact": 0.08
+          "name": "rating_diff",
+          "impact": 0.0
         },
         {
-          "name": "sample_rating_diff",
-          "impact": 0.04
+          "name": "home_advantage",
+          "impact": 0.08
         }
       ],
-      "confidence_label": "LOW",
-      "data_completeness": "sample",
-      "data_truth_mode": "SAMPLE_ONLY",
+      "confidence_label": "MED",
+      "data_completeness": "partial",
+      "data_truth_mode": "MIXED",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL"
+      },
       "warnings": [
-        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
+        "Forecast based on mixed data; treat probabilities as informational only."
+      ]
+    },
+    {
+      "prediction_id": "pred_F003_981d4111",
+      "fixture_id": "F003",
+      "competition_id": "world_cup_2026",
+      "season_id": "world_cup_2026:2026",
+      "kickoff_utc": "2026-06-13T18:00:00Z",
+      "home_team_id": "canada",
+      "away_team_id": "argentina",
+      "home_team": "Canada",
+      "away_team": "Argentina",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "MED",
+      "data_completeness": "partial",
+      "data_truth_mode": "MIXED",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL"
+      },
+      "warnings": [
+        "Forecast based on mixed data; treat probabilities as informational only."
+      ]
+    },
+    {
+      "prediction_id": "pred_F004_981d4111",
+      "fixture_id": "F004",
+      "competition_id": "world_cup_2026",
+      "season_id": "world_cup_2026:2026",
+      "kickoff_utc": "2026-06-14T18:00:00Z",
+      "home_team_id": "spain",
+      "away_team_id": "japan",
+      "home_team": "Spain",
+      "away_team": "Japan",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "MED",
+      "data_completeness": "partial",
+      "data_truth_mode": "MIXED",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL"
+      },
+      "warnings": [
+        "Forecast based on mixed data; treat probabilities as informational only."
+      ]
+    },
+    {
+      "prediction_id": "pred_F005_981d4111",
+      "fixture_id": "F005",
+      "competition_id": "world_cup_2026",
+      "season_id": "world_cup_2026:2026",
+      "kickoff_utc": "2026-06-15T18:00:00Z",
+      "home_team_id": "germany",
+      "away_team_id": "morocco",
+      "home_team": "Germany",
+      "away_team": "Morocco",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "MED",
+      "data_completeness": "partial",
+      "data_truth_mode": "MIXED",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL"
+      },
+      "warnings": [
+        "Forecast based on mixed data; treat probabilities as informational only."
+      ]
+    },
+    {
+      "prediction_id": "pred_F006_981d4111",
+      "fixture_id": "F006",
+      "competition_id": "world_cup_2026",
+      "season_id": "world_cup_2026:2026",
+      "kickoff_utc": "2026-06-16T18:00:00Z",
+      "home_team_id": "england",
+      "away_team_id": "senegal",
+      "home_team": "England",
+      "away_team": "Senegal",
+      "model_version": "football_ensemble@981d4111",
+      "generated_at": "2026-05-09T00:16:26.370881+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "MED",
+      "data_completeness": "partial",
+      "data_truth_mode": "MIXED",
+      "source_freshness_summary": {
+        "worldcup": "PARTIAL"
+      },
+      "warnings": [
+        "Forecast based on mixed data; treat probabilities as informational only."
       ]
     }
   ]
