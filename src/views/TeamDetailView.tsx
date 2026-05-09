@@ -1,5 +1,7 @@
 import { notFound } from 'next/navigation';
 import { loadTeams } from '@/lib/data';
+import { I18nText } from '@/components/I18nText';
+import { localizedTeamName } from '@/lib/i18n';
 
 type Locale = 'zh' | 'en';
 
@@ -55,9 +57,14 @@ export function TeamDetailView({ locale, teamId }: TeamDetailViewProps) {
         >
           ← {t.back}
         </a>
-        <h1 className="text-3xl font-bold">{team.canonical_name}</h1>
-        {team.canonical_name_zh && locale === 'zh' && team.canonical_name_zh !== team.canonical_name && (
-          <p className="text-lg text-gray-600">{team.canonical_name_zh}</p>
+        <h1 className="text-3xl font-bold">
+          {locale === 'zh' && team.canonical_name_zh ? team.canonical_name_zh : team.canonical_name}
+        </h1>
+        {locale === 'zh' && team.canonical_name_zh && team.canonical_name_zh !== team.canonical_name && (
+          <p className="text-lg text-gray-600">{team.canonical_name}</p>
+        )}
+        {locale === 'zh' && !team.canonical_name_zh && (
+          <p className="text-lg text-gray-600"><I18nText raw={team.canonical_name} locale="zh" kind="team" /></p>
         )}
         <dl className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
           {coach && (
@@ -67,20 +74,22 @@ export function TeamDetailView({ locale, teamId }: TeamDetailViewProps) {
                 className="text-base font-medium"
                 data-testid="coach-name"
               >
-                {coach}
+                {locale === 'zh' && team.coach_name_zh ? team.coach_name_zh : (
+                  <I18nText raw={coach} locale={locale} kind="manager" />
+                )}
               </dd>
             </div>
           )}
           {team.country && (
             <div>
               <dt className="text-xs uppercase text-gray-500">{t.country}</dt>
-              <dd className="text-base">{team.country}</dd>
+              <dd className="text-base"><I18nText raw={team.country} locale={locale} kind="country" /></dd>
             </div>
           )}
           {team.venue && (
             <div>
               <dt className="text-xs uppercase text-gray-500">{t.venue}</dt>
-              <dd className="text-base">{team.venue}</dd>
+              <dd className="text-base"><I18nText raw={team.venue} locale={locale} kind="venue" /></dd>
             </div>
           )}
           {team.founded && (
@@ -114,14 +123,16 @@ export function TeamDetailView({ locale, teamId }: TeamDetailViewProps) {
                 className="rounded border border-gray-200 bg-white p-3 shadow-sm dark:border-gray-700 dark:bg-gray-900"
                 data-testid="player-card"
               >
-                <div className="font-medium">{p.name ?? '—'}</div>
+                <div className="font-medium">
+                  {locale === 'zh' && p.name_zh ? p.name_zh : (p.name ? <I18nText raw={p.name} locale={locale} kind="manager" /> : '—')}
+                </div>
                 {p.position && (
                   <div className="text-xs text-gray-500">
-                    {t.position}: {p.position}
+                    {t.position}: <I18nText raw={p.position} locale={locale} kind="position" />
                   </div>
                 )}
                 {p.nationality && (
-                  <div className="text-xs text-gray-500">{p.nationality}</div>
+                  <div className="text-xs text-gray-500"><I18nText raw={p.nationality} locale={locale} kind="country" /></div>
                 )}
               </div>
             ))}
