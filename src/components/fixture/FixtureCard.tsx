@@ -1,10 +1,16 @@
 // src/components/fixture/FixtureCard.tsx
 // Phase A — 共享组件，design-spec §3.1 / §5.1.2 双 mode（primary | picker），含 degraded 状态。
+// Phase B (B-1, B-2):
+//   - 加 home/away team logo（TeamLogo，缺图 fallback 圆形首字母）
+//   - 加「主」「客」label，靠在 team name 旁
+//   - 概率三 box → ProbStack 三段式 stacked bar（D-B3 独立组件）
 'use client';
 
 import Link from 'next/link';
 import { type FixtureRow } from '@/lib/fixtures';
 import { type Dictionary } from '@/lib/i18n';
+import { TeamLogo } from '@/components/team/TeamLogo';
+import { ProbStack } from '@/components/match/ProbStack';
 
 export type FixtureCardMode = 'primary' | 'picker';
 
@@ -66,9 +72,27 @@ export function FixtureCard({ fixture, mode, pickerHref = 'match', t }: FixtureC
 
   const title = (
     <div className="fixture-card-title">
-      <span className="home">{home}</span>
+      <span className="home" data-side="home">
+        <TeamLogo
+          teamId={fixture.home.team_id}
+          displayName={home}
+          src={fixture.home.crest_url ?? null}
+          size="sm"
+        />
+        <span className="side-lbl" aria-label={t.common.home}>{t.fixtureCard.sideHomeShort}</span>
+        <span className="team-name">{home}</span>
+      </span>
       <span className="vs" aria-hidden="true">{t.common.vs}</span>
-      <span className="away">{away}</span>
+      <span className="away" data-side="away">
+        <span className="team-name">{away}</span>
+        <span className="side-lbl" aria-label={t.common.away}>{t.fixtureCard.sideAwayShort}</span>
+        <TeamLogo
+          teamId={fixture.away.team_id}
+          displayName={away}
+          src={fixture.away.crest_url ?? null}
+          size="sm"
+        />
+      </span>
     </div>
   );
 
@@ -80,15 +104,16 @@ export function FixtureCard({ fixture, mode, pickerHref = 'match', t }: FixtureC
   );
 
   const probRow = summary ? (
-    <div
-      className="fixture-card-prob"
-      role="img"
-      aria-label={`${t.common.home} ${(summary.p_home * 100).toFixed(0)}%, ${t.common.draw} ${(summary.p_draw * 100).toFixed(0)}%, ${t.common.away} ${(summary.p_away * 100).toFixed(0)}%`}
-    >
-      <span className="seg home"><span className="lbl">{t.common.home}</span>{(summary.p_home * 100).toFixed(0)}%</span>
-      <span className="seg draw"><span className="lbl">{t.common.draw}</span>{(summary.p_draw * 100).toFixed(0)}%</span>
-      <span className="seg away"><span className="lbl">{t.common.away}</span>{(summary.p_away * 100).toFixed(0)}%</span>
-    </div>
+    <ProbStack
+      pHome={summary.p_home}
+      pDraw={summary.p_draw}
+      pAway={summary.p_away}
+      t={t}
+      size="sm"
+      layout="inline"
+      homeName={home}
+      awayName={away}
+    />
   ) : (
     <div className="fixture-card-degraded-note">{t.fixtureCard.degradedMissingPack}</div>
   );

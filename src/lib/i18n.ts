@@ -100,6 +100,8 @@ const dictionaries = {
       detailCta: '研究',
       teamCompareCta: '对比',
       probMissing: '暂无概率',
+      sideHomeShort: '主',
+      sideAwayShort: '客',
     },
     dimStatusChip: {
       ready: '已就绪',
@@ -416,6 +418,8 @@ const dictionaries = {
       detailCta: 'Research',
       teamCompareCta: 'Compare',
       probMissing: 'No probabilities',
+      sideHomeShort: 'H',
+      sideAwayShort: 'A',
     },
     dimStatusChip: {
       ready: 'Ready',

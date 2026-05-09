@@ -2,6 +2,8 @@
 // Phase A — design §3.2，三入口共享组件（mode: primary | picker）。
 // 排序：sortFixtures(kickoff_utc ASC + match_id ASC) 由 lib/fixtures.ts 保证。
 // 分组：按 matchday 分组（GW N），无 matchday 落入 fallback。
+// Phase B (B-3) 响应式：1440=3 列 / 768-1439=2 列 / <768=1 列
+//   通过 .fixture-grid 的 grid-template-columns + media query 实现（globals.css）。
 import { sortFixtures, type FixtureRow } from '@/lib/fixtures';
 import { type Dictionary } from '@/lib/i18n';
 import { FixtureCard, type FixtureCardMode } from './FixtureCard';
