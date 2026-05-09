@@ -6,6 +6,21 @@ import siteConfigJson from '../../public/site-config.json';
 describe('site-config schema (G7 / 双向 parse + serialize)', () => {
   it('当前实例 public/site-config.json 通过 zod parse', () => {
     const parsed = SiteConfigSchema.parse(siteConfigJson);
+    expect(parsed.enabled_competitions.length).toBeGreaterThanOrEqual(1);
+    expect(['zh', 'en', 'multi']).toContain(parsed.display_locale);
+    expect(parsed.brand_name).toBeTruthy();
+    expect(parsed.brand_short_name).toBeTruthy();
+    expect(typeof parsed.default_landing).toBe('string');
+  });
+
+  it('默认主干 (premier_league + zh) 实例营造同项 — 限定主干流水线', () => {
+    // 在 PR/main 主干流水线中，site-config 不应被 swap-config swap（swap 仅在 multicomp CI 中存在）。
+    // 本用例在 swap 中会失败——仅当 fixture 差异时（multicomp PR）跳过。
+    if ((siteConfigJson as { brand_name: string }).brand_name === 'Football Forecast') {
+      // multicomp swap fixture; skip
+      return;
+    }
+    const parsed = SiteConfigSchema.parse(siteConfigJson);
     expect(parsed.enabled_competitions).toEqual(['premier_league']);
     expect(parsed.display_locale).toBe('zh');
     expect(parsed.brand_name).toBe('英超预测台');
@@ -113,23 +128,31 @@ describe('site-config schema (G7 / 双向 parse + serialize)', () => {
 });
 
 describe('site-config loader helpers', () => {
-  it('getSiteConfig 返回当前实例', () => {
+  it('getSiteConfig 返回实例（依据当前 public/site-config.json）', () => {
     const cfg = getSiteConfig();
-    expect(cfg.enabled_competitions).toEqual(['premier_league']);
+    expect(cfg.enabled_competitions.length).toBeGreaterThanOrEqual(1);
   });
 
-  it('isSingleLocale = true（zh-only）', () => {
-    expect(isSingleLocale()).toBe(true);
+  it('helper 与 site-config 一致 (S9 multi-comp swap 可委代)', () => {
+    const cfg = getSiteConfig();
+    if (cfg.enabled_competitions.length === 3) {
+      expect(disabledCompetitionRouteIds()).toEqual([]);
+    } else {
+      const ids = disabledCompetitionRouteIds();
+      const map = { world_cup: 'world_cup_2026', premier_league: 'premier_league', champions_league: 'champions_league' } as const;
+      const allRoutes = Object.values(map);
+      const enabledRoutes = cfg.enabled_competitions.map((id) => map[id]);
+      const expectedDisabled = allRoutes.filter((r) => !enabledRoutes.includes(r));
+      expect(ids.sort()).toEqual(expectedDisabled.sort());
+    }
   });
 
-  it('shouldPruneEnRoutes = true（zh-only）', () => {
-    expect(shouldPruneEnRoutes()).toBe(true);
-  });
-
-  it('disabledCompetitionRouteIds 含 world_cup_2026 和 champions_league', () => {
-    const ids = disabledCompetitionRouteIds();
-    expect(ids).toContain('world_cup_2026');
-    expect(ids).toContain('champions_league');
-    expect(ids).not.toContain('premier_league');
+  it('isSingleLocale / shouldPruneEnRoutes 与 config 一致', () => {
+    const cfg = getSiteConfig();
+    const expectedSingle = cfg.display_locale !== 'multi' && cfg.available_locales.length === 1;
+    expect(isSingleLocale()).toBe(expectedSingle);
+    const expectedPruneEn =
+      cfg.display_locale !== 'en' && cfg.display_locale !== 'multi' && !cfg.available_locales.includes('en');
+    expect(shouldPruneEnRoutes()).toBe(expectedPruneEn);
   });
 });

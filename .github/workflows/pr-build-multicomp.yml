@@ -1,0 +1,56 @@
+name: pr-build-multicomp
+on:
+  pull_request:
+  workflow_dispatch:
+
+# 架构假设硬保护 (D-002 / D-004.P3 / sprint-contract C-5):
+# 临时把 site-config 切到 multi-comp + multi-locale, 验证未来切换实例后
+# build 仍可产出 (en)/* + wc/cl 路由 → 即架构可定制性未漂移。
+# G10 fail = 阻塞 merge, 不可降级到 nightly / weekly。
+
+jobs:
+  multicomp-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+
+      # 1) swap site-config 到 multi-comp / multi-locale
+      - name: Swap site-config (multi-comp)
+        run: pnpm exec tsx scripts/swap-config.ts apply
+
+      # 2) 跑完整门禁 + build, 失败也要走到 restore
+      - name: Lint / typecheck / test
+        run: pnpm lint && pnpm typecheck && pnpm test
+
+      - name: Build (multi-comp expected)
+        run: pnpm build
+
+      # 3) 验证 out/ 含 (en)/* 与 wc/cl 路由 → G10
+      - name: Verify multi-comp routes in out/
+        run: |
+          set -e
+          test -d out/en || (echo "MISSING out/en (G10 fail: en routes not generated)"; exit 1)
+          test -d out/competitions/world_cup_2026 || (echo "MISSING out/competitions/world_cup_2026 (G10 fail)"; exit 1)
+          test -d out/competitions/champions_league || (echo "MISSING out/competitions/champions_league (G10 fail)"; exit 1)
+          echo "G10 PASS: multi-comp build产出 (en)/* + wc/cl 路由"
+
+      # 4) 还原（成功失败都跑）
+      - name: Restore site-config
+        if: always()
+        run: pnpm exec tsx scripts/swap-config.ts restore
+
+      # 5) 校验 source 干净（没有 _disabled_* 残留）
+      - name: Source tree clean (no _disabled_* leftovers)
+        if: always()
+        run: |
+          set -e
+          if find src/app -name '_disabled_*' | grep . ; then
+            echo "FAIL: _disabled_* leftover in source"
+            exit 1
+          fi
+          echo "Source tree clean"
