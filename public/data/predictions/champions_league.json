@@ -1,20 +1,22 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T04:19:32.459569+00:00",
+  "generated_at": "2026-05-09T05:59:17.875916+00:00",
   "competition_id": "champions_league",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "SAMPLE_ONLY",
   "source_freshness_summary": {
     "sample_football_fixtures": "FRESH",
     "elo_national_teams": "FRESH",
-    "wikidata_team_master": "FRESH"
+    "wikidata_team_master": "FRESH",
+    "football_data_org_pl": "FRESH",
+    "clubelo": "FRESH"
   },
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 6/94 fixtures (6%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 3/471 fixtures (1%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
@@ -30,7 +32,61 @@
       "home_team": "Real Madrid",
       "away_team": "Bayern Munich",
       "model_version": "football_ensemble@678a73c0",
-      "generated_at": "2026-05-09T04:19:31.666937+00:00",
+      "generated_at": "2026-05-09T05:57:47.385760+00:00",
+      "p_home": 0.41476127,
+      "p_draw": 0.26804501,
+      "p_away": 0.31719371,
+      "expected_goals_home": 1.47,
+      "expected_goals_away": 1.15,
+      "scoreline_top3": [
+        {
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123723
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.107585
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.090937
+        }
+      ],
+      "top_drivers": [
+        {
+          "name": "rating_diff",
+          "impact": 0.0
+        },
+        {
+          "name": "home_advantage",
+          "impact": 0.08
+        }
+      ],
+      "confidence_label": "LOW",
+      "data_completeness": "sample",
+      "data_truth_mode": "SAMPLE_ONLY",
+      "source_freshness_summary": {
+        "sample_football_fixtures": "FRESH"
+      },
+      "warnings": [
+        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
+      ]
+    },
+    {
+      "prediction_id": "pred_fx_3bb82897f03dc477_678a73c0",
+      "fixture_id": "fx_3bb82897f03dc477",
+      "competition_id": "champions_league",
+      "season_id": "champions_league:2025-2026",
+      "kickoff_utc": "2025-09-17T19:00:00Z",
+      "home_team_id": "club:global:psg",
+      "away_team_id": "club:global:inter_milan",
+      "home_team": "PSG",
+      "away_team": "Inter Milan",
+      "model_version": "football_ensemble@678a73c0",
+      "generated_at": "2026-05-09T05:57:47.385760+00:00",
       "p_home": 0.41476127,
       "p_draw": 0.26804501,
       "p_away": 0.31719371,
@@ -84,7 +140,7 @@
       "home_team": "Real Madrid",
       "away_team": "PSG",
       "model_version": "football_ensemble@678a73c0",
-      "generated_at": "2026-05-09T04:19:31.666937+00:00",
+      "generated_at": "2026-05-09T05:57:47.385760+00:00",
       "p_home": 0.39634959,
       "p_draw": 0.267302,
       "p_away": 0.33634841,
@@ -111,60 +167,6 @@
         {
           "name": "rating_diff",
           "impact": -0.075
-        },
-        {
-          "name": "home_advantage",
-          "impact": 0.08
-        }
-      ],
-      "confidence_label": "LOW",
-      "data_completeness": "sample",
-      "data_truth_mode": "SAMPLE_ONLY",
-      "source_freshness_summary": {
-        "sample_football_fixtures": "FRESH"
-      },
-      "warnings": [
-        "SAMPLE_ONLY data pack for P2 local baseline; not betting advice."
-      ]
-    },
-    {
-      "prediction_id": "pred_fx_3bb82897f03dc477_678a73c0",
-      "fixture_id": "fx_3bb82897f03dc477",
-      "competition_id": "champions_league",
-      "season_id": "champions_league:2025-2026",
-      "kickoff_utc": "2025-09-17T19:00:00Z",
-      "home_team_id": "club:global:psg",
-      "away_team_id": "club:global:inter_milan",
-      "home_team": "PSG",
-      "away_team": "Inter Milan",
-      "model_version": "football_ensemble@678a73c0",
-      "generated_at": "2026-05-09T04:19:31.666937+00:00",
-      "p_home": 0.41476127,
-      "p_draw": 0.26804501,
-      "p_away": 0.31719371,
-      "expected_goals_home": 1.47,
-      "expected_goals_away": 1.15,
-      "scoreline_top3": [
-        {
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.123723
-        },
-        {
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.107585
-        },
-        {
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.090937
-        }
-      ],
-      "top_drivers": [
-        {
-          "name": "rating_diff",
-          "impact": 0.0
         },
         {
           "name": "home_advantage",

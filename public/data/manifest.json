@@ -1,92 +1,99 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T04:19:32.459569+00:00",
-  "run_id": "export-20260509T041932Z",
+  "generated_at": "2026-05-09T05:59:17.875916+00:00",
+  "run_id": "export-20260509T055917Z",
   "model_version": {
     "champions_league": "football_ensemble@local",
-    "premier_league": "football_ensemble@local",
-    "world_cup_2026": "football_ensemble@local"
+    "world_cup_2026": "football_ensemble@local",
+    "premier_league": "football_ensemble@local"
   },
   "data_truth_mode": {
     "champions_league": "SAMPLE_ONLY",
-    "premier_league": "SAMPLE_ONLY",
-    "world_cup_2026": "REAL_DERIVED"
+    "world_cup_2026": "REAL_DERIVED",
+    "premier_league": "REAL_DERIVED"
   },
   "source_freshness": {
     "sample_football_fixtures": "FRESH",
     "elo_national_teams": "FRESH",
-    "wikidata_team_master": "FRESH"
+    "wikidata_team_master": "FRESH",
+    "football_data_org_pl": "FRESH",
+    "clubelo": "FRESH"
   },
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 6/94 fixtures (6%) include fallback or sample components.",
+      "detail": "Forecast pack truth_mode=MIXED; 3/471 fixtures (1%) include fallback or sample components.",
       "severity": "warning"
     }
   ],
   "files": [
     {
       "path": "competitions.json",
-      "sha256": "8580e88e4ce1242afaf28ddb2f70e0cc2d44dd7b59d65bfd1326b11f1b7c06b0",
-      "bytes": 1225
+      "sha256": "3dc8e1fb66c21de2b53fdb9d9f3ac034e8bfa667cd8d857d9da9b1303010b228",
+      "bytes": 1340
     },
     {
       "path": "data_quality.json",
-      "sha256": "95166558e38ee8379cf1bd306c2eafb0dc9ea597f0d998a7476133d4d77859d2",
-      "bytes": 1739
+      "sha256": "e1e2bc58bfb93e9af5a687012b90bec15012d271986c162b1c652c809b4449e8",
+      "bytes": 2149
     },
     {
       "path": "diagnostics.json",
-      "sha256": "b984e5b6113a0dd359373a3fbd437a7be449bb21c8bee0ed201f23786aa86006",
-      "bytes": 1452
+      "sha256": "0341ad3e09a464a0ae55701993ff10ff977ad3b03f3e8087ad8a93573e0fd716",
+      "bytes": 1514
     },
     {
       "path": "overview.json",
-      "sha256": "121ee3b48feb89c981396486f1cab9bbf11c633b9ede5b56d912ce7bb1526cb4",
-      "bytes": 791
+      "sha256": "e42435cc269b9289f2089276729e0f7b8d0d8a7ae91970a5431d8f98b4713050",
+      "bytes": 839
     },
     {
       "path": "predictions/champions_league.json",
-      "sha256": "a5afcde77954d52ba04dee75f908c91daac32ad4040b43d90fb6b0799695dce1",
-      "bytes": 5242
+      "sha256": "26dda82cbf5e253c86fa09bcd2639746fd2ba31e324e7a3e4276c50b94faf024",
+      "bytes": 5304
     },
     {
       "path": "predictions/premier_league.json",
-      "sha256": "1e9fb3ac924b886328646408a82e0507d639f388a6d203bbf8ab147ff7555d3f",
-      "bytes": 5233
+      "sha256": "e8c95682d27e8233cfb9d7b44152bcd1cfd9fa314337f5153678d13927fcdd7f",
+      "bytes": 581635
     },
     {
       "path": "predictions/world_cup_2026.json",
-      "sha256": "bcd6df1662d99c6eb06b3fd7d565c54f3edf39d06af4270fa02c6750a54c39b4",
-      "bytes": 143295
+      "sha256": "afea11317ec5780141fc007223c01533ec1668da158eef6f306df37db667e077",
+      "bytes": 143357
     },
     {
       "path": "team_compare.json",
-      "sha256": "af8b30bf141543ee8308ba4b9c9f733e880706e320dc5a321b348a854c96fd8e",
-      "bytes": 116712
+      "sha256": "a9beb037f4731e548308f2540fb442cdcc417b7e64a1d231ee3b5759997653be",
+      "bytes": 251104
     },
     {
       "path": "teams.json",
-      "sha256": "af8b30bf141543ee8308ba4b9c9f733e880706e320dc5a321b348a854c96fd8e",
-      "bytes": 116712
+      "sha256": "a9beb037f4731e548308f2540fb442cdcc417b7e64a1d231ee3b5759997653be",
+      "bytes": 251104
     },
     {
       "path": "tournaments/champions_league.json",
-      "sha256": "1211e7a57b3d44cfae268e9ea491be73dac40835a35e734d8e60c990c96869e0",
-      "bytes": 1161
+      "sha256": "48ffb649bf06c678865049c85d7f8410b6d27a4e836a647bc0a000b1dee0311c",
+      "bytes": 1223
+    },
+    {
+      "path": "tournaments/premier_league.json",
+      "sha256": "2c64aa27c89b9019c2c35023b2eab33e6776b0e7bcde76cb1618e400375291aa",
+      "bytes": 4625
     },
     {
       "path": "tournaments/world_cup_2026.json",
-      "sha256": "c2ab52ac3e3e20db71a0213b4e0bace644ff92eb1e7642622266be39ddeb0ca4",
-      "bytes": 8767
+      "sha256": "ae7307dbb294c0c6d2840adbfbf2d09212f10053606bc241e745004414cd31b2",
+      "bytes": 8829
     }
   ],
   "competitions": [
     "champions_league",
-    "premier_league",
-    "world_cup_2026"
+    "world_cup_2026",
+    "premier_league"
   ],
   "retention": {
     "keep_days": 365,
@@ -131,9 +138,52 @@
       "detail": "distinct scoreline_top3 = 73"
     }
   ],
+  "data_correctness_checks_pl": [
+    {
+      "name": "probabilities_sum_to_one",
+      "passed": true,
+      "metric": 1.1102230246251565e-16,
+      "threshold": 1e-06,
+      "detail": "max |sum-1| = 1.11e-16"
+    },
+    {
+      "name": "probability_distinct",
+      "passed": true,
+      "metric": 342,
+      "threshold": 4,
+      "detail": "distinct probability tuples = 342"
+    },
+    {
+      "name": "latest_rating_real",
+      "passed": true,
+      "metric": 1.0,
+      "threshold": 0.8,
+      "detail": "latest_rating notna ratio = 100.00%"
+    },
+    {
+      "name": "fixture_status_diversity",
+      "passed": true,
+      "metric": 2,
+      "threshold": 2,
+      "detail": "distinct fixture_status = ['FINISHED', 'TIMED']"
+    },
+    {
+      "name": "scoreline_distinct",
+      "passed": true,
+      "metric": 337,
+      "threshold": 4,
+      "detail": "distinct scoreline_top3 = 337"
+    }
+  ],
   "wc_phase": "pre_draw",
   "wc_rating_source": "eloratings.net",
   "wc_rating_coverage": 1.0,
+  "elo_source": {
+    "world_cup_2026": "live",
+    "premier_league": "live"
+  },
+  "pl_rating_source": "clubelo.com",
+  "pl_rating_coverage": 1.0,
   "coach_name_coverage": 0.5208,
   "team_zh_coverage": 1.0
 }
