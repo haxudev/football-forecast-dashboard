@@ -13,8 +13,9 @@ import {
 import { friendlyFreshness, deriveMatchStage } from '@/lib/status';
 import type { Prediction } from '@/lib/schemas';
 
-export function Nav({ locale, t }: { locale: Locale; t: Dictionary }) {
+export function Nav({ locale, t, brandName }: { locale: Locale; t: Dictionary; brandName?: string }) {
   const prefix = locale === 'en' ? '/en' : '';
+  const brand = brandName ?? t.common.footerCopy;
   const items: [string, string][] = [
     ['/', t.nav.overview],
     ['/competitions', t.nav.competitions],
@@ -27,9 +28,9 @@ export function Nav({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <header className="topbar">
       <div className="topbar-inner">
-        <Link href={`${prefix || ''}/`} className="brand" aria-label={t.common.footerCopy}>
+        <Link href={`${prefix || ''}/`} className="brand" aria-label={brand}>
           <span className="brand-mark" aria-hidden="true">⚽</span>
-          <span className="brand-text">{t.common.footerCopy}</span>
+          <span className="brand-text">{brand}</span>
         </Link>
         <nav aria-label="Primary" className="nav-scroll">
           {items.map(([href, label]) => (
@@ -51,18 +52,21 @@ export function FreshnessFooter({
   locale,
   generatedAt,
   buildVersion,
+  brandShortName,
 }: {
   locale: Locale;
   generatedAt?: string;
   buildVersion?: string;
+  brandShortName?: string;
 }) {
   const t = getDictionary(locale);
   const freshness = friendlyFreshness(generatedAt, t);
   const prefix = locale === 'en' ? '/en' : '';
+  const brand = brandShortName ?? t.common.footerCopy;
   return (
     <footer className="ff-footer">
       <div className="ff-footer-inner">
-        <span>© {t.common.footerCopy}{buildVersion ? ` · v${buildVersion}` : ''}</span>
+        <span>© {brand}{buildVersion ? ` · v${buildVersion}` : ''}</span>
         {freshness && <span className="ff-footer-fresh">{freshness}</span>}
         <Link className="ff-footer-link" href={`${prefix}/about`}>
           {t.common.footerAbout}

@@ -40,7 +40,7 @@ const dictionaries = {
       thisWeek: '本周',
       matches: '场比赛',
       noFixtures: '暂无可展示的比赛',
-      footerCopy: '足球预测研究',
+      footerCopy: '英超预测台',
       footerAbout: '关于',
       veryStale: '数据明显过期，仅供参考',
       stale: '数据较旧',
