@@ -4,7 +4,8 @@ import {
   MatchCard,
   SampleBanner,
 } from '@/components/Shell';
-import { loadAllPredictions, loadCompetitions, loadOverview } from '@/lib/data';
+import { TruthBadge } from '@/components/TruthBadge';
+import { loadAllPredictions, loadCompetitions, loadManifest, loadOverview } from '@/lib/data';
 import { format, getDictionary, type Locale } from '@/lib/i18n';
 import { deriveMatchStage } from '@/lib/status';
 
@@ -14,6 +15,7 @@ export function OverviewView({ locale }: { locale: Locale }) {
   const overview = loadOverview();
   const preds = loadAllPredictions();
   const competitions = loadCompetitions();
+  const manifest = loadManifest();
   const isSample = overview.data_truth_mode_summary === 'SAMPLE_ONLY';
 
   // Group matches: PRE first, sorted by kickoff ascending
@@ -48,6 +50,17 @@ export function OverviewView({ locale }: { locale: Locale }) {
         <div>
           <h1 className="hero-title">{t.overview.title}</h1>
           <p className="hero-sub">{heroSubtitle}</p>
+          <div className="mt-2 flex flex-wrap items-center gap-2" data-testid="truth-badges">
+            <TruthBadge mode={overview.data_truth_mode_summary} locale={locale} />
+            {Object.entries(manifest.data_truth_mode).map(([cid, mode]) => (
+              <TruthBadge
+                key={cid}
+                mode={String(mode)}
+                locale={locale}
+                label={`${cid}: ${mode}`}
+              />
+            ))}
+          </div>
         </div>
         <div className="hero-actions" aria-label={t.overview.quickActions}>
           <Link className="hero-action" href={`${prefix}/competitions`}>{t.nav.competitions}</Link>

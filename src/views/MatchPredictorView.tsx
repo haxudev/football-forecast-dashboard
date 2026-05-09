@@ -1,5 +1,6 @@
 import { ProbabilityEChart, ScorelineHeatmap } from '@/components/Charts';
 import { MatchCard, SampleBanner, StageChip } from '@/components/Shell';
+import { TruthBadge } from '@/components/TruthBadge';
 import { loadAllPredictions, loadOverview } from '@/lib/data';
 import {
   format,
@@ -52,6 +53,10 @@ export function MatchPredictorView({ locale }: { locale: Locale }) {
       <header className="page-header">
         <h1 className="page-title">{t.match.title}</h1>
         <p className="page-sub">{t.match.subtitle}</p>
+        <div className="mt-2 flex flex-wrap items-center gap-2" data-testid="truth-badges">
+          <TruthBadge mode={p.data_truth_mode} locale={locale} label={`${p.competition_id}: ${p.data_truth_mode}`} />
+          <TruthBadge mode={overview.data_truth_mode_summary} locale={locale} />
+        </div>
       </header>
 
       {isSample && <SampleBanner t={t} />}

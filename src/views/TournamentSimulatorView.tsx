@@ -1,7 +1,8 @@
 import { AdvancementBars } from '@/components/Charts';
 import { BracketView } from '@/components/Bracket';
 import { SampleBanner } from '@/components/Shell';
-import { loadCompetitions, loadOverview, tryLoadTournament } from '@/lib/data';
+import { TruthBadge } from '@/components/TruthBadge';
+import { loadCompetitions, loadManifest, loadOverview, tryLoadTournament } from '@/lib/data';
 import {
   getDictionary,
   localizedCompetitionShortName,
@@ -12,8 +13,10 @@ import {
 export function TournamentSimulatorView({ locale, competitionId }: { locale: Locale; competitionId: string }) {
   const t = getDictionary(locale);
   const overview = loadOverview();
+  const manifest = loadManifest();
   const isSample = overview.data_truth_mode_summary === 'SAMPLE_ONLY';
   const tournament = tryLoadTournament(competitionId);
+  const compTruthMode = String(manifest.data_truth_mode[competitionId] ?? overview.data_truth_mode_summary);
   const sims = tournament?.simulations ?? [];
   const compName = localizedCompetitionShortName(
     competitionId,
@@ -30,6 +33,9 @@ export function TournamentSimulatorView({ locale, competitionId }: { locale: Loc
         <p className="page-eyebrow">{t.nav.tournamentSimulator}</p>
         <h1 className="page-title tour-title">{compName}</h1>
         <p className="page-sub">{t.tournament.subtitle}</p>
+        <div className="mt-2 flex flex-wrap items-center gap-2" data-testid="truth-badges">
+          <TruthBadge mode={compTruthMode} locale={locale} label={`${competitionId}: ${compTruthMode}`} />
+        </div>
       </header>
 
       {isSample && <SampleBanner t={t} />}
