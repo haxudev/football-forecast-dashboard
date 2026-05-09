@@ -1,7 +1,7 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:12:15.010512+00:00",
+  "generated_at": "2026-05-09T08:43:58.033906+00:00",
   "teams": [
     {
       "team_id": "nat:alg",
@@ -10,8 +10,8 @@
       "scope": "national_team",
       "country": "ALG",
       "fifa_code": "ALG",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Vladimir Petković",
+      "coach_name_zh": "弗拉迪米尔·彼得科维奇",
       "players": [
         {
           "player_id": "player:manual:alg:adam_ounas",
@@ -166,8 +166,8 @@
       "scope": "national_team",
       "country": "AUS",
       "fifa_code": "AUS",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Tony Popovic",
+      "coach_name_zh": "托尼·波波维奇",
       "players": [
         {
           "player_id": "player:manual:aus:aiden_oneill",
@@ -244,8 +244,8 @@
       "scope": "national_team",
       "country": "AUT",
       "fifa_code": "AUT",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Ralf Rangnick",
+      "coach_name_zh": "拉尔夫·朗尼克",
       "players": [
         {
           "player_id": "player:manual:aut:christoph_baumgartner",
@@ -646,8 +646,8 @@
       "scope": "national_team",
       "country": "CMR",
       "fifa_code": "CMR",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Marc Brys",
+      "coach_name_zh": "马克·布吕斯",
       "players": [
         {
           "player_id": "player:manual:cmr:andré_onana",
@@ -802,8 +802,8 @@
       "scope": "national_team",
       "country": "CRC",
       "fifa_code": "CRC",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Gustavo Alfaro",
+      "coach_name_zh": "古斯塔沃·阿尔法罗",
       "players": [
         {
           "player_id": "player:manual:crc:anthony_contreras",
@@ -964,8 +964,8 @@
       "scope": "national_team",
       "country": "DEN",
       "fifa_code": "DEN",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Brian Riemer",
+      "coach_name_zh": "布莱恩·里默",
       "players": [
         {
           "player_id": "player:manual:den:anders_christiansen",
@@ -1042,8 +1042,8 @@
       "scope": "national_team",
       "country": "ECU",
       "fifa_code": "ECU",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Sebastián Beccacece",
+      "coach_name_zh": "塞巴斯蒂安·贝卡塞塞",
       "players": [
         {
           "player_id": "player:manual:ecu:alan_franco",
@@ -1540,8 +1540,8 @@
       "scope": "national_team",
       "country": "GHA",
       "fifa_code": "GHA",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Otto Addo",
+      "coach_name_zh": "奥托·阿多",
       "players": [
         {
           "player_id": "player:manual:gha:alexander_djiku",
@@ -1618,8 +1618,8 @@
       "scope": "national_team",
       "country": "HUN",
       "fifa_code": "HUN",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Marco Rossi",
+      "coach_name_zh": "马尔科·罗西",
       "players": [
         {
           "player_id": "player:manual:hun:adam_szalai",
@@ -1696,8 +1696,8 @@
       "scope": "national_team",
       "country": "IRN",
       "fifa_code": "IRN",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Amir Ghalenoei",
+      "coach_name_zh": "阿米尔·加列诺伊",
       "players": [
         {
           "player_id": "player:manual:irn:alireza_beiranvand",
@@ -1774,8 +1774,8 @@
       "scope": "national_team",
       "country": "IRQ",
       "fifa_code": "IRQ",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Graham Arnold",
+      "coach_name_zh": "格雷厄姆·阿诺德",
       "players": [
         {
           "player_id": "player:manual:irq:ahmad_yasin",
@@ -1930,8 +1930,8 @@
       "scope": "national_team",
       "country": "JAM",
       "fifa_code": "JAM",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Steve McClaren",
+      "coach_name_zh": "史蒂夫·麦克拉伦",
       "players": [
         {
           "player_id": "player:manual:jam:andre_blake",
@@ -2566,8 +2566,8 @@
       "scope": "national_team",
       "country": "NOR",
       "fifa_code": "NOR",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Ståle Solbakken",
+      "coach_name_zh": "斯塔勒·索尔巴肯",
       "players": [
         {
           "player_id": "player:manual:nor:alexander_sørloth",
@@ -2650,8 +2650,8 @@
       "scope": "national_team",
       "country": "PAN",
       "fifa_code": "PAN",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Thomas Christiansen",
+      "coach_name_zh": "托马斯·克里斯滕森",
       "players": [
         {
           "player_id": "player:manual:pan:adalberto_carrasquilla",
@@ -2728,8 +2728,8 @@
       "scope": "national_team",
       "country": "POL",
       "fifa_code": "POL",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Michał Probierz",
+      "coach_name_zh": "米哈乌·普罗别日",
       "players": [
         {
           "player_id": "player:manual:pol:bartosz_bereszyński",
@@ -2890,8 +2890,8 @@
       "scope": "national_team",
       "country": "QAT",
       "fifa_code": "QAT",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Bartolomé Márquez",
+      "coach_name_zh": "巴托洛梅·马尔克斯",
       "players": [
         {
           "player_id": "player:manual:qat:abdelaziz_hatem",
@@ -2968,8 +2968,8 @@
       "scope": "national_team",
       "country": "SCO",
       "fifa_code": "SCO",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Steve Clarke",
+      "coach_name_zh": "史蒂夫·克拉克",
       "players": [
         {
           "player_id": "player:manual:sco:andrew_robertson",
@@ -3130,8 +3130,8 @@
       "scope": "national_team",
       "country": "SRB",
       "fifa_code": "SRB",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Dragan Stojković",
+      "coach_name_zh": "德拉甘·斯托伊科维奇",
       "players": [
         {
           "player_id": "player:manual:srb:aleksandar_mitrović",
@@ -3286,8 +3286,8 @@
       "scope": "national_team",
       "country": "SWE",
       "fifa_code": "SWE",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Jon Dahl Tomasson",
+      "coach_name_zh": "约恩·达尔·托马森",
       "players": [
         {
           "player_id": "player:manual:swe:albin_ekdal",
@@ -3364,8 +3364,8 @@
       "scope": "national_team",
       "country": "TUN",
       "fifa_code": "TUN",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Faouzi Benzarti",
+      "coach_name_zh": "法乌齐·本扎尔提",
       "players": [
         {
           "player_id": "player:manual:tun:anis_ben_slimane",
@@ -3442,8 +3442,8 @@
       "scope": "national_team",
       "country": "TUR",
       "fifa_code": "TUR",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Vincenzo Montella",
+      "coach_name_zh": "文森佐·蒙特拉",
       "players": [
         {
           "player_id": "player:manual:tur:arda_güler",
@@ -3520,8 +3520,8 @@
       "scope": "national_team",
       "country": "UKR",
       "fifa_code": "UKR",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Serhiy Rebrov",
+      "coach_name_zh": "谢尔盖·雷布罗夫",
       "players": [
         {
           "player_id": "player:manual:ukr:andriy_lunin",
@@ -3754,8 +3754,8 @@
       "scope": "national_team",
       "country": "UZB",
       "fifa_code": "UZB",
-      "coach_name": null,
-      "coach_name_zh": null,
+      "coach_name": "Srečko Katanec",
+      "coach_name_zh": "斯雷奇科·卡塔涅茨",
       "players": [
         {
           "player_id": "player:manual:uzb:abbosbek_fayzullaev",
@@ -16503,7 +16503,7 @@
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "PARTIAL",
+    "clubelo": "FRESH",
     "football_data_org_cl": "FRESH",
     "clubelo_cl": "STALE"
   },

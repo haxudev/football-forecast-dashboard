@@ -2,7 +2,9 @@ import { CompetitionDetailView } from '@/views/CompetitionDetailView';
 import { loadCompetitions } from '@/lib/data';
 
 export function generateStaticParams() {
-  return loadCompetitions().map((c) => ({ competitionId: c.competition_id }));
+  return loadCompetitions()
+    .filter((c) => c.competition_id !== 'champions_league')
+    .map((c) => ({ competitionId: c.competition_id }));
 }
 
 export default async function Page({ params }: { params: Promise<{ competitionId: string }> }) {

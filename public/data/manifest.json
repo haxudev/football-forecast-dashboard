@@ -1,8 +1,8 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:12:15.010512+00:00",
-  "run_id": "export-20260509T081215Z",
+  "generated_at": "2026-05-09T08:43:58.033906+00:00",
+  "run_id": "export-20260509T084358Z",
   "model_version": {
     "world_cup_2026": "football_ensemble@local",
     "premier_league": "football_ensemble@local",
@@ -17,7 +17,7 @@
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "PARTIAL",
+    "clubelo": "FRESH",
     "football_data_org_cl": "FRESH",
     "clubelo_cl": "STALE"
   },
@@ -32,63 +32,63 @@
   "files": [
     {
       "path": "competitions.json",
-      "sha256": "18969cc14886e4734b8e030263f6da1af8711d524c542dea616cfa191fa78487",
-      "bytes": 1432
+      "sha256": "9260e8fff11592c7d0df74b41d99ca71e51a849a4e138fe5cc5e3543bfa6c966",
+      "bytes": 1430
     },
     {
       "path": "data_quality.json",
-      "sha256": "ca4757071b8773affc85bf40b4d3421945ee34346c841cb946d0d0b4731fd5db",
-      "bytes": 2334
+      "sha256": "bdb6048980b35864caacd15dd594532fb352874bd23d835b7c5cae8e4b85f421",
+      "bytes": 2330
     },
     {
       "path": "diagnostics.json",
-      "sha256": "e99a264c1c9c176a237703d8deccdb94e760626d55a96f5bbe630ae70156672e",
-      "bytes": 1542
+      "sha256": "ebbef331146cbc1359403720025ee4f7fc559fc27f236b7c59969624bb6ebfb6",
+      "bytes": 1540
     },
     {
       "path": "overview.json",
-      "sha256": "92a087b8abf3092e607688de828fba43ec19304fb5011ff719cece10f0f55b85",
-      "bytes": 846
+      "sha256": "f726e811567dceab63998fe51822c6ee5ef23b4338829905a481bb19763078de",
+      "bytes": 844
     },
     {
       "path": "predictions/champions_league.json",
-      "sha256": "028bf431d06642c8b98a7d6ccc92a3bcf1c8b08266d70468a15d10626ad83243",
-      "bytes": 268086
+      "sha256": "73ca30f9bd78eeeb99b7c3d7c2b2e7cdaa495e145a2efefd718ca511af2031a3",
+      "bytes": 268084
     },
     {
       "path": "predictions/premier_league.json",
-      "sha256": "421144b3cc4041381641ce1e8442ba7ede3620b35f25950f50934fdbb6ac52e0",
-      "bytes": 582431
+      "sha256": "26f0a06380f374601dde26f1b46c982b13a03d4f9ace689ac655f0665366482d",
+      "bytes": 581661
     },
     {
       "path": "predictions/world_cup_2026.json",
-      "sha256": "4a86553296517bc2d4268f5e382e943c697491157173d8dd25a4772996bb5407",
-      "bytes": 143385
+      "sha256": "10d39954eafdf03b7c496a85a55978b85c998a4bc0e492c5ae3c19fb90515e4e",
+      "bytes": 143383
     },
     {
       "path": "team_compare.json",
-      "sha256": "e01c0d0c6069b5cc9f0ecb5c3372023a6f16042466dc3d9b4ba54ea46b1fcf90",
-      "bytes": 466892
+      "sha256": "322ff0c2958e4209e3b5c5f6f8e9257563c31774886f46eb098b1bf4da218f82",
+      "bytes": 467658
     },
     {
       "path": "teams.json",
-      "sha256": "e01c0d0c6069b5cc9f0ecb5c3372023a6f16042466dc3d9b4ba54ea46b1fcf90",
-      "bytes": 466892
+      "sha256": "322ff0c2958e4209e3b5c5f6f8e9257563c31774886f46eb098b1bf4da218f82",
+      "bytes": 467658
     },
     {
       "path": "tournaments/champions_league.json",
-      "sha256": "70f87b244fab9d216b2a3fcddb36dc06bb649d1a448a1cdf8aa4f49fb482ad4a",
-      "bytes": 13991
+      "sha256": "aadf689d4e8b20b2d8c3800550c67e79ccdcba7badccdffc16e715b8c8c08b0e",
+      "bytes": 13989
     },
     {
       "path": "tournaments/premier_league.json",
-      "sha256": "12a68b026e99a92686187cea1f59a701780c27aef4481e01a0472f703d57dbde",
-      "bytes": 4653
+      "sha256": "8d6641a5789be7c338fc0453e7b9ed8e2356923c6508c1cd307d491919bd0e4f",
+      "bytes": 4651
     },
     {
       "path": "tournaments/world_cup_2026.json",
-      "sha256": "52c49c20940f86057e8f078d36e8db3fd4e39da2fe74096e93a99bae972be25f",
-      "bytes": 8857
+      "sha256": "bbba8cec102b6c57b54437e30f1ff625e38fbfd4f2fa1410a6c8c9f9f4e87588",
+      "bytes": 8855
     }
   ],
   "competitions": [
@@ -150,9 +150,9 @@
     {
       "name": "probability_distinct",
       "passed": true,
-      "metric": 343,
+      "metric": 342,
       "threshold": 4,
-      "detail": "distinct probability tuples = 343"
+      "detail": "distinct probability tuples = 342"
     },
     {
       "name": "latest_rating_real",
@@ -171,9 +171,46 @@
     {
       "name": "scoreline_distinct",
       "passed": true,
-      "metric": 339,
+      "metric": 337,
       "threshold": 4,
-      "detail": "distinct scoreline_top3 = 339"
+      "detail": "distinct scoreline_top3 = 337"
+    }
+  ],
+  "data_correctness_checks_cl": [
+    {
+      "name": "probabilities_sum_to_one",
+      "passed": true,
+      "metric": 1.1102230246251565e-16,
+      "threshold": 1e-06,
+      "detail": "max |sum-1| = 1.11e-16"
+    },
+    {
+      "name": "probability_distinct",
+      "passed": true,
+      "metric": 152,
+      "threshold": 4,
+      "detail": "distinct probability tuples = 152"
+    },
+    {
+      "name": "latest_rating_real",
+      "passed": true,
+      "metric": 1.0,
+      "threshold": 0.8,
+      "detail": "latest_rating notna ratio = 100.00%"
+    },
+    {
+      "name": "fixture_status_diversity",
+      "passed": true,
+      "metric": 2,
+      "threshold": 2,
+      "detail": "distinct fixture_status = ['FINISHED', 'TIMED']"
+    },
+    {
+      "name": "scoreline_distinct",
+      "passed": true,
+      "metric": 151,
+      "threshold": 4,
+      "detail": "distinct scoreline_top3 = 151"
     }
   ],
   "wc_phase": "pre_draw",
@@ -184,7 +221,7 @@
     "premier_league": "live",
     "champions_league": "fallback"
   },
-  "pl_rating_source": "mixed",
+  "pl_rating_source": "clubelo.com",
   "pl_rating_coverage": 1.0,
   "cl_rating_source": "manual_fallback",
   "cl_rating_coverage": 1.0,
@@ -850,6 +887,21 @@
       "p_champion": 0.0
     }
   ],
-  "coach_name_coverage": 0.5208,
-  "team_zh_coverage": 1.0
+  "coach_name_coverage": 1.0,
+  "team_zh_coverage": 1.0,
+  "coach_name_coverage_combined": 1.0,
+  "coach_name_coverage_breakdown": {
+    "wc": {
+      "total": 48,
+      "with_coach": 48
+    },
+    "pl": {
+      "total": 20,
+      "with_coach": 20
+    },
+    "cl": {
+      "total": 36,
+      "with_coach": 36
+    }
+  }
 }

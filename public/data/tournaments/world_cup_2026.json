@@ -1,7 +1,7 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:12:15.010512+00:00",
+  "generated_at": "2026-05-09T08:43:58.033906+00:00",
   "competition_id": "world_cup_2026",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "REAL_DERIVED",
@@ -9,7 +9,7 @@
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "PARTIAL",
+    "clubelo": "FRESH",
     "football_data_org_cl": "FRESH",
     "clubelo_cl": "STALE"
   },

@@ -1,12 +1,12 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:12:15.010512+00:00",
+  "generated_at": "2026-05-09T08:43:58.033906+00:00",
   "data_truth_mode_summary": "MIXED",
   "source_freshness": [
     {
       "source_name": "clubelo",
-      "freshness_status": "PARTIAL",
+      "freshness_status": "FRESH",
       "forecast_impact": [
         "elo",
         "poisson",
@@ -91,7 +91,7 @@
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "PARTIAL",
+    "clubelo": "FRESH",
     "football_data_org_cl": "FRESH",
     "clubelo_cl": "STALE"
   },

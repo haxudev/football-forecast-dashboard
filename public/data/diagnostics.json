@@ -1,12 +1,12 @@
 {
   "pack_version": "p2.1.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:12:15.010512+00:00",
+  "generated_at": "2026-05-09T08:43:58.033906+00:00",
   "model_registry": [
     {
       "model_version": "football_ensemble@local",
       "algorithm_layer": "ensemble",
-      "trained_at": "2026-05-09T08:12:15.010512+00:00",
+      "trained_at": "2026-05-09T08:43:58.033906+00:00",
       "feature_set_hash": "unknown"
     }
   ],
@@ -21,7 +21,7 @@
     "calibration_curve": [],
     "n_matches": 88,
     "fold": 0,
-    "generated_at": "2026-05-09T08:10:22.725056+00:00",
+    "generated_at": "2026-05-09T08:42:30.290379+00:00",
     "code_git_sha": "unknown",
     "rating_source": "eloratings.net",
     "rating_coverage": 1.0
@@ -50,7 +50,7 @@
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "PARTIAL",
+    "clubelo": "FRESH",
     "football_data_org_cl": "FRESH",
     "clubelo_cl": "STALE"
   },

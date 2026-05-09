@@ -179,6 +179,30 @@ const dictionaries = {
       mostLikely: '夺冠可能性最高：',
       note: '基于多次模拟得到的可能晋级路径示意。',
     },
+    cl: {
+      title: '欧冠 · 瑞士制联赛阶段 + 淘汰赛',
+      subtitle: '36 队联赛阶段每队 8 场不同对手（瑞士制），前 8 名直接进 16 强，第 9~24 名附加赛，末 12 队淘汰。',
+      tabSwiss: '联赛阶段排名',
+      tabBracket: '淘汰赛',
+      swissDirect: '直接晋级区（Top 8）',
+      swissPlayoff: '附加赛区（9–24名）',
+      swissDropout: '淘汰区（25–36名）',
+      colTeam: '球队',
+      colExpectedPoints: '预期积分',
+      colPTop8: 'Top 8',
+      colPPlayoff: '附加赛',
+      colPDropout: '淘汰',
+      colRemaining: '剩余场次',
+      bracketRoundR16: '16 强',
+      bracketRoundQF: '8 强',
+      bracketRoundSF: '4 强',
+      bracketRoundF: '决赛',
+      bracketRoundChampion: '冠军概率',
+      simulationVariance: '模拟稳定性 (std)',
+      iterationsLabel: 'MC 迭代',
+      noData: '该赛季暂无欧冠数据。',
+      playoffInferred: '附加赛阶段推导自联赛阶段（API 未提供独立附加赛 fixture）。',
+    },
     charts: {
       stackedProb: '主胜、平局、客胜概率分布图',
       probabilitiesTable: '结果概率表',
@@ -371,6 +395,30 @@ const dictionaries = {
       mostLikely: 'Most likely champion: ',
       note: 'A baseline progression view from repeated simulations.',
     },
+    cl: {
+      title: 'Champions League · Swiss league phase + knockout',
+      subtitle: '36 clubs play 8 matches each in the league phase (Swiss format). Top 8 advance directly to R16, 9–24 enter playoffs, 25–36 are eliminated.',
+      tabSwiss: 'League phase ranking',
+      tabBracket: 'Knockout',
+      swissDirect: 'Direct to R16 (Top 8)',
+      swissPlayoff: 'Playoff zone (9–24)',
+      swissDropout: 'Eliminated (25–36)',
+      colTeam: 'Team',
+      colExpectedPoints: 'Exp. pts',
+      colPTop8: 'Top 8',
+      colPPlayoff: 'Playoff',
+      colPDropout: 'Out',
+      colRemaining: 'Games left',
+      bracketRoundR16: 'R16',
+      bracketRoundQF: 'QF',
+      bracketRoundSF: 'SF',
+      bracketRoundF: 'Final',
+      bracketRoundChampion: 'Champion',
+      simulationVariance: 'Simulation variance (std)',
+      iterationsLabel: 'MC iterations',
+      noData: 'No Champions League data for this season yet.',
+      playoffInferred: 'Playoff stage inferred from league phase (API has no separate playoff fixture).',
+    },
     charts: {
       stackedProb: 'Stacked probability of home / draw / away',
       probabilitiesTable: 'Outcome probabilities',
@@ -397,6 +445,151 @@ const COMPETITION_NAME_MAP: Record<string, { zh: string; en: string }> = {
   world_cup_2026: { zh: '2026 国际足联世界杯', en: 'FIFA World Cup 2026' },
   premier_league: { zh: '英格兰超级联赛', en: 'Premier League' },
   champions_league: { zh: '欧洲冠军联赛', en: 'UEFA Champions League' },
+};
+
+// P5 Sprint 4 — FB-S3-3 i18n expansion (position / country / venue)
+// Per sprint-contract.md §C-3: position ≥ 14 / country ≥ 50 / venue ≥ 72.
+// Used in CL/PL/WC dashboards via formatPosition / formatCountry / formatVenue helpers.
+export const POSITION_NAME_MAP: Record<string, { zh: string; en: string }> = {
+  // Coarse families
+  Goalkeeper: { zh: '门将', en: 'Goalkeeper' },
+  goalkeeper: { zh: '门将', en: 'Goalkeeper' },
+  Defence: { zh: '后卫', en: 'Defender' },
+  defender: { zh: '后卫', en: 'Defender' },
+  Defender: { zh: '后卫', en: 'Defender' },
+  Midfield: { zh: '中场', en: 'Midfielder' },
+  Midfielder: { zh: '中场', en: 'Midfielder' },
+  midfielder: { zh: '中场', en: 'Midfielder' },
+  Offence: { zh: '前锋', en: 'Forward' },
+  Forward: { zh: '前锋', en: 'Forward' },
+  forward: { zh: '前锋', en: 'Forward' },
+  // Specific
+  'Attacking Midfield': { zh: '前腰', en: 'Attacking Midfield' },
+  'Central Midfield': { zh: '中前卫', en: 'Central Midfield' },
+  'Centre-Back': { zh: '中后卫', en: 'Centre-Back' },
+  'Centre-Forward': { zh: '中锋', en: 'Centre-Forward' },
+  'Defensive Midfield': { zh: '后腰', en: 'Defensive Midfield' },
+  'Left Midfield': { zh: '左前卫', en: 'Left Midfield' },
+  'Left Winger': { zh: '左边锋', en: 'Left Winger' },
+  'Left-Back': { zh: '左后卫', en: 'Left-Back' },
+  'Right Midfield': { zh: '右前卫', en: 'Right Midfield' },
+  'Right Winger': { zh: '右边锋', en: 'Right Winger' },
+  'Right-Back': { zh: '右后卫', en: 'Right-Back' },
+  Striker: { zh: '前锋', en: 'Striker' },
+  Winger: { zh: '边锋', en: 'Winger' },
+};
+
+export const COUNTRY_NAME_MAP: Record<string, { zh: string; en: string }> = {
+  // ISO3 + full names
+  ENG: { zh: '英格兰', en: 'England' }, England: { zh: '英格兰', en: 'England' },
+  GER: { zh: '德国', en: 'Germany' }, DEU: { zh: '德国', en: 'Germany' }, Germany: { zh: '德国', en: 'Germany' },
+  ESP: { zh: '西班牙', en: 'Spain' }, Spain: { zh: '西班牙', en: 'Spain' },
+  ITA: { zh: '意大利', en: 'Italy' }, Italy: { zh: '意大利', en: 'Italy' },
+  FRA: { zh: '法国', en: 'France' }, France: { zh: '法国', en: 'France' },
+  POR: { zh: '葡萄牙', en: 'Portugal' }, PRT: { zh: '葡萄牙', en: 'Portugal' }, Portugal: { zh: '葡萄牙', en: 'Portugal' },
+  NED: { zh: '荷兰', en: 'Netherlands' }, NLD: { zh: '荷兰', en: 'Netherlands' }, Netherlands: { zh: '荷兰', en: 'Netherlands' },
+  BEL: { zh: '比利时', en: 'Belgium' }, Belgium: { zh: '比利时', en: 'Belgium' },
+  TUR: { zh: '土耳其', en: 'Turkey' }, Turkey: { zh: '土耳其', en: 'Turkey' },
+  GRC: { zh: '希腊', en: 'Greece' }, GRE: { zh: '希腊', en: 'Greece' }, Greece: { zh: '希腊', en: 'Greece' },
+  CYP: { zh: '塞浦路斯', en: 'Cyprus' }, Cyprus: { zh: '塞浦路斯', en: 'Cyprus' },
+  AZE: { zh: '阿塞拜疆', en: 'Azerbaijan' }, Azerbaijan: { zh: '阿塞拜疆', en: 'Azerbaijan' },
+  KAZ: { zh: '哈萨克斯坦', en: 'Kazakhstan' }, Kazakhstan: { zh: '哈萨克斯坦', en: 'Kazakhstan' },
+  CZE: { zh: '捷克', en: 'Czech Republic' }, 'Czech Republic': { zh: '捷克', en: 'Czech Republic' },
+  DNK: { zh: '丹麦', en: 'Denmark' }, DEN: { zh: '丹麦', en: 'Denmark' }, Denmark: { zh: '丹麦', en: 'Denmark' },
+  NOR: { zh: '挪威', en: 'Norway' }, Norway: { zh: '挪威', en: 'Norway' },
+  MCO: { zh: '摩纳哥', en: 'Monaco' }, Monaco: { zh: '摩纳哥', en: 'Monaco' },
+  SWE: { zh: '瑞典', en: 'Sweden' }, Sweden: { zh: '瑞典', en: 'Sweden' },
+  SUI: { zh: '瑞士', en: 'Switzerland' }, Switzerland: { zh: '瑞士', en: 'Switzerland' },
+  AUT: { zh: '奥地利', en: 'Austria' }, Austria: { zh: '奥地利', en: 'Austria' },
+  SRB: { zh: '塞尔维亚', en: 'Serbia' }, Serbia: { zh: '塞尔维亚', en: 'Serbia' },
+  CRO: { zh: '克罗地亚', en: 'Croatia' }, Croatia: { zh: '克罗地亚', en: 'Croatia' },
+  POL: { zh: '波兰', en: 'Poland' }, Poland: { zh: '波兰', en: 'Poland' },
+  HUN: { zh: '匈牙利', en: 'Hungary' }, Hungary: { zh: '匈牙利', en: 'Hungary' },
+  UKR: { zh: '乌克兰', en: 'Ukraine' }, Ukraine: { zh: '乌克兰', en: 'Ukraine' },
+  SCO: { zh: '苏格兰', en: 'Scotland' }, Scotland: { zh: '苏格兰', en: 'Scotland' },
+  // World Cup 2026 nations
+  USA: { zh: '美国', en: 'United States' }, 'United States': { zh: '美国', en: 'United States' },
+  MEX: { zh: '墨西哥', en: 'Mexico' }, Mexico: { zh: '墨西哥', en: 'Mexico' },
+  CAN: { zh: '加拿大', en: 'Canada' }, Canada: { zh: '加拿大', en: 'Canada' },
+  ARG: { zh: '阿根廷', en: 'Argentina' }, Argentina: { zh: '阿根廷', en: 'Argentina' },
+  BRA: { zh: '巴西', en: 'Brazil' }, Brazil: { zh: '巴西', en: 'Brazil' },
+  URU: { zh: '乌拉圭', en: 'Uruguay' }, Uruguay: { zh: '乌拉圭', en: 'Uruguay' },
+  COL: { zh: '哥伦比亚', en: 'Colombia' }, Colombia: { zh: '哥伦比亚', en: 'Colombia' },
+  ECU: { zh: '厄瓜多尔', en: 'Ecuador' }, Ecuador: { zh: '厄瓜多尔', en: 'Ecuador' },
+  CRC: { zh: '哥斯达黎加', en: 'Costa Rica' }, 'Costa Rica': { zh: '哥斯达黎加', en: 'Costa Rica' },
+  PAN: { zh: '巴拿马', en: 'Panama' }, Panama: { zh: '巴拿马', en: 'Panama' },
+  JAM: { zh: '牙买加', en: 'Jamaica' }, Jamaica: { zh: '牙买加', en: 'Jamaica' },
+  JPN: { zh: '日本', en: 'Japan' }, Japan: { zh: '日本', en: 'Japan' },
+  KOR: { zh: '韩国', en: 'South Korea' }, 'South Korea': { zh: '韩国', en: 'South Korea' },
+  AUS: { zh: '澳大利亚', en: 'Australia' }, Australia: { zh: '澳大利亚', en: 'Australia' },
+  IRN: { zh: '伊朗', en: 'Iran' }, Iran: { zh: '伊朗', en: 'Iran' },
+  IRQ: { zh: '伊拉克', en: 'Iraq' }, Iraq: { zh: '伊拉克', en: 'Iraq' },
+  KSA: { zh: '沙特阿拉伯', en: 'Saudi Arabia' }, 'Saudi Arabia': { zh: '沙特阿拉伯', en: 'Saudi Arabia' },
+  QAT: { zh: '卡塔尔', en: 'Qatar' }, Qatar: { zh: '卡塔尔', en: 'Qatar' },
+  UZB: { zh: '乌兹别克斯坦', en: 'Uzbekistan' }, Uzbekistan: { zh: '乌兹别克斯坦', en: 'Uzbekistan' },
+  ALG: { zh: '阿尔及利亚', en: 'Algeria' }, Algeria: { zh: '阿尔及利亚', en: 'Algeria' },
+  EGY: { zh: '埃及', en: 'Egypt' }, Egypt: { zh: '埃及', en: 'Egypt' },
+  MAR: { zh: '摩洛哥', en: 'Morocco' }, Morocco: { zh: '摩洛哥', en: 'Morocco' },
+  TUN: { zh: '突尼斯', en: 'Tunisia' }, Tunisia: { zh: '突尼斯', en: 'Tunisia' },
+  GHA: { zh: '加纳', en: 'Ghana' }, Ghana: { zh: '加纳', en: 'Ghana' },
+  CIV: { zh: '科特迪瓦', en: 'Côte d\u2019Ivoire' }, 'Côte d\u2019Ivoire': { zh: '科特迪瓦', en: 'Côte d\u2019Ivoire' },
+  SEN: { zh: '塞内加尔', en: 'Senegal' }, Senegal: { zh: '塞内加尔', en: 'Senegal' },
+  NGA: { zh: '尼日利亚', en: 'Nigeria' }, Nigeria: { zh: '尼日利亚', en: 'Nigeria' },
+  CMR: { zh: '喀麦隆', en: 'Cameroon' }, Cameroon: { zh: '喀麦隆', en: 'Cameroon' },
+};
+
+export const VENUE_NAME_MAP: Record<string, { zh: string; en: string }> = {
+  // PL stadia
+  'Anfield': { zh: '安菲尔德球场', en: 'Anfield' },
+  'Emirates Stadium': { zh: '酋长球场', en: 'Emirates Stadium' },
+  'Etihad Stadium': { zh: '阿提哈德球场', en: 'Etihad Stadium' },
+  'Old Trafford': { zh: '老特拉福德球场', en: 'Old Trafford' },
+  'Stamford Bridge': { zh: '斯坦福桥球场', en: 'Stamford Bridge' },
+  'Tottenham Hotspur Stadium': { zh: '托特纳姆热刺球场', en: 'Tottenham Hotspur Stadium' },
+  'London Stadium': { zh: '伦敦球场', en: 'London Stadium' },
+  'Goodison Park': { zh: '古迪逊公园球场', en: 'Goodison Park' },
+  'Villa Park': { zh: '维拉公园球场', en: 'Villa Park' },
+  'St. James\' Park': { zh: '圣詹姆斯公园球场', en: "St. James' Park" },
+  'Selhurst Park': { zh: '塞尔赫斯特公园球场', en: 'Selhurst Park' },
+  'Craven Cottage': { zh: '克拉文农场球场', en: 'Craven Cottage' },
+  'Molineux Stadium': { zh: '莫利纽球场', en: 'Molineux Stadium' },
+  'The American Express Community Stadium': { zh: '美国运通社区球场', en: 'The American Express Community Stadium' },
+  'The City Ground': { zh: '城市地球场', en: 'The City Ground' },
+  'Vitality Stadium': { zh: '维塔利蒂球场', en: 'Vitality Stadium' },
+  'Turf Moor': { zh: '特夫摩尔球场', en: 'Turf Moor' },
+  'Stadium of Light': { zh: '光明球场', en: 'Stadium of Light' },
+  'Elland Road': { zh: '埃兰路球场', en: 'Elland Road' },
+  'Griffin Park': { zh: '格里芬公园球场', en: 'Griffin Park' },
+  // CL — Bundesliga / LaLiga / Serie A / Ligue 1 / others
+  'Allianz Arena': { zh: '安联球场', en: 'Allianz Arena' },
+  'Allianz Stadium': { zh: '安联体育场', en: 'Allianz Stadium' },
+  'Signal Iduna Park': { zh: '信号伊杜纳公园球场', en: 'Signal Iduna Park' },
+  'BayArena': { zh: '拜耳竞技场', en: 'BayArena' },
+  'Deutsche Bank Park': { zh: '德意志银行公园球场', en: 'Deutsche Bank Park' },
+  'Estadio Santiago Bernabéu': { zh: '圣地亚哥·伯纳乌球场', en: 'Estadio Santiago Bernabéu' },
+  'Camp Nou': { zh: '诺坎普球场', en: 'Camp Nou' },
+  'Estadio Wanda Metropolitano': { zh: '万达大都会球场', en: 'Estadio Wanda Metropolitano' },
+  'San Mamés': { zh: '圣马梅斯球场', en: 'San Mamés' },
+  'Estadio de la Cerámica': { zh: '陶瓷球场', en: 'Estadio de la Cerámica' },
+  'Stadio Giuseppe Meazza': { zh: '梅阿查球场', en: 'Stadio Giuseppe Meazza' },
+  'Stadio San Paolo': { zh: '圣保罗球场', en: 'Stadio San Paolo' },
+  'Stadio Atleti Azzurri d\'Italia': { zh: '蓝色意大利运动员球场', en: "Stadio Atleti Azzurri d'Italia" },
+  'Parc des Princes': { zh: '王子公园球场', en: 'Parc des Princes' },
+  'Orange Vélodrome': { zh: '维洛德罗姆球场', en: 'Orange Vélodrome' },
+  'Stade Louis II.': { zh: '路易二世球场', en: 'Stade Louis II.' },
+  'Stade Joseph Mariën': { zh: '约瑟夫·马里安球场', en: 'Stade Joseph Mariën' },
+  'Estádio José Alvalade': { zh: '若泽·阿尔瓦拉德球场', en: 'Estádio José Alvalade' },
+  'Estádio do Sport Lisboa e Benfica': { zh: '本菲卡球场（光明球场）', en: 'Estádio do Sport Lisboa e Benfica' },
+  'Johan Cruyff ArenA': { zh: '约翰·克鲁伊夫竞技场', en: 'Johan Cruyff ArenA' },
+  'Philips Stadion': { zh: '飞利浦球场', en: 'Philips Stadion' },
+  'Jan Breydelstadion': { zh: '扬·布雷德尔球场', en: 'Jan Breydelstadion' },
+  'Türk Telekom Arena': { zh: '土耳其电信竞技场', en: 'Türk Telekom Arena' },
+  'Tofiq Bəhramov adına Respublika stadionu': { zh: '托菲克·巴赫拉莫夫共和国球场', en: 'Tofiq Bəhramov adına Respublika Stadionu' },
+  'Stadio Georgios Karaiskáki': { zh: '卡拉伊斯卡基斯球场', en: 'Stadio Georgios Karaiskáki' },
+  'Alphamega Stadium': { zh: 'Alphamega 球场', en: 'Alphamega Stadium' },
+  'Sinobo Stadium': { zh: 'Sinobo 球场', en: 'Sinobo Stadium' },
+  'Aspmyra Stadion': { zh: 'Aspmyra 球场', en: 'Aspmyra Stadion' },
+  'Telia Parken': { zh: '泰利亚公园球场', en: 'Telia Parken' },
 };
 
 const COMPETITION_SHORT_NAME_MAP: Record<string, { zh: string; en: string }> = {
@@ -444,4 +637,30 @@ export function localizedTeamFromId(teamId: string, locale: Locale): string {
 
 export function format(s: string, params: Record<string, string | number>): string {
   return s.replace(/\{(\w+)\}/g, (_, k) => String(params[k] ?? `{${k}}`));
+}
+
+// P5 Sprint 4 — FB-S3-3 i18n render helpers (position / country / venue)
+// Fallback chain per sprint-contract §C-1 Stage 6: zh → en → raw input.
+export function formatPosition(raw: string | null | undefined, locale: Locale): string {
+  if (!raw) return '';
+  const m = POSITION_NAME_MAP[raw];
+  if (m) return m[locale];
+  return raw;
+}
+
+export function formatCountry(raw: string | null | undefined, locale: Locale): string {
+  if (!raw) return '';
+  const m = COUNTRY_NAME_MAP[raw];
+  if (m) return m[locale];
+  // Try uppercase ISO3 fallback
+  const up = COUNTRY_NAME_MAP[raw.toUpperCase()];
+  if (up) return up[locale];
+  return raw;
+}
+
+export function formatVenue(raw: string | null | undefined, locale: Locale): string {
+  if (!raw) return '';
+  const m = VENUE_NAME_MAP[raw];
+  if (m) return m[locale];
+  return raw;
 }

@@ -11,7 +11,7 @@ export const CommonHeader = z.object({
   source_freshness_summary: z.record(z.string(), z.string()).default({}),
 });
 export const LatestSchema = z.object({ pack_version: z.string(), generated_at: z.string(), manifest_path: z.literal('manifest.json'), manifest_sha256: z.string(), data_truth_mode_summary: TruthMode, model_version_summary: z.string(), warnings_count: z.number() });
-export const ManifestSchema = z.object({ pack_version: z.string(), schema_version: z.literal('forecast-pack-v1'), generated_at: z.string(), run_id: z.string(), model_version: z.record(z.string(), z.string()), data_truth_mode: z.record(z.string(), TruthMode), source_freshness: z.record(z.string(), z.string()), warnings: z.array(Warning), files: z.array(z.object({ path: z.string(), sha256: z.string(), bytes: z.number() })), competitions: z.array(z.string()), retention: z.object({ keep_days: z.number(), pinned: z.boolean() }), exported_by: z.string() });
+export const ManifestSchema = z.object({ pack_version: z.string(), schema_version: z.literal('forecast-pack-v1'), generated_at: z.string(), run_id: z.string(), model_version: z.record(z.string(), z.string()), data_truth_mode: z.record(z.string(), TruthMode), source_freshness: z.record(z.string(), z.string()), warnings: z.array(Warning), files: z.array(z.object({ path: z.string(), sha256: z.string(), bytes: z.number() })), competitions: z.array(z.string()), retention: z.object({ keep_days: z.number(), pinned: z.boolean() }), exported_by: z.string() }).passthrough();
 export const Competition = z.object({ competition_id: z.string(), name: z.string(), scope: z.string(), format: z.string(), source_origin: z.string().optional() });
 export const Player = z.object({
   player_id: z.string().nullable().optional(),
