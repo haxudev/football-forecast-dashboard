@@ -1,0 +1,207 @@
+{
+  "schema_version": "fixtures-v1",
+  "generated_at": "2026-05-09T13:20:02.612Z",
+  "competition_id": "premier_league",
+  "season_id": "pl:2025-26",
+  "data_truth_mode": "SAMPLE_ONLY",
+  "fixtures": [
+    {
+      "match_id": "fx_pl_2025_26_001_liv_bou",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 1,
+      "stage": null,
+      "kickoff_utc": "2025-08-15T19:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:liverpool",
+        "name": "Liverpool FC",
+        "name_zh": "利物浦",
+        "short_name_zh": "利物浦"
+      },
+      "away": {
+        "team_id": "club:eng:bournemouth",
+        "name": "AFC Bournemouth",
+        "name_zh": "伯恩茅斯",
+        "short_name_zh": "伯恩茅斯"
+      },
+      "venue": {
+        "name": "Anfield",
+        "name_zh": "安菲尔德球场",
+        "city": "Liverpool"
+      },
+      "match_pack_path": "data/match-pack/fx_pl_2025_26_001_liv_bou.json",
+      "prediction_summary": {
+        "p_home": 0.56,
+        "p_draw": 0.26,
+        "p_away": 0.18,
+        "confidence_label": "MED",
+        "data_truth_mode": "SAMPLE_ONLY"
+      }
+    },
+    {
+      "match_id": "fx_pl_2025_26_002_ars_che",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 2,
+      "stage": null,
+      "kickoff_utc": "2025-08-23T16:30:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:arsenal",
+        "name": "Arsenal FC",
+        "name_zh": "阿森纳",
+        "short_name_zh": "阿森纳"
+      },
+      "away": {
+        "team_id": "club:eng:chelsea",
+        "name": "Chelsea FC",
+        "name_zh": "切尔西",
+        "short_name_zh": "切尔西"
+      },
+      "venue": {
+        "name": "Emirates Stadium",
+        "name_zh": "酋长球场",
+        "city": "London"
+      },
+      "match_pack_path": "data/match-pack/fx_pl_2025_26_002_ars_che.json",
+      "prediction_summary": {
+        "p_home": 0.48,
+        "p_draw": 0.28,
+        "p_away": 0.24,
+        "confidence_label": "MED",
+        "data_truth_mode": "SAMPLE_ONLY"
+      }
+    },
+    {
+      "match_id": "fx_pl_2025_26_003_mci_tot",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 3,
+      "stage": null,
+      "kickoff_utc": "2025-08-30T14:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:man_city",
+        "name": "Manchester City FC",
+        "name_zh": "曼城",
+        "short_name_zh": "曼城"
+      },
+      "away": {
+        "team_id": "club:eng:tottenham",
+        "name": "Tottenham Hotspur FC",
+        "name_zh": "热刺",
+        "short_name_zh": "热刺"
+      },
+      "venue": {
+        "name": "Etihad Stadium",
+        "name_zh": "阿提哈德球场",
+        "city": "Manchester"
+      },
+      "match_pack_path": "data/match-pack/fx_pl_2025_26_003_mci_tot.json",
+      "prediction_summary": {
+        "p_home": 0.62,
+        "p_draw": 0.22,
+        "p_away": 0.16,
+        "confidence_label": "MED",
+        "data_truth_mode": "SAMPLE_ONLY"
+      }
+    },
+    {
+      "match_id": "fx_pl_2025_26_004_mun_new",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 3,
+      "stage": null,
+      "kickoff_utc": "2025-08-30T16:30:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:man_united",
+        "name": "Manchester United FC",
+        "name_zh": "曼联",
+        "short_name_zh": "曼联"
+      },
+      "away": {
+        "team_id": "club:eng:newcastle",
+        "name": "Newcastle United FC",
+        "name_zh": "纽卡斯尔",
+        "short_name_zh": "纽卡"
+      },
+      "venue": {
+        "name": "Old Trafford",
+        "name_zh": "老特拉福德球场",
+        "city": "Manchester"
+      },
+      "match_pack_path": "data/match-pack/fx_pl_2025_26_004_mun_new.json",
+      "prediction_summary": {
+        "p_home": 0.4,
+        "p_draw": 0.3,
+        "p_away": 0.3,
+        "confidence_label": "MED",
+        "data_truth_mode": "SAMPLE_ONLY"
+      }
+    },
+    {
+      "match_id": "fx_pl_2025_26_005_bri_eve",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 4,
+      "stage": null,
+      "kickoff_utc": "2025-09-13T14:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:brighton",
+        "name": "Brighton & Hove Albion FC",
+        "name_zh": "布莱顿",
+        "short_name_zh": "布莱顿"
+      },
+      "away": {
+        "team_id": "club:eng:everton",
+        "name": "Everton FC",
+        "name_zh": "埃弗顿",
+        "short_name_zh": "埃弗顿"
+      },
+      "venue": {
+        "name": "The American Express Community Stadium",
+        "name_zh": "美国运通社区球场",
+        "city": "Brighton"
+      },
+      "match_pack_path": "data/match-pack/fx_pl_2025_26_005_bri_eve.json",
+      "prediction_summary": {
+        "p_home": 0.42,
+        "p_draw": 0.3,
+        "p_away": 0.28,
+        "confidence_label": "MED",
+        "data_truth_mode": "SAMPLE_ONLY"
+      }
+    },
+    {
+      "match_id": "fx_pl_2025_26_006_whu_for",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 4,
+      "stage": null,
+      "kickoff_utc": "2025-09-14T13:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:west_ham",
+        "name": "West Ham United FC",
+        "name_zh": "西汉姆",
+        "short_name_zh": "西汉姆"
+      },
+      "away": {
+        "team_id": "club:eng:nott_forest",
+        "name": "Nottingham Forest FC",
+        "name_zh": "诺丁汉森林",
+        "short_name_zh": "诺森"
+      },
+      "venue": {
+        "name": "London Stadium",
+        "name_zh": "伦敦球场",
+        "city": "London"
+      },
+      "match_pack_path": null,
+      "prediction_summary": null
+    }
+  ]
+}

@@ -1,86 +1,81 @@
-import { RadarChart } from '@/components/Charts';
-import { SampleBanner } from '@/components/Shell';
-import { loadOverview, loadTeamCompare } from '@/lib/data';
-import { getDictionary, localizedTeamName, type Locale } from '@/lib/i18n';
+// src/views/TeamComparisonView.tsx
+// Phase A — /team-comparison/[matchId]，球员双列名单 + 6 状态徽章 + 关键球员卡片。
+import Link from 'next/link';
+import { tryLoadMatchPack, findFixtureRow } from '@/lib/data-fixture';
+import { getDictionary, type Locale } from '@/lib/i18n';
+import { MatchHeader } from '@/components/match/MatchHeader';
+import { LineupPair } from '@/components/match/LineupPair';
+import { KeyPlayerCard, FormSparkline, XgBars, FatigueBars } from '@/components/charts';
 
-export function TeamComparisonView({ locale }: { locale: Locale }) {
+export function TeamComparisonView({ locale, matchId }: { locale: Locale; matchId: string }) {
   const t = getDictionary(locale);
-  const overview = loadOverview();
-  const isSample = overview.data_truth_mode_summary === 'SAMPLE_ONLY';
-  const data = loadTeamCompare();
-  const teams = data.teams.slice(0, 2);
+  const pack = tryLoadMatchPack(matchId);
 
-  const stats = [
-    { label: t.team.recentForm, a: 'W W D L W', b: 'W D W W L' },
-    { label: t.team.avgScore, a: '1.6', b: '1.5' },
-    { label: t.team.avgConceded, a: '1.1', b: '1.3' },
-    { label: t.team.homeStrength, a: '★★★★☆', b: '★★★☆☆' },
-    { label: t.team.awayStrength, a: '★★★☆☆', b: '★★★★☆' },
-    { label: t.team.keyAvailability, a: '90%', b: '85%' },
-  ];
+  if (!pack) {
+    const fxRow = findFixtureRow(matchId);
+    return (
+      <div className="space-y-4">
+        <Link href="/" className="muted">← {t.match.backToFixtures}</Link>
+        <h1 className="page-title">{t.match.notFoundTitle}</h1>
+        <p>{fxRow ? t.match.noPackForMatch : t.match.notFoundBody}</p>
+        <Link href="/" className="hero-action">{t.match.notFoundCta}</Link>
+      </div>
+    );
+  }
 
   return (
-    <div className="space-y-6">
-      <header className="page-header">
-        <h1 className="page-title">{t.team.title}</h1>
-        <p className="page-sub">{t.team.subtitle}</p>
-      </header>
+    <div className="space-y-4">
+      <Link href="/" className="muted">← {t.match.backToFixtures}</Link>
 
-      {isSample && <SampleBanner t={t} />}
+      <MatchHeader pack={pack} t={t} />
 
-      <section className="card">
-        <div className="picker-grid">
-          <select aria-label={t.team.teamA} className="select-control" defaultValue={teams[0]?.team_id}>
-            {data.teams.map((tm) => (
-              <option key={`a-${tm.team_id}`} value={tm.team_id}>{localizedTeamName(tm.canonical_name, locale)}</option>
-            ))}
-          </select>
-          <select aria-label={t.team.teamB} className="select-control" defaultValue={teams[1]?.team_id}>
-            {data.teams.map((tm) => (
-              <option key={`b-${tm.team_id}`} value={tm.team_id}>{localizedTeamName(tm.canonical_name, locale)}</option>
-            ))}
-          </select>
-        </div>
+      <div className="dim-nav" role="tablist">
+        <Link href={`/match/${matchId}`}>{t.match.tabResearch}</Link>
+        <span aria-current="page" style={{ background: 'var(--accent-cyan)', color: 'var(--bg-app)' }}>{t.match.tabTeamCompare}</span>
+      </div>
+
+      <section>
+        <h2 className="section-title">{t.teamCompare.title}</h2>
+        <p className="muted">{t.teamCompare.subtitle}</p>
       </section>
 
-      <section className="compare-grid">
-        <div className="card compare-col">
-          <h2 className="compare-team-name">{localizedTeamName(teams[0]?.canonical_name ?? '', locale) || t.team.teamA}</h2>
-        </div>
-        <div className="compare-vs" aria-hidden="true">{t.common.vs}</div>
-        <div className="card compare-col">
-          <h2 className="compare-team-name">{localizedTeamName(teams[1]?.canonical_name ?? '', locale) || t.team.teamB}</h2>
-        </div>
+      {/* 整体维度 compare-grid（form / xG / fatigue 三块紧凑横排） */}
+      <section className="card" aria-labelledby="cmp-overall-h">
+        <h3 id="cmp-overall-h" className="font-semibold" style={{ marginBottom: 8 }}>{t.match.dim['03']}</h3>
+        {pack.form && (
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            <FormSparkline form={pack.form.home} t={t} side="home" />
+            <FormSparkline form={pack.form.away} t={t} side="away" />
+          </div>
+        )}
       </section>
 
-      <section className="card">
-        <table className="compare-table">
-          <caption className="sr-only">{t.team.title}</caption>
-          <thead>
-            <tr>
-              <th scope="col">{t.common.team}</th>
-              <th scope="col">{localizedTeamName(teams[0]?.canonical_name ?? '', locale) || t.team.teamA}</th>
-              <th scope="col">{localizedTeamName(teams[1]?.canonical_name ?? '', locale) || t.team.teamB}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {stats.map((row) => (
-              <tr key={row.label}>
-                <th scope="row">{row.label}</th>
-                <td>{row.a}</td>
-                <td>{row.b}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <section className="card" aria-labelledby="cmp-xg-h">
+        <h3 id="cmp-xg-h" className="font-semibold" style={{ marginBottom: 8 }}>{t.match.dim['02']}</h3>
+        <XgBars data={pack.expected_goals} t={t} />
       </section>
 
-      <section className="card chart-card">
-        <h2 className="font-semibold mb-2">{t.charts.radar}</h2>
-        <RadarChart teams={teams.map((tm) => tm.canonical_name)} t={t} locale={locale} />
+      <section className="card" aria-labelledby="cmp-fatigue-h">
+        <h3 id="cmp-fatigue-h" className="font-semibold" style={{ marginBottom: 8 }}>{t.match.dim['06']}</h3>
+        <FatigueBars data={pack.fatigue ?? null} t={t} />
       </section>
 
-      <p className="caveat">{t.team.caveat}</p>
+      {/* 球员双列名单（重点） */}
+      <section className="card" aria-labelledby="cmp-lineup-h">
+        <h3 id="cmp-lineup-h" className="font-semibold" style={{ marginBottom: 8 }}>{t.match.dim['04']}</h3>
+        <LineupPair pack={pack} t={t} />
+      </section>
+
+      {/* 关键球员卡片 */}
+      {pack.player_availability?.home.key_players?.length ? (
+        <section className="card" aria-labelledby="cmp-keyplayer-h">
+          <h3 id="cmp-keyplayer-h" className="font-semibold" style={{ marginBottom: 8 }}>{t.teamCompare.keyPlayerHeading}</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            {pack.player_availability.home.key_players[0] && <KeyPlayerCard player={pack.player_availability.home.key_players[0]} t={t} />}
+            {pack.player_availability.away.key_players?.[0] && <KeyPlayerCard player={pack.player_availability.away.key_players[0]} t={t} />}
+          </div>
+        </section>
+      ) : null}
     </div>
   );
 }

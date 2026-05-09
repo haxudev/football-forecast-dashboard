@@ -6,6 +6,14 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Phase A CI guard (D-9 / G-A9 / TR-8) — main 推送默认 SKIP 生产部署。
+    # 进入生产 SWA 必须满足下列任一条件：
+    #   1) 仓库 vars.PHASE == 'B'（手动设置，phaseB cutover 启用）
+    #   2) commit message 含 [hotfix]（紧急回滚 / 热修）
+    # 详见 architecture.md §6.5 + sprint-contract §1.1 G。
+    if: |
+      vars.PHASE == 'B' ||
+      contains(github.event.head_commit.message, '[hotfix]')
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4

@@ -1,5 +1,5 @@
 import { SampleBanner } from '@/components/Shell';
-import { loadOverview } from '@/lib/data';
+import { tryLoadFixtures } from '@/lib/data-fixture';
 import { friendlyFreshness } from '@/lib/status';
 import { getDictionary, type Locale } from '@/lib/i18n';
 
@@ -7,9 +7,10 @@ const BUILD_VERSION = '1.0.0';
 
 export function AboutView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  const overview = loadOverview();
-  const isSample = overview.data_truth_mode_summary === 'SAMPLE_ONLY';
-  const freshness = friendlyFreshness(overview.generated_at, t);
+  const fixtures = tryLoadFixtures();
+  const generatedAt = fixtures?.generated_at;
+  const isSample = (fixtures?.data_truth_mode ?? 'SAMPLE_ONLY') === 'SAMPLE_ONLY';
+  const freshness = friendlyFreshness(generatedAt, t);
   const buildAt = new Date().toISOString().slice(0, 10);
 
   return (

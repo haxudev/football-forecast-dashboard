@@ -1,99 +1,56 @@
-import { SampleBanner } from '@/components/Shell';
-import { loadSentimentRaw } from '@/lib/data';
+// src/views/SentimentView.tsx
+// Phase A — /sentiment 改造：顶部 [当前赛事=英超] chip + competition_id filter（PL-only by site-config）。
+import { tryLoadSentimentList } from '@/lib/data-fixture';
+import { filterByEnabledCompetitions } from '@/lib/sentiment';
+import { getSiteConfig } from '@/lib/site-config';
 import { getDictionary, type Locale } from '@/lib/i18n';
-import { z } from 'zod';
-
-const SentimentSchema = z.object({
-  generatedAt: z.string(),
-  topics: z.array(z.object({ id: z.string(), name: z.string(), heatScore: z.number().min(0).max(100) })),
-  wordcloud: z.array(z.object({ text: z.string(), weight: z.number().min(1).max(100) })),
-  sentimentBars: z.array(
-    z.object({
-      id: z.string(),
-      label: z.string(),
-      positive: z.number().min(0).max(100),
-      neutral: z.number().min(0).max(100),
-      negative: z.number().min(0).max(100),
-    }),
-  ),
-});
 
 export function SentimentView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  const data = SentimentSchema.parse(loadSentimentRaw(locale));
-  const top5Cloud = new Set(data.wordcloud.slice().sort((a, b) => b.weight - a.weight).slice(0, 5).map((w) => w.text));
+  const cfg = getSiteConfig();
+  const file = tryLoadSentimentList();
+  const enabled = cfg.enabled_competitions;
+  const items = file ? filterByEnabledCompetitions(file.items, enabled) : [];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <header className="page-header">
         <h1 className="page-title">{t.sentiment.title}</h1>
-        <p className="page-sub">{t.sentiment.subtitle}</p>
+        <p className="muted">{t.sentiment.subtitle}</p>
       </header>
 
-      <SampleBanner t={t} message={t.sentiment.sampleBanner} />
+      <div>
+        <span
+          className="sentiment-comp-chip"
+          data-competition-chip
+          title={t.sentiment.competitionLockTooltip}
+          aria-label={`${t.sentiment.competitionChip} — ${t.sentiment.competitionLockTooltip}`}
+        >
+          ⚽ {t.sentiment.competitionChip}
+        </span>
+      </div>
 
-      <section className="card" aria-labelledby="heat-h">
-        <h2 id="heat-h" className="font-semibold mb-3">{t.sentiment.heatRanking}</h2>
-        <ol className="heat-list">
-          {data.topics.slice(0, 10).map((topic, i) => (
-            <li key={topic.id} className="heat-row">
-              <span className="heat-rank" aria-hidden="true">{i + 1}</span>
-              <span className="heat-name">{topic.name}</span>
-              <div className="heat-bar" aria-hidden="true">
-                <span className="heat-fill" style={{ width: `${topic.heatScore}%` }} />
-              </div>
-              <span className="heat-value" aria-label={`${topic.name} ${topic.heatScore}`}>{topic.heatScore}</span>
-              <span className="chip chip-sample" aria-label={t.common.sample}>{t.common.sample}</span>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section className="card" aria-labelledby="cloud-h">
-        <h2 id="cloud-h" className="font-semibold mb-3">{t.sentiment.wordCloud}</h2>
-        <ul className="word-cloud" aria-label={t.sentiment.wordCloud}>
-          {data.wordcloud.slice(0, 50).map((w) => (
-            <li key={w.text}>
-              <span
-                className={`cloud-word ${top5Cloud.has(w.text) ? 'cloud-top' : ''}`}
-                style={{ fontSize: `${0.85 + (w.weight / 100) * 1.4}rem` }}
-              >
-                {w.text}
-              </span>
+      {items.length === 0 ? (
+        <div className="sentiment-empty" role="note">{t.sentiment.emptyAfterFilter}</div>
+      ) : (
+        <ul className="sentiment-list" aria-label={t.sentiment.title}>
+          {items.map((it) => (
+            <li key={it.item_id} className="sentiment-item">
+              <p className="meta">
+                <span>{new Date(it.captured_at).toLocaleDateString()}</span>
+                <span>·</span>
+                <span>{t.sentiment.itemSourceLabel}: {it.source}</span>
+                {it.sentiment_label && <span className={`chip chip-sentiment-${it.sentiment_label.toLowerCase()}`}>{it.sentiment_label}</span>}
+              </p>
+              <p className="title">{it.title_zh ?? it.title}</p>
+              {it.summary_zh || it.summary ? <p className="summary">{it.summary_zh ?? it.summary}</p> : null}
+              <p style={{ marginTop: 6 }}><a href={it.url} target="_blank" rel="noopener noreferrer">{t.sentiment.itemReadOriginal}</a></p>
             </li>
           ))}
         </ul>
-      </section>
+      )}
 
-      <section className="card" aria-labelledby="bars-h">
-        <h2 id="bars-h" className="font-semibold mb-3">{t.sentiment.sentimentBars}</h2>
-        <ul className="sent-bars">
-          {data.sentimentBars.map((b) => (
-            <li key={b.id} className="sent-row">
-              <div className="sent-label">{b.label}</div>
-              <div
-                className="sent-bar"
-                role="img"
-                aria-label={`${b.label}: ${t.sentiment.positive} ${b.positive}%, ${t.sentiment.neutral} ${b.neutral}%, ${t.sentiment.negative} ${b.negative}%`}
-              >
-                <span className="sent-pos" style={{ width: `${b.positive}%` }}>{b.positive >= 8 ? `${b.positive}%` : ''}</span>
-                <span className="sent-neu" style={{ width: `${b.neutral}%` }}>{b.neutral >= 8 ? `${b.neutral}%` : ''}</span>
-                <span className="sent-neg" style={{ width: `${b.negative}%` }}>{b.negative >= 8 ? `${b.negative}%` : ''}</span>
-              </div>
-              <span className="chip chip-sample sent-sample" aria-label={t.common.sample}>{t.common.sample}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="muted text-sm mt-3">
-          <span aria-hidden="true">●</span> {t.sentiment.positive} ·
-          <span aria-hidden="true"> ●</span> {t.sentiment.neutral} ·
-          <span aria-hidden="true"> ●</span> {t.sentiment.negative}
-        </p>
-      </section>
-
-      <p className="caveat">
-        {t.sentiment.lastUpdated} {data.generatedAt} · {t.sentiment.footerNote}
-      </p>
+      <p className="muted" style={{ fontSize: 11 }}>{t.sentiment.footerNote}</p>
     </div>
   );
 }

@@ -185,7 +185,8 @@ export const WinDrawLoss = z.object({
     .optional(),
 }).strict();
 
-export const ScorelineDistribution = z.object({
+export type ScorelineDistribution = z.infer<typeof ScorelineDistribution_>;
+export const ScorelineDistribution_ = z.object({
   matrix: z.array(z.array(z.number().min(0).max(1)).length(6)).length(6),
   top3: z
     .array(
@@ -197,6 +198,7 @@ export const ScorelineDistribution = z.object({
     )
     .max(3),
 }).strict();
+export const ScorelineDistribution = ScorelineDistribution_;
 
 export const SidePlayers = z.object({
   lineup: z.object({
@@ -437,3 +439,13 @@ export function parseForecastPackV2(raw: unknown): ForecastPackV2 {
 export function safeParseForecastPackV2(raw: unknown) {
   return ForecastPackV2.safeParse(raw);
 }
+
+// 类型别名（charts/views 直接 import 类型时使用）
+export type ScorelineDistributionT = z.infer<typeof ScorelineDistribution>;
+export type TeamFormT = z.infer<typeof TeamForm>;
+export type H2HT = z.infer<typeof H2H>;
+export type FatigueT = z.infer<typeof Fatigue>;
+export type TacticalT = z.infer<typeof Tactical>;
+export type RefereeT = z.infer<typeof Referee>;
+export type OddsDiffT = z.infer<typeof OddsDiff>;
+export type ScenarioSimulationT = z.infer<typeof ScenarioSimulation>;
