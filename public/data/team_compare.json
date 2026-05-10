@@ -1,7 +1,7 @@
 {
-  "pack_version": "p2.1.0",
+  "pack_version": "p2.2.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:43:58.033906+00:00",
+  "generated_at": "2026-05-10T01:19:17.323214+00:00",
   "teams": [
     {
       "team_id": "nat:alg",
@@ -1160,12 +1160,6 @@
           "position": "midfielder"
         },
         {
-          "player_id": "pl:mohamed_salah:19920615",
-          "name": "Mohamed Salah",
-          "name_zh": "萨拉赫",
-          "position": "forward"
-        },
-        {
           "player_id": "player:manual:egy:mostafa_fathi",
           "name": "Mostafa Fathi",
           "name_zh": "法蒂",
@@ -1207,12 +1201,6 @@
       "coach_name": "Thomas Tuchel",
       "coach_name_zh": "图赫尔",
       "players": [
-        {
-          "player_id": "pl:bukayo_saka:20010905",
-          "name": "Bukayo Saka",
-          "name_zh": "布卡约·萨卡",
-          "position": "midfielder"
-        },
         {
           "player_id": "player:manual:eng:cole_palmer",
           "name": "Cole Palmer",
@@ -2586,12 +2574,6 @@
           "name": "Birger Meling",
           "name_zh": "梅林",
           "position": "defender"
-        },
-        {
-          "player_id": "pl:erling_haaland:20000721",
-          "name": "Erling Haaland",
-          "name_zh": "埃尔林·哈兰德",
-          "position": "forward"
         },
         {
           "player_id": "player:manual:nor:kristoffer_ajer",
@@ -16494,18 +16476,18 @@
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 173/641 fixtures (27%) include fallback or sample components.",
-      "severity": "warning"
+      "detail": "Forecast pack truth_mode=REAL_DERIVED; 0/641 fixtures (0%) include fallback or sample components.",
+      "severity": "info"
     }
   ],
-  "data_truth_mode_summary": "MIXED",
+  "data_truth_mode_summary": "REAL_DERIVED",
   "source_freshness_summary": {
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "FRESH",
+    "clubelo": "PARTIAL",
     "football_data_org_cl": "FRESH",
-    "clubelo_cl": "STALE"
+    "clubelo_cl": "PARTIAL"
   },
   "model_version_summary": "football_ensemble@local"
 }

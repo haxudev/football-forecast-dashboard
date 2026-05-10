@@ -350,13 +350,17 @@
       ],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_liverpool_0",
-          "name": "Mohamed Salah",
-          "name_zh": "萨拉赫",
+          "player_id": "player:fd:152454",
+          "name": "Hugo Ekitike",
+          "name_zh": "埃基蒂克",
           "position": "Right Winger",
           "last5_goals": 4,
           "last5_assists": 3,
-          "avg_rating_last5": 8.4
+          "avg_rating_last5": 8.4,
+          "season_goals": 11,
+          "season_assists": 4,
+          "season_played": 29,
+          "data_truth_mode": "REAL"
         }
       ]
     },
@@ -465,13 +469,17 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_bournemouth_0",
-          "name": "Antoine Semenyo",
-          "name_zh": "塞门约",
+          "player_id": "player:fd:204241",
+          "name": "Eli Kroupi",
+          "name_zh": "克鲁皮",
           "position": "Forward",
           "last5_goals": 3,
           "last5_assists": 1,
-          "avg_rating_last5": 7.6
+          "avg_rating_last5": 7.6,
+          "season_goals": 12,
+          "season_assists": null,
+          "season_played": 35,
+          "data_truth_mode": "REAL"
         }
       ]
     },

@@ -241,6 +241,11 @@ export const SidePlayers = z.object({
         last5_goals: z.number().int().min(0).nullable().optional(),
         last5_assists: z.number().int().min(0).nullable().optional(),
         avg_rating_last5: z.number().min(0).max(10).nullable().optional(),
+        // Sprint 6 (S6-5): real season-aggregate fields from lakehouse player_stats
+        season_goals: z.number().int().min(0).nullable().optional(),
+        season_assists: z.number().int().min(0).nullable().optional(),
+        season_played: z.number().int().min(0).nullable().optional(),
+        data_truth_mode: z.string().nullable().optional(),
       }).strict(),
     )
     .optional(),

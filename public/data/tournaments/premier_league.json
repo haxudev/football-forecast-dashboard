@@ -1,7 +1,7 @@
 {
-  "pack_version": "p2.1.0",
+  "pack_version": "p2.2.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:43:58.033906+00:00",
+  "generated_at": "2026-05-10T01:19:17.323214+00:00",
   "competition_id": "premier_league",
   "model_version_used": "football_ensemble@local",
   "data_truth_mode": "REAL_DERIVED",
@@ -9,155 +9,155 @@
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "FRESH",
+    "clubelo": "PARTIAL",
     "football_data_org_cl": "FRESH",
-    "clubelo_cl": "STALE"
+    "clubelo_cl": "PARTIAL"
   },
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 173/641 fixtures (27%) include fallback or sample components.",
-      "severity": "warning"
+      "detail": "Forecast pack truth_mode=REAL_DERIVED; 0/641 fixtures (0%) include fallback or sample components.",
+      "severity": "info"
     }
   ],
   "simulations": [
     {
       "team_id": "club:eng:arsenal",
-      "champion_probability": 0.358853,
+      "champion_probability": 0.360401,
       "top4_probability": 0.95,
       "relegation_probability": 0.0,
       "advance_probability": 0.95
     },
     {
       "team_id": "club:eng:aston_villa",
-      "champion_probability": 0.046077,
+      "champion_probability": 0.046276,
       "top4_probability": 0.55,
       "relegation_probability": 0.0,
       "advance_probability": 0.55
     },
     {
       "team_id": "club:eng:chelsea",
-      "champion_probability": 0.026862,
+      "champion_probability": 0.026978,
       "top4_probability": 0.02,
       "relegation_probability": 0.0,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:everton",
-      "champion_probability": 0.02581,
+      "champion_probability": 0.025922,
       "top4_probability": 0.02,
       "relegation_probability": 0.0,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:fulham",
-      "champion_probability": 0.021283,
+      "champion_probability": 0.021375,
       "top4_probability": 0.02,
       "relegation_probability": 0.0,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:liverpool",
-      "champion_probability": 0.082256,
+      "champion_probability": 0.082611,
       "top4_probability": 0.75,
       "relegation_probability": 0.0,
       "advance_probability": 0.75
     },
     {
       "team_id": "club:eng:man_city",
-      "champion_probability": 0.133624,
+      "champion_probability": 0.1342,
       "top4_probability": 0.85,
       "relegation_probability": 0.0,
       "advance_probability": 0.85
     },
     {
       "team_id": "club:eng:man_united",
-      "champion_probability": 0.059252,
+      "champion_probability": 0.059508,
       "top4_probability": 0.65,
       "relegation_probability": 0.0,
       "advance_probability": 0.65
     },
     {
       "team_id": "club:eng:newcastle",
-      "champion_probability": 0.029884,
+      "champion_probability": 0.030013,
       "top4_probability": 0.05,
       "relegation_probability": 0.0,
       "advance_probability": 0.05
     },
     {
       "team_id": "club:eng:sunderland",
-      "champion_probability": 0.006177,
+      "champion_probability": 0.00189,
       "top4_probability": 0.02,
-      "relegation_probability": 0.64,
+      "relegation_probability": 0.95,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:tottenham",
-      "champion_probability": 0.013939,
+      "champion_probability": 0.013999,
       "top4_probability": 0.02,
       "relegation_probability": 0.28,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:wolverhampton",
-      "champion_probability": 0.004777,
+      "champion_probability": 0.004798,
+      "top4_probability": 0.02,
+      "relegation_probability": 0.64,
+      "advance_probability": 0.02
+    },
+    {
+      "team_id": "club:eng:burnley",
+      "champion_probability": 0.003863,
       "top4_probability": 0.02,
       "relegation_probability": 0.82,
       "advance_probability": 0.02
     },
     {
-      "team_id": "club:eng:burnley",
-      "champion_probability": 0.003846,
-      "top4_probability": 0.02,
-      "relegation_probability": 0.95,
-      "advance_probability": 0.02
-    },
-    {
       "team_id": "club:eng:leeds_united",
-      "champion_probability": 0.019283,
+      "champion_probability": 0.019366,
       "top4_probability": 0.02,
       "relegation_probability": 0.1,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:nottingham",
-      "champion_probability": 0.03158,
+      "champion_probability": 0.031716,
       "top4_probability": 0.25,
       "relegation_probability": 0.0,
       "advance_probability": 0.25
     },
     {
       "team_id": "club:eng:crystal_palace",
-      "champion_probability": 0.019284,
+      "champion_probability": 0.019367,
       "top4_probability": 0.02,
       "relegation_probability": 0.0,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:brighton_hove",
-      "champion_probability": 0.036488,
+      "champion_probability": 0.036645,
       "top4_probability": 0.35,
       "relegation_probability": 0.0,
       "advance_probability": 0.35
     },
     {
       "team_id": "club:eng:brentford",
-      "champion_probability": 0.030271,
+      "champion_probability": 0.030402,
       "top4_probability": 0.15,
       "relegation_probability": 0.0,
       "advance_probability": 0.15
     },
     {
       "team_id": "club:eng:west_ham",
-      "champion_probability": 0.012273,
+      "champion_probability": 0.012326,
       "top4_probability": 0.02,
       "relegation_probability": 0.46,
       "advance_probability": 0.02
     },
     {
       "team_id": "club:eng:bournemouth",
-      "champion_probability": 0.038179,
+      "champion_probability": 0.038344,
       "top4_probability": 0.45,
       "relegation_probability": 0.0,
       "advance_probability": 0.45
