@@ -1,0 +1,165 @@
+{
+  "schema_version": "forecast-pack-v2",
+  "pack_version": "p2.2.1",
+  "match_id": "fx_pl_2025_26_gw36_cry_eve",
+  "competition_id": "premier_league",
+  "season_id": "pl:2025-26",
+  "matchday": 36,
+  "kickoff_utc": "2026-05-10T13:00:00Z",
+  "fixture_status": "SCHEDULED",
+  "home": {
+    "team_id": "club:eng:cry",
+    "name": "Crystal Palace",
+    "name_zh": "水晶宫",
+    "short_name": "Crystal Palace",
+    "short_name_zh": "水晶宫",
+    "tla": "CRY",
+    "crest_url": "https://crests.football-data.org/354.png"
+  },
+  "away": {
+    "team_id": "club:eng:eve",
+    "name": "Everton",
+    "name_zh": "埃弗顿",
+    "short_name": "Everton",
+    "short_name_zh": "埃弗顿",
+    "tla": "EVE",
+    "crest_url": "https://crests.football-data.org/62.png"
+  },
+  "venue": {
+    "name": "Crystal Palace 主场",
+    "name_zh": null,
+    "city": null,
+    "city_zh": null
+  },
+  "model_version": "football_elo_v1@p2.2.1",
+  "generated_at": "2026-05-10T01:38:00.755975Z",
+  "data_truth_mode": "REAL_DERIVED",
+  "data_completeness": "partial",
+  "confidence_label": "MED",
+  "source_freshness_summary": {
+    "football_data_org": "FRESH",
+    "clubelo": "FRESH"
+  },
+  "warnings": [],
+  "dimension_status": {
+    "dim_1_outcome": {
+      "status": "READY",
+      "note": "elo-derived"
+    },
+    "dim_2_xg": {
+      "status": "READY",
+      "note": "elo-derived"
+    },
+    "dim_3_form": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_4_player_availability": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_5_h2h": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_6_fatigue": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_7_tactical": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_8_referee": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_9_odds": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_10_scenario": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    }
+  },
+  "win_draw_loss": {
+    "p_home": 0.4466,
+    "p_draw": 0.2666,
+    "p_away": 0.2867,
+    "top_drivers": []
+  },
+  "scoreline_distribution": {
+    "matrix": [
+      [
+        0.036153,
+        0.055314,
+        0.042315,
+        0.021581,
+        0.008255,
+        0.002526
+      ],
+      [
+        0.064714,
+        0.099012,
+        0.075744,
+        0.038629,
+        0.014776,
+        0.004521
+      ],
+      [
+        0.057919,
+        0.088616,
+        0.067791,
+        0.034573,
+        0.013224,
+        0.004047
+      ],
+      [
+        0.034558,
+        0.052874,
+        0.040449,
+        0.020629,
+        0.007891,
+        0.002414
+      ],
+      [
+        0.015465,
+        0.023661,
+        0.018101,
+        0.009231,
+        0.003531,
+        0.00108
+      ],
+      [
+        0.005536,
+        0.008471,
+        0.00648,
+        0.003305,
+        0.001264,
+        0.000387
+      ]
+    ],
+    "top3": [
+      {
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.099
+      },
+      {
+        "home_goals": 2,
+        "away_goals": 1,
+        "probability": 0.0886
+      },
+      {
+        "home_goals": 1,
+        "away_goals": 2,
+        "probability": 0.0757
+      }
+    ]
+  },
+  "expected_goals": {
+    "xg_home": 1.79,
+    "xg_away": 1.53
+  }
+}
