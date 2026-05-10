@@ -336,13 +336,13 @@
       ],
       "key_players": [
         {
-          "player_id": "p_001",
-          "name": "A. Striker",
-          "name_zh": "射手 A",
+          "player_id": "p_real_club_eng_man_city_0",
+          "name": "Erling Haaland",
+          "name_zh": "哈兰德",
           "position": "Centre-Forward",
-          "last5_goals": 5,
-          "last5_assists": 2,
-          "avg_rating_last5": 8.1
+          "last5_goals": 6,
+          "last5_assists": 1,
+          "avg_rating_last5": 8.7
         }
       ]
     },
@@ -451,13 +451,13 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_away_001",
-          "name": "X. Striker",
-          "name_zh": "射手 X",
-          "position": "Centre-Forward",
+          "player_id": "p_real_club_eng_tottenham_0",
+          "name": "Son Heung-min",
+          "name_zh": "孙兴慜",
+          "position": "Forward",
           "last5_goals": 3,
-          "last5_assists": 1,
-          "avg_rating_last5": 7.4
+          "last5_assists": 2,
+          "avg_rating_last5": 8.0
         }
       ]
     },

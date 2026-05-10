@@ -1,18 +1,19 @@
 // src/views/OverviewView.tsx
 // Phase A — 重写，赛程驱动首页（design §4.1）。
 // hero quick action 仅 [舆情]（D-7 / M-1）；FixtureGrid mode='primary'。
+// Phase B (B-5)：数据加载留 server；client 子组件管 sort segmented + 重新排序后的 FixtureGrid。
 import Link from 'next/link';
 import { SampleBanner } from '@/components/Shell';
-import { FixtureGrid } from '@/components/fixture/FixtureGrid';
 import { tryLoadFixtures } from '@/lib/data-fixture';
-import { isUpcomingFixture } from '@/lib/fixtures';
+import { isUpcomingFixture, type FixtureRow } from '@/lib/fixtures';
 import { format, getDictionary, type Locale } from '@/lib/i18n';
 import { TruthBadge } from '@/components/TruthBadge';
+import { OverviewSortable } from './OverviewSortable';
 
 export function OverviewView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const fixturesFile = tryLoadFixtures();
-  const all = fixturesFile?.fixtures ?? [];
+  const all: FixtureRow[] = (fixturesFile?.fixtures ?? []) as FixtureRow[];
   const upcoming = all.filter(isUpcomingFixture);
   const truthMode = fixturesFile?.data_truth_mode ?? 'SAMPLE_ONLY';
   const isSample = truthMode === 'SAMPLE_ONLY';
@@ -36,17 +37,13 @@ export function OverviewView({ locale }: { locale: Locale }) {
           </div>
         </div>
         <div className="hero-actions" aria-label={t.overview.quickActions}>
-          {/* Phase A: 仅保留 [舆情] quick action（M-1 删除 allTeams） */}
           <Link className="hero-action" href="/sentiment">{t.overview.heroActions.sentiment}</Link>
         </div>
       </header>
 
       {isSample && <SampleBanner t={t} />}
 
-      <section aria-labelledby="upcoming-h">
-        <h2 id="upcoming-h" className="section-title">{t.overview.todayHighlights}</h2>
-        <FixtureGrid fixtures={upcoming} mode="primary" t={t} />
-      </section>
+      <OverviewSortable fixtures={upcoming} locale={locale} />
     </div>
   );
 }

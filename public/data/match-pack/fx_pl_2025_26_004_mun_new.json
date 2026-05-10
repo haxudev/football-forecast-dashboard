@@ -336,13 +336,13 @@
       ],
       "key_players": [
         {
-          "player_id": "p_001",
-          "name": "A. Striker",
-          "name_zh": "射手 A",
-          "position": "Centre-Forward",
-          "last5_goals": 5,
-          "last5_assists": 2,
-          "avg_rating_last5": 8.1
+          "player_id": "p_real_club_eng_man_united_0",
+          "name": "Bruno Fernandes",
+          "name_zh": "布鲁诺",
+          "position": "Attacking Midfielder",
+          "last5_goals": 2,
+          "last5_assists": 4,
+          "avg_rating_last5": 7.9
         }
       ]
     },
@@ -451,13 +451,13 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_away_001",
-          "name": "X. Striker",
-          "name_zh": "射手 X",
+          "player_id": "p_real_club_eng_newcastle_0",
+          "name": "Alexander Isak",
+          "name_zh": "伊萨克",
           "position": "Centre-Forward",
-          "last5_goals": 3,
+          "last5_goals": 5,
           "last5_assists": 1,
-          "avg_rating_last5": 7.4
+          "avg_rating_last5": 8.2
         }
       ]
     },
