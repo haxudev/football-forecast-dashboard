@@ -14,7 +14,8 @@ export interface OverviewSortableProps {
 
 export function OverviewSortable({ fixtures, locale }: OverviewSortableProps) {
   const t = getDictionary(locale);
-  const [sortBy, setSortBy] = useState<FixtureSortBy>('home_win_desc');
+  // Phase B (B-5)，Sprint 6.5: 默认按开赛时间升序 · 可切换到主胜概率
+  const [sortBy, setSortBy] = useState<FixtureSortBy>('kickoff_asc');
 
   return (
     <section aria-labelledby="upcoming-h">
@@ -73,7 +74,7 @@ export function OverviewSortable({ fixtures, locale }: OverviewSortableProps) {
           </button>
         </div>
       </div>
-      <FixtureGrid fixtures={fixtures} mode="primary" sortBy={sortBy} t={t} />
+      <FixtureGrid fixtures={fixtures} mode="primary" sortBy={sortBy} groupByGameweek={sortBy === 'kickoff_asc'} t={t} />
     </section>
   );
 }
