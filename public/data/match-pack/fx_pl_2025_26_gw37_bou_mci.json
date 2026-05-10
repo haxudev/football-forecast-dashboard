@@ -1,0 +1,165 @@
+{
+  "schema_version": "forecast-pack-v2",
+  "pack_version": "p2.2.1",
+  "match_id": "fx_pl_2025_26_gw37_bou_mci",
+  "competition_id": "premier_league",
+  "season_id": "pl:2025-26",
+  "matchday": 37,
+  "kickoff_utc": "2026-05-19T18:30:00Z",
+  "fixture_status": "SCHEDULED",
+  "home": {
+    "team_id": "club:eng:bou",
+    "name": "Bournemouth",
+    "name_zh": "伯恩茅斯",
+    "short_name": "Bournemouth",
+    "short_name_zh": "伯恩茅斯",
+    "tla": "BOU",
+    "crest_url": "https://crests.football-data.org/bournemouth.png"
+  },
+  "away": {
+    "team_id": "club:eng:mci",
+    "name": "Man City",
+    "name_zh": "曼城",
+    "short_name": "Man City",
+    "short_name_zh": "曼城",
+    "tla": "MCI",
+    "crest_url": "https://crests.football-data.org/65.png"
+  },
+  "venue": {
+    "name": "Bournemouth 主场",
+    "name_zh": null,
+    "city": null,
+    "city_zh": null
+  },
+  "model_version": "football_elo_v1@p2.2.1",
+  "generated_at": "2026-05-10T01:38:00.755975Z",
+  "data_truth_mode": "REAL_DERIVED",
+  "data_completeness": "partial",
+  "confidence_label": "HIGH",
+  "source_freshness_summary": {
+    "football_data_org": "FRESH",
+    "clubelo": "FRESH"
+  },
+  "warnings": [],
+  "dimension_status": {
+    "dim_1_outcome": {
+      "status": "READY",
+      "note": "elo-derived"
+    },
+    "dim_2_xg": {
+      "status": "READY",
+      "note": "elo-derived"
+    },
+    "dim_3_form": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_4_player_availability": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_5_h2h": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_6_fatigue": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_7_tactical": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_8_referee": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_9_odds": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    },
+    "dim_10_scenario": {
+      "status": "STUB",
+      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    }
+  },
+  "win_draw_loss": {
+    "p_home": 0.2314,
+    "p_draw": 0.2506,
+    "p_away": 0.518,
+    "top_drivers": []
+  },
+  "scoreline_distribution": {
+    "matrix": [
+      [
+        0.013168,
+        0.033972,
+        0.043824,
+        0.037689,
+        0.024309,
+        0.012544
+      ],
+      [
+        0.023043,
+        0.059451,
+        0.076692,
+        0.065955,
+        0.042541,
+        0.021951
+      ],
+      [
+        0.020163,
+        0.05202,
+        0.067106,
+        0.057711,
+        0.037224,
+        0.019207
+      ],
+      [
+        0.011762,
+        0.030345,
+        0.039145,
+        0.033665,
+        0.021714,
+        0.011204
+      ],
+      [
+        0.005146,
+        0.013276,
+        0.017126,
+        0.014728,
+        0.0095,
+        0.004902
+      ],
+      [
+        0.001801,
+        0.004647,
+        0.005994,
+        0.005155,
+        0.003325,
+        0.001716
+      ]
+    ],
+    "top3": [
+      {
+        "home_goals": 1,
+        "away_goals": 2,
+        "probability": 0.0767
+      },
+      {
+        "home_goals": 2,
+        "away_goals": 2,
+        "probability": 0.0671
+      },
+      {
+        "home_goals": 1,
+        "away_goals": 3,
+        "probability": 0.066
+      }
+    ]
+  },
+  "expected_goals": {
+    "xg_home": 1.75,
+    "xg_away": 2.58
+  }
+}

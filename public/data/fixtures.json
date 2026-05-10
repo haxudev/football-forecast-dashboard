@@ -1,207 +1,1311 @@
 {
   "schema_version": "fixtures-v1",
-  "generated_at": "2026-05-09T13:20:02.612Z",
+  "generated_at": "2026-05-10T01:38:00.755975Z",
   "competition_id": "premier_league",
   "season_id": "pl:2025-26",
-  "data_truth_mode": "SAMPLE_ONLY",
+  "data_truth_mode": "REAL_DERIVED",
   "fixtures": [
     {
-      "match_id": "fx_pl_2025_26_001_liv_bou",
+      "match_id": "fx_pl_2025_26_gw36_liv_che",
       "competition_id": "premier_league",
       "season_id": "pl:2025-26",
-      "matchday": 1,
+      "matchday": 36,
       "stage": null,
-      "kickoff_utc": "2025-08-15T19:00:00Z",
+      "kickoff_utc": "2026-05-09T11:30:00Z",
       "fixture_status": "SCHEDULED",
       "home": {
-        "team_id": "club:eng:liverpool",
-        "name": "Liverpool FC",
+        "team_id": "club:eng:liv",
+        "name": "Liverpool",
         "name_zh": "利物浦",
-        "short_name_zh": "利物浦"
+        "short_name": "Liverpool",
+        "short_name_zh": "利物浦",
+        "tla": "LIV",
+        "crest_url": "https://crests.football-data.org/64.png"
       },
       "away": {
-        "team_id": "club:eng:bournemouth",
-        "name": "AFC Bournemouth",
-        "name_zh": "伯恩茅斯",
-        "short_name_zh": "伯恩茅斯"
-      },
-      "venue": {
-        "name": "Anfield",
-        "name_zh": "安菲尔德球场",
-        "city": "Liverpool"
-      },
-      "match_pack_path": "data/match-pack/fx_pl_2025_26_001_liv_bou.json",
-      "prediction_summary": {
-        "p_home": 0.56,
-        "p_draw": 0.26,
-        "p_away": 0.18,
-        "confidence_label": "MED",
-        "data_truth_mode": "SAMPLE_ONLY"
-      }
-    },
-    {
-      "match_id": "fx_pl_2025_26_002_ars_che",
-      "competition_id": "premier_league",
-      "season_id": "pl:2025-26",
-      "matchday": 2,
-      "stage": null,
-      "kickoff_utc": "2025-08-23T16:30:00Z",
-      "fixture_status": "SCHEDULED",
-      "home": {
-        "team_id": "club:eng:arsenal",
-        "name": "Arsenal FC",
-        "name_zh": "阿森纳",
-        "short_name_zh": "阿森纳"
-      },
-      "away": {
-        "team_id": "club:eng:chelsea",
-        "name": "Chelsea FC",
+        "team_id": "club:eng:che",
+        "name": "Chelsea",
         "name_zh": "切尔西",
-        "short_name_zh": "切尔西"
+        "short_name": "Chelsea",
+        "short_name_zh": "切尔西",
+        "tla": "CHE",
+        "crest_url": "https://crests.football-data.org/61.png"
       },
       "venue": {
-        "name": "Emirates Stadium",
-        "name_zh": "酋长球场",
-        "city": "London"
+        "name": "Liverpool 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
       },
-      "match_pack_path": "data/match-pack/fx_pl_2025_26_002_ars_che.json",
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_liv_che.json",
       "prediction_summary": {
-        "p_home": 0.48,
-        "p_draw": 0.28,
-        "p_away": 0.24,
-        "confidence_label": "MED",
-        "data_truth_mode": "SAMPLE_ONLY"
-      }
+        "p_home": 0.5275,
+        "p_draw": 0.2488,
+        "p_away": 0.2237,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
     },
     {
-      "match_id": "fx_pl_2025_26_003_mci_tot",
+      "match_id": "fx_pl_2025_26_gw36_sun_mun",
       "competition_id": "premier_league",
       "season_id": "pl:2025-26",
-      "matchday": 3,
+      "matchday": 36,
       "stage": null,
-      "kickoff_utc": "2025-08-30T14:00:00Z",
+      "kickoff_utc": "2026-05-09T14:00:00Z",
       "fixture_status": "SCHEDULED",
       "home": {
-        "team_id": "club:eng:man_city",
-        "name": "Manchester City FC",
-        "name_zh": "曼城",
-        "short_name_zh": "曼城"
+        "team_id": "club:eng:sun",
+        "name": "Sunderland",
+        "name_zh": "桑德兰",
+        "short_name": "Sunderland",
+        "short_name_zh": "桑德兰",
+        "tla": "SUN",
+        "crest_url": "https://crests.football-data.org/71.png"
       },
       "away": {
-        "team_id": "club:eng:tottenham",
-        "name": "Tottenham Hotspur FC",
-        "name_zh": "热刺",
-        "short_name_zh": "热刺"
-      },
-      "venue": {
-        "name": "Etihad Stadium",
-        "name_zh": "阿提哈德球场",
-        "city": "Manchester"
-      },
-      "match_pack_path": "data/match-pack/fx_pl_2025_26_003_mci_tot.json",
-      "prediction_summary": {
-        "p_home": 0.62,
-        "p_draw": 0.22,
-        "p_away": 0.16,
-        "confidence_label": "MED",
-        "data_truth_mode": "SAMPLE_ONLY"
-      }
-    },
-    {
-      "match_id": "fx_pl_2025_26_004_mun_new",
-      "competition_id": "premier_league",
-      "season_id": "pl:2025-26",
-      "matchday": 3,
-      "stage": null,
-      "kickoff_utc": "2025-08-30T16:30:00Z",
-      "fixture_status": "SCHEDULED",
-      "home": {
-        "team_id": "club:eng:man_united",
-        "name": "Manchester United FC",
+        "team_id": "club:eng:mun",
+        "name": "Man United",
         "name_zh": "曼联",
-        "short_name_zh": "曼联"
-      },
-      "away": {
-        "team_id": "club:eng:newcastle",
-        "name": "Newcastle United FC",
-        "name_zh": "纽卡斯尔",
-        "short_name_zh": "纽卡"
+        "short_name": "Man United",
+        "short_name_zh": "曼联",
+        "tla": "MUN",
+        "crest_url": "https://crests.football-data.org/66.png"
       },
       "venue": {
-        "name": "Old Trafford",
-        "name_zh": "老特拉福德球场",
-        "city": "Manchester"
+        "name": "Sunderland 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
       },
-      "match_pack_path": "data/match-pack/fx_pl_2025_26_004_mun_new.json",
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_sun_mun.json",
       "prediction_summary": {
-        "p_home": 0.4,
-        "p_draw": 0.3,
-        "p_away": 0.3,
-        "confidence_label": "MED",
-        "data_truth_mode": "SAMPLE_ONLY"
-      }
+        "p_home": 0.2246,
+        "p_draw": 0.249,
+        "p_away": 0.5265,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
     },
     {
-      "match_id": "fx_pl_2025_26_005_bri_eve",
+      "match_id": "fx_pl_2025_26_gw36_bha_wol",
       "competition_id": "premier_league",
       "season_id": "pl:2025-26",
-      "matchday": 4,
+      "matchday": 36,
       "stage": null,
-      "kickoff_utc": "2025-09-13T14:00:00Z",
+      "kickoff_utc": "2026-05-09T14:00:00Z",
       "fixture_status": "SCHEDULED",
       "home": {
-        "team_id": "club:eng:brighton",
-        "name": "Brighton & Hove Albion FC",
+        "team_id": "club:eng:bha",
+        "name": "Brighton Hove",
         "name_zh": "布莱顿",
-        "short_name_zh": "布莱顿"
+        "short_name": "Brighton Hove",
+        "short_name_zh": "布莱顿",
+        "tla": "BHA",
+        "crest_url": "https://crests.football-data.org/397.png"
       },
       "away": {
-        "team_id": "club:eng:everton",
-        "name": "Everton FC",
-        "name_zh": "埃弗顿",
-        "short_name_zh": "埃弗顿"
+        "team_id": "club:eng:wol",
+        "name": "Wolverhampton",
+        "name_zh": "狼队",
+        "short_name": "Wolverhampton",
+        "short_name_zh": "狼队",
+        "tla": "WOL",
+        "crest_url": "https://crests.football-data.org/76.png"
       },
       "venue": {
-        "name": "The American Express Community Stadium",
-        "name_zh": "美国运通社区球场",
-        "city": "Brighton"
+        "name": "Brighton Hove 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
       },
-      "match_pack_path": "data/match-pack/fx_pl_2025_26_005_bri_eve.json",
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_bha_wol.json",
       "prediction_summary": {
-        "p_home": 0.42,
-        "p_draw": 0.3,
-        "p_away": 0.28,
-        "confidence_label": "MED",
-        "data_truth_mode": "SAMPLE_ONLY"
-      }
+        "p_home": 0.5368,
+        "p_draw": 0.247,
+        "p_away": 0.2162,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
     },
     {
-      "match_id": "fx_pl_2025_26_006_whu_for",
+      "match_id": "fx_pl_2025_26_gw36_ful_bou",
       "competition_id": "premier_league",
       "season_id": "pl:2025-26",
-      "matchday": 4,
+      "matchday": 36,
       "stage": null,
-      "kickoff_utc": "2025-09-14T13:00:00Z",
+      "kickoff_utc": "2026-05-09T14:00:00Z",
       "fixture_status": "SCHEDULED",
       "home": {
-        "team_id": "club:eng:west_ham",
-        "name": "West Ham United FC",
-        "name_zh": "西汉姆",
-        "short_name_zh": "西汉姆"
+        "team_id": "club:eng:ful",
+        "name": "Fulham",
+        "name_zh": "富勒姆",
+        "short_name": "Fulham",
+        "short_name_zh": "富勒姆",
+        "tla": "FUL",
+        "crest_url": "https://crests.football-data.org/63.png"
       },
       "away": {
-        "team_id": "club:eng:nott_forest",
-        "name": "Nottingham Forest FC",
-        "name_zh": "诺丁汉森林",
-        "short_name_zh": "诺森"
+        "team_id": "club:eng:bou",
+        "name": "Bournemouth",
+        "name_zh": "伯恩茅斯",
+        "short_name": "Bournemouth",
+        "short_name_zh": "伯恩茅斯",
+        "tla": "BOU",
+        "crest_url": "https://crests.football-data.org/bournemouth.png"
       },
       "venue": {
-        "name": "London Stadium",
-        "name_zh": "伦敦球场",
-        "city": "London"
+        "name": "Fulham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
       },
-      "match_pack_path": null,
-      "prediction_summary": null
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_ful_bou.json",
+      "prediction_summary": {
+        "p_home": 0.4261,
+        "p_draw": 0.2723,
+        "p_away": 0.3016,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw36_mci_bre",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 36,
+      "stage": null,
+      "kickoff_utc": "2026-05-09T16:30:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:mci",
+        "name": "Man City",
+        "name_zh": "曼城",
+        "short_name": "Man City",
+        "short_name_zh": "曼城",
+        "tla": "MCI",
+        "crest_url": "https://crests.football-data.org/65.png"
+      },
+      "away": {
+        "team_id": "club:eng:bre",
+        "name": "Brentford",
+        "name_zh": "布伦特福德",
+        "short_name": "Brentford",
+        "short_name_zh": "布伦特福德",
+        "tla": "BRE",
+        "crest_url": "https://crests.football-data.org/402.png"
+      },
+      "venue": {
+        "name": "Man City 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_mci_bre.json",
+      "prediction_summary": {
+        "p_home": 0.6289,
+        "p_draw": 0.2319,
+        "p_away": 0.1392,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw36_cry_eve",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 36,
+      "stage": null,
+      "kickoff_utc": "2026-05-10T13:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:cry",
+        "name": "Crystal Palace",
+        "name_zh": "水晶宫",
+        "short_name": "Crystal Palace",
+        "short_name_zh": "水晶宫",
+        "tla": "CRY",
+        "crest_url": "https://crests.football-data.org/354.png"
+      },
+      "away": {
+        "team_id": "club:eng:eve",
+        "name": "Everton",
+        "name_zh": "埃弗顿",
+        "short_name": "Everton",
+        "short_name_zh": "埃弗顿",
+        "tla": "EVE",
+        "crest_url": "https://crests.football-data.org/62.png"
+      },
+      "venue": {
+        "name": "Crystal Palace 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_cry_eve.json",
+      "prediction_summary": {
+        "p_home": 0.4466,
+        "p_draw": 0.2666,
+        "p_away": 0.2867,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw36_bur_avl",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 36,
+      "stage": null,
+      "kickoff_utc": "2026-05-10T13:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:bur",
+        "name": "Burnley",
+        "name_zh": "伯恩利",
+        "short_name": "Burnley",
+        "short_name_zh": "伯恩利",
+        "tla": "BUR",
+        "crest_url": "https://crests.football-data.org/328.png"
+      },
+      "away": {
+        "team_id": "club:eng:avl",
+        "name": "Aston Villa",
+        "name_zh": "阿斯顿维拉",
+        "short_name": "Aston Villa",
+        "short_name_zh": "阿斯顿维拉",
+        "tla": "AVL",
+        "crest_url": "https://crests.football-data.org/58.png"
+      },
+      "venue": {
+        "name": "Burnley 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_bur_avl.json",
+      "prediction_summary": {
+        "p_home": 0.2566,
+        "p_draw": 0.2572,
+        "p_away": 0.4862,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw36_not_new",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 36,
+      "stage": null,
+      "kickoff_utc": "2026-05-10T13:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:not",
+        "name": "Nottingham",
+        "name_zh": "诺森",
+        "short_name": "Nottingham",
+        "short_name_zh": "诺森",
+        "tla": "NOT",
+        "crest_url": "https://crests.football-data.org/351.png"
+      },
+      "away": {
+        "team_id": "club:eng:new",
+        "name": "Newcastle",
+        "name_zh": "纽卡",
+        "short_name": "Newcastle",
+        "short_name_zh": "纽卡",
+        "tla": "NEW",
+        "crest_url": "https://crests.football-data.org/67.png"
+      },
+      "venue": {
+        "name": "Nottingham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_not_new.json",
+      "prediction_summary": {
+        "p_home": 0.331,
+        "p_draw": 0.2867,
+        "p_away": 0.3823,
+        "confidence_label": "LOW",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw36_whu_ars",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 36,
+      "stage": null,
+      "kickoff_utc": "2026-05-10T15:30:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:whu",
+        "name": "West Ham",
+        "name_zh": "西汉姆",
+        "short_name": "West Ham",
+        "short_name_zh": "西汉姆",
+        "tla": "WHU",
+        "crest_url": "https://crests.football-data.org/563.png"
+      },
+      "away": {
+        "team_id": "club:eng:ars",
+        "name": "Arsenal",
+        "name_zh": "阿森纳",
+        "short_name": "Arsenal",
+        "short_name_zh": "阿森纳",
+        "tla": "ARS",
+        "crest_url": "https://crests.football-data.org/57.png"
+      },
+      "venue": {
+        "name": "West Ham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_whu_ars.json",
+      "prediction_summary": {
+        "p_home": 0.217,
+        "p_draw": 0.2472,
+        "p_away": 0.5358,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw36_tot_lee",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 36,
+      "stage": null,
+      "kickoff_utc": "2026-05-11T19:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:tot",
+        "name": "Tottenham",
+        "name_zh": "热刺",
+        "short_name": "Tottenham",
+        "short_name_zh": "热刺",
+        "tla": "TOT",
+        "crest_url": "https://crests.football-data.org/73.png"
+      },
+      "away": {
+        "team_id": "club:eng:lee",
+        "name": "Leeds United",
+        "name_zh": "利兹",
+        "short_name": "Leeds United",
+        "short_name_zh": "利兹",
+        "tla": "LEE",
+        "crest_url": "https://crests.football-data.org/341.png"
+      },
+      "venue": {
+        "name": "Tottenham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw36_tot_lee.json",
+      "prediction_summary": {
+        "p_home": 0.5882,
+        "p_draw": 0.2383,
+        "p_away": 0.1736,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw31_mci_cry",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 31,
+      "stage": null,
+      "kickoff_utc": "2026-05-13T19:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:mci",
+        "name": "Man City",
+        "name_zh": "曼城",
+        "short_name": "Man City",
+        "short_name_zh": "曼城",
+        "tla": "MCI",
+        "crest_url": "https://crests.football-data.org/65.png"
+      },
+      "away": {
+        "team_id": "club:eng:cry",
+        "name": "Crystal Palace",
+        "name_zh": "水晶宫",
+        "short_name": "Crystal Palace",
+        "short_name_zh": "水晶宫",
+        "tla": "CRY",
+        "crest_url": "https://crests.football-data.org/354.png"
+      },
+      "venue": {
+        "name": "Man City 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw31_mci_cry.json",
+      "prediction_summary": {
+        "p_home": 0.6289,
+        "p_draw": 0.2319,
+        "p_away": 0.1392,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_avl_liv",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-15T19:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:avl",
+        "name": "Aston Villa",
+        "name_zh": "阿斯顿维拉",
+        "short_name": "Aston Villa",
+        "short_name_zh": "阿斯顿维拉",
+        "tla": "AVL",
+        "crest_url": "https://crests.football-data.org/58.png"
+      },
+      "away": {
+        "team_id": "club:eng:liv",
+        "name": "Liverpool",
+        "name_zh": "利物浦",
+        "short_name": "Liverpool",
+        "short_name_zh": "利物浦",
+        "tla": "LIV",
+        "crest_url": "https://crests.football-data.org/64.png"
+      },
+      "venue": {
+        "name": "Aston Villa 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_avl_liv.json",
+      "prediction_summary": {
+        "p_home": 0.2885,
+        "p_draw": 0.2673,
+        "p_away": 0.4442,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_mun_not",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-17T11:30:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:mun",
+        "name": "Man United",
+        "name_zh": "曼联",
+        "short_name": "Man United",
+        "short_name_zh": "曼联",
+        "tla": "MUN",
+        "crest_url": "https://crests.football-data.org/66.png"
+      },
+      "away": {
+        "team_id": "club:eng:not",
+        "name": "Nottingham",
+        "name_zh": "诺森",
+        "short_name": "Nottingham",
+        "short_name_zh": "诺森",
+        "tla": "NOT",
+        "crest_url": "https://crests.football-data.org/351.png"
+      },
+      "venue": {
+        "name": "Man United 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_mun_not.json",
+      "prediction_summary": {
+        "p_home": 0.4896,
+        "p_draw": 0.2564,
+        "p_away": 0.254,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_bre_cry",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-17T14:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:bre",
+        "name": "Brentford",
+        "name_zh": "布伦特福德",
+        "short_name": "Brentford",
+        "short_name_zh": "布伦特福德",
+        "tla": "BRE",
+        "crest_url": "https://crests.football-data.org/402.png"
+      },
+      "away": {
+        "team_id": "club:eng:cry",
+        "name": "Crystal Palace",
+        "name_zh": "水晶宫",
+        "short_name": "Crystal Palace",
+        "short_name_zh": "水晶宫",
+        "tla": "CRY",
+        "crest_url": "https://crests.football-data.org/354.png"
+      },
+      "venue": {
+        "name": "Brentford 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_bre_cry.json",
+      "prediction_summary": {
+        "p_home": 0.4322,
+        "p_draw": 0.2706,
+        "p_away": 0.2973,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_eve_sun",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-17T14:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:eve",
+        "name": "Everton",
+        "name_zh": "埃弗顿",
+        "short_name": "Everton",
+        "short_name_zh": "埃弗顿",
+        "tla": "EVE",
+        "crest_url": "https://crests.football-data.org/62.png"
+      },
+      "away": {
+        "team_id": "club:eng:sun",
+        "name": "Sunderland",
+        "name_zh": "桑德兰",
+        "short_name": "Sunderland",
+        "short_name_zh": "桑德兰",
+        "tla": "SUN",
+        "crest_url": "https://crests.football-data.org/71.png"
+      },
+      "venue": {
+        "name": "Everton 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_eve_sun.json",
+      "prediction_summary": {
+        "p_home": 0.5899,
+        "p_draw": 0.238,
+        "p_away": 0.1721,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_lee_bha",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-17T14:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:lee",
+        "name": "Leeds United",
+        "name_zh": "利兹",
+        "short_name": "Leeds United",
+        "short_name_zh": "利兹",
+        "tla": "LEE",
+        "crest_url": "https://crests.football-data.org/341.png"
+      },
+      "away": {
+        "team_id": "club:eng:bha",
+        "name": "Brighton Hove",
+        "name_zh": "布莱顿",
+        "short_name": "Brighton Hove",
+        "short_name_zh": "布莱顿",
+        "tla": "BHA",
+        "crest_url": "https://crests.football-data.org/397.png"
+      },
+      "venue": {
+        "name": "Leeds United 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_lee_bha.json",
+      "prediction_summary": {
+        "p_home": 0.3389,
+        "p_draw": 0.2916,
+        "p_away": 0.3695,
+        "confidence_label": "LOW",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_wol_ful",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-17T14:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:wol",
+        "name": "Wolverhampton",
+        "name_zh": "狼队",
+        "short_name": "Wolverhampton",
+        "short_name_zh": "狼队",
+        "tla": "WOL",
+        "crest_url": "https://crests.football-data.org/76.png"
+      },
+      "away": {
+        "team_id": "club:eng:ful",
+        "name": "Fulham",
+        "name_zh": "富勒姆",
+        "short_name": "Fulham",
+        "short_name_zh": "富勒姆",
+        "tla": "FUL",
+        "crest_url": "https://crests.football-data.org/63.png"
+      },
+      "venue": {
+        "name": "Wolverhampton 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_wol_ful.json",
+      "prediction_summary": {
+        "p_home": 0.3427,
+        "p_draw": 0.2943,
+        "p_away": 0.363,
+        "confidence_label": "LOW",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_new_whu",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-17T16:30:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:new",
+        "name": "Newcastle",
+        "name_zh": "纽卡",
+        "short_name": "Newcastle",
+        "short_name_zh": "纽卡",
+        "tla": "NEW",
+        "crest_url": "https://crests.football-data.org/67.png"
+      },
+      "away": {
+        "team_id": "club:eng:whu",
+        "name": "West Ham",
+        "name_zh": "西汉姆",
+        "short_name": "West Ham",
+        "short_name_zh": "西汉姆",
+        "tla": "WHU",
+        "crest_url": "https://crests.football-data.org/563.png"
+      },
+      "venue": {
+        "name": "Newcastle 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_new_whu.json",
+      "prediction_summary": {
+        "p_home": 0.5577,
+        "p_draw": 0.2433,
+        "p_away": 0.199,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_ars_bur",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-18T19:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:ars",
+        "name": "Arsenal",
+        "name_zh": "阿森纳",
+        "short_name": "Arsenal",
+        "short_name_zh": "阿森纳",
+        "tla": "ARS",
+        "crest_url": "https://crests.football-data.org/57.png"
+      },
+      "away": {
+        "team_id": "club:eng:bur",
+        "name": "Burnley",
+        "name_zh": "伯恩利",
+        "short_name": "Burnley",
+        "short_name_zh": "伯恩利",
+        "tla": "BUR",
+        "crest_url": "https://crests.football-data.org/328.png"
+      },
+      "venue": {
+        "name": "Arsenal 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_ars_bur.json",
+      "prediction_summary": {
+        "p_home": 0.7056,
+        "p_draw": 0.2205,
+        "p_away": 0.0739,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_bou_mci",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-19T18:30:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:bou",
+        "name": "Bournemouth",
+        "name_zh": "伯恩茅斯",
+        "short_name": "Bournemouth",
+        "short_name_zh": "伯恩茅斯",
+        "tla": "BOU",
+        "crest_url": "https://crests.football-data.org/bournemouth.png"
+      },
+      "away": {
+        "team_id": "club:eng:mci",
+        "name": "Man City",
+        "name_zh": "曼城",
+        "short_name": "Man City",
+        "short_name_zh": "曼城",
+        "tla": "MCI",
+        "crest_url": "https://crests.football-data.org/65.png"
+      },
+      "venue": {
+        "name": "Bournemouth 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_bou_mci.json",
+      "prediction_summary": {
+        "p_home": 0.2314,
+        "p_draw": 0.2506,
+        "p_away": 0.518,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw37_che_tot",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 37,
+      "stage": null,
+      "kickoff_utc": "2026-05-19T19:15:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:che",
+        "name": "Chelsea",
+        "name_zh": "切尔西",
+        "short_name": "Chelsea",
+        "short_name_zh": "切尔西",
+        "tla": "CHE",
+        "crest_url": "https://crests.football-data.org/61.png"
+      },
+      "away": {
+        "team_id": "club:eng:tot",
+        "name": "Tottenham",
+        "name_zh": "热刺",
+        "short_name": "Tottenham",
+        "short_name_zh": "热刺",
+        "tla": "TOT",
+        "crest_url": "https://crests.football-data.org/73.png"
+      },
+      "venue": {
+        "name": "Chelsea 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw37_che_tot.json",
+      "prediction_summary": {
+        "p_home": 0.4725,
+        "p_draw": 0.2603,
+        "p_away": 0.2672,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_sun_che",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:sun",
+        "name": "Sunderland",
+        "name_zh": "桑德兰",
+        "short_name": "Sunderland",
+        "short_name_zh": "桑德兰",
+        "tla": "SUN",
+        "crest_url": "https://crests.football-data.org/71.png"
+      },
+      "away": {
+        "team_id": "club:eng:che",
+        "name": "Chelsea",
+        "name_zh": "切尔西",
+        "short_name": "Chelsea",
+        "short_name_zh": "切尔西",
+        "tla": "CHE",
+        "crest_url": "https://crests.football-data.org/61.png"
+      },
+      "venue": {
+        "name": "Sunderland 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_sun_che.json",
+      "prediction_summary": {
+        "p_home": 0.1811,
+        "p_draw": 0.2397,
+        "p_away": 0.5792,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_bha_mun",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:bha",
+        "name": "Brighton Hove",
+        "name_zh": "布莱顿",
+        "short_name": "Brighton Hove",
+        "short_name_zh": "布莱顿",
+        "tla": "BHA",
+        "crest_url": "https://crests.football-data.org/397.png"
+      },
+      "away": {
+        "team_id": "club:eng:mun",
+        "name": "Man United",
+        "name_zh": "曼联",
+        "short_name": "Man United",
+        "short_name_zh": "曼联",
+        "tla": "MUN",
+        "crest_url": "https://crests.football-data.org/66.png"
+      },
+      "venue": {
+        "name": "Brighton Hove 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_bha_mun.json",
+      "prediction_summary": {
+        "p_home": 0.3733,
+        "p_draw": 0.2901,
+        "p_away": 0.3366,
+        "confidence_label": "LOW",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_cry_ars",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:cry",
+        "name": "Crystal Palace",
+        "name_zh": "水晶宫",
+        "short_name": "Crystal Palace",
+        "short_name_zh": "水晶宫",
+        "tla": "CRY",
+        "crest_url": "https://crests.football-data.org/354.png"
+      },
+      "away": {
+        "team_id": "club:eng:ars",
+        "name": "Arsenal",
+        "name_zh": "阿森纳",
+        "short_name": "Arsenal",
+        "short_name_zh": "阿森纳",
+        "tla": "ARS",
+        "crest_url": "https://crests.football-data.org/57.png"
+      },
+      "venue": {
+        "name": "Crystal Palace 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_cry_ars.json",
+      "prediction_summary": {
+        "p_home": 0.2348,
+        "p_draw": 0.2514,
+        "p_away": 0.5137,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_bur_wol",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:bur",
+        "name": "Burnley",
+        "name_zh": "伯恩利",
+        "short_name": "Burnley",
+        "short_name_zh": "伯恩利",
+        "tla": "BUR",
+        "crest_url": "https://crests.football-data.org/328.png"
+      },
+      "away": {
+        "team_id": "club:eng:wol",
+        "name": "Wolverhampton",
+        "name_zh": "狼队",
+        "short_name": "Wolverhampton",
+        "short_name_zh": "狼队",
+        "tla": "WOL",
+        "crest_url": "https://crests.football-data.org/76.png"
+      },
+      "venue": {
+        "name": "Burnley 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_bur_wol.json",
+      "prediction_summary": {
+        "p_home": 0.3848,
+        "p_draw": 0.2857,
+        "p_away": 0.3294,
+        "confidence_label": "LOW",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_ful_new",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:ful",
+        "name": "Fulham",
+        "name_zh": "富勒姆",
+        "short_name": "Fulham",
+        "short_name_zh": "富勒姆",
+        "tla": "FUL",
+        "crest_url": "https://crests.football-data.org/63.png"
+      },
+      "away": {
+        "team_id": "club:eng:new",
+        "name": "Newcastle",
+        "name_zh": "纽卡",
+        "short_name": "Newcastle",
+        "short_name_zh": "纽卡",
+        "tla": "NEW",
+        "crest_url": "https://crests.football-data.org/67.png"
+      },
+      "venue": {
+        "name": "Fulham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_ful_new.json",
+      "prediction_summary": {
+        "p_home": 0.3179,
+        "p_draw": 0.2796,
+        "p_away": 0.4025,
+        "confidence_label": "LOW",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_liv_bre",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:liv",
+        "name": "Liverpool",
+        "name_zh": "利物浦",
+        "short_name": "Liverpool",
+        "short_name_zh": "利物浦",
+        "tla": "LIV",
+        "crest_url": "https://crests.football-data.org/64.png"
+      },
+      "away": {
+        "team_id": "club:eng:bre",
+        "name": "Brentford",
+        "name_zh": "布伦特福德",
+        "short_name": "Brentford",
+        "short_name_zh": "布伦特福德",
+        "tla": "BRE",
+        "crest_url": "https://crests.football-data.org/402.png"
+      },
+      "venue": {
+        "name": "Liverpool 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_liv_bre.json",
+      "prediction_summary": {
+        "p_home": 0.6236,
+        "p_draw": 0.2327,
+        "p_away": 0.1437,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_mci_avl",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:mci",
+        "name": "Man City",
+        "name_zh": "曼城",
+        "short_name": "Man City",
+        "short_name_zh": "曼城",
+        "tla": "MCI",
+        "crest_url": "https://crests.football-data.org/65.png"
+      },
+      "away": {
+        "team_id": "club:eng:avl",
+        "name": "Aston Villa",
+        "name_zh": "阿斯顿维拉",
+        "short_name": "Aston Villa",
+        "short_name_zh": "阿斯顿维拉",
+        "tla": "AVL",
+        "crest_url": "https://crests.football-data.org/58.png"
+      },
+      "venue": {
+        "name": "Man City 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_mci_avl.json",
+      "prediction_summary": {
+        "p_home": 0.5882,
+        "p_draw": 0.2383,
+        "p_away": 0.1736,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_not_bou",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:not",
+        "name": "Nottingham",
+        "name_zh": "诺森",
+        "short_name": "Nottingham",
+        "short_name_zh": "诺森",
+        "tla": "NOT",
+        "crest_url": "https://crests.football-data.org/351.png"
+      },
+      "away": {
+        "team_id": "club:eng:bou",
+        "name": "Bournemouth",
+        "name_zh": "伯恩茅斯",
+        "short_name": "Bournemouth",
+        "short_name_zh": "伯恩茅斯",
+        "tla": "BOU",
+        "crest_url": "https://crests.football-data.org/bournemouth.png"
+      },
+      "venue": {
+        "name": "Nottingham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_not_bou.json",
+      "prediction_summary": {
+        "p_home": 0.4454,
+        "p_draw": 0.267,
+        "p_away": 0.2876,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_tot_eve",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:tot",
+        "name": "Tottenham",
+        "name_zh": "热刺",
+        "short_name": "Tottenham",
+        "short_name_zh": "热刺",
+        "tla": "TOT",
+        "crest_url": "https://crests.football-data.org/73.png"
+      },
+      "away": {
+        "team_id": "club:eng:eve",
+        "name": "Everton",
+        "name_zh": "埃弗顿",
+        "short_name": "Everton",
+        "short_name_zh": "埃弗顿",
+        "tla": "EVE",
+        "crest_url": "https://crests.football-data.org/62.png"
+      },
+      "venue": {
+        "name": "Tottenham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_tot_eve.json",
+      "prediction_summary": {
+        "p_home": 0.5275,
+        "p_draw": 0.2488,
+        "p_away": 0.2237,
+        "confidence_label": "HIGH",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
+    },
+    {
+      "match_id": "fx_pl_2025_26_gw38_whu_lee",
+      "competition_id": "premier_league",
+      "season_id": "pl:2025-26",
+      "matchday": 38,
+      "stage": null,
+      "kickoff_utc": "2026-05-24T15:00:00Z",
+      "fixture_status": "SCHEDULED",
+      "home": {
+        "team_id": "club:eng:whu",
+        "name": "West Ham",
+        "name_zh": "西汉姆",
+        "short_name": "West Ham",
+        "short_name_zh": "西汉姆",
+        "tla": "WHU",
+        "crest_url": "https://crests.football-data.org/563.png"
+      },
+      "away": {
+        "team_id": "club:eng:lee",
+        "name": "Leeds United",
+        "name_zh": "利兹",
+        "short_name": "Leeds United",
+        "short_name_zh": "利兹",
+        "tla": "LEE",
+        "crest_url": "https://crests.football-data.org/341.png"
+      },
+      "venue": {
+        "name": "West Ham 主场",
+        "name_zh": null,
+        "city": null,
+        "city_zh": null
+      },
+      "match_pack_path": "/data/match-pack/fx_pl_2025_26_gw38_whu_lee.json",
+      "prediction_summary": {
+        "p_home": 0.4952,
+        "p_draw": 0.2552,
+        "p_away": 0.2496,
+        "confidence_label": "MED",
+        "data_truth_mode": "REAL_DERIVED"
+      },
+      "score_final": null
     }
   ]
 }
