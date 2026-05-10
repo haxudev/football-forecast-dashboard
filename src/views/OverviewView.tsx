@@ -45,7 +45,7 @@ export function OverviewView({ locale }: { locale: Locale }) {
 
       <section aria-labelledby="upcoming-h">
         <h2 id="upcoming-h" className="section-title">{t.overview.todayHighlights}</h2>
-        <FixtureGrid fixtures={upcoming} mode="primary" groupByGameweek t={t} />
+        <FixtureGrid fixtures={upcoming} mode="primary" t={t} />
       </section>
     </div>
   );
