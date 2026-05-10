@@ -336,13 +336,13 @@
       ],
       "key_players": [
         {
-          "player_id": "p_001",
-          "name": "A. Striker",
-          "name_zh": "射手 A",
-          "position": "Centre-Forward",
-          "last5_goals": 5,
-          "last5_assists": 2,
-          "avg_rating_last5": 8.1
+          "player_id": "p_real_club_eng_brighton_0",
+          "name": "Kaoru Mitoma",
+          "name_zh": "三笘薫",
+          "position": "Left Winger",
+          "last5_goals": 2,
+          "last5_assists": 3,
+          "avg_rating_last5": 7.7
         }
       ]
     },
@@ -451,13 +451,13 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_away_001",
-          "name": "X. Striker",
-          "name_zh": "射手 X",
-          "position": "Centre-Forward",
+          "player_id": "p_real_club_eng_everton_0",
+          "name": "Iliman Ndiaye",
+          "name_zh": "恩迪亚耶",
+          "position": "Forward",
           "last5_goals": 3,
           "last5_assists": 1,
-          "avg_rating_last5": 7.4
+          "avg_rating_last5": 7.5
         }
       ]
     },

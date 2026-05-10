@@ -90,6 +90,24 @@ export function sortFixtures(rows: readonly FixtureRow[]): FixtureRow[] {
 }
 
 /**
+ * Phase B (B-5) — 按主胜概率 DESC 排序（p_home 高 → 低）。
+ * 缺失 prediction_summary 的场次沉底（sort key = -1），伤同后回落 kickoff_utc → match_id。
+ */
+export function sortFixturesByHomeWinDesc(rows: readonly FixtureRow[]): FixtureRow[] {
+  const keyOf = (r: FixtureRow): number => r.prediction_summary?.p_home ?? -1;
+  return [...rows].sort((a, b) => {
+    const ka = keyOf(a);
+    const kb = keyOf(b);
+    if (ka !== kb) return kb - ka; // DESC
+    if (a.kickoff_utc < b.kickoff_utc) return -1;
+    if (a.kickoff_utc > b.kickoff_utc) return 1;
+    if (a.match_id < b.match_id) return -1;
+    if (a.match_id > b.match_id) return 1;
+    return 0;
+  });
+}
+
+/**
  * 卡片网格仅渲染 SCHEDULED / TIMED；FINISHED / POSTPONED / CANCELED / IN_PLAY / PAUSED 由调用方决定（design §3.2）。
  * 此处是工具函数；具体路由根据 mode 自行选择是否过滤。
  */

@@ -336,13 +336,13 @@
       ],
       "key_players": [
         {
-          "player_id": "p_001",
-          "name": "A. Striker",
-          "name_zh": "射手 A",
-          "position": "Centre-Forward",
-          "last5_goals": 5,
-          "last5_assists": 2,
-          "avg_rating_last5": 8.1
+          "player_id": "p_real_club_eng_arsenal_0",
+          "name": "Bukayo Saka",
+          "name_zh": "萨卡",
+          "position": "Right Winger",
+          "last5_goals": 3,
+          "last5_assists": 4,
+          "avg_rating_last5": 8.3
         }
       ]
     },
@@ -451,13 +451,13 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_away_001",
-          "name": "X. Striker",
-          "name_zh": "射手 X",
-          "position": "Centre-Forward",
-          "last5_goals": 3,
-          "last5_assists": 1,
-          "avg_rating_last5": 7.4
+          "player_id": "p_real_club_eng_chelsea_0",
+          "name": "Cole Palmer",
+          "name_zh": "帕尔默",
+          "position": "Attacking Midfielder",
+          "last5_goals": 4,
+          "last5_assists": 2,
+          "avg_rating_last5": 8.5
         }
       ]
     },
