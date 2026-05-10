@@ -1,52 +1,29 @@
+// src/views/OverviewView.tsx
+// Phase A — 重写，赛程驱动首页（design §4.1）。
+// hero quick action 仅 [舆情]（D-7 / M-1）；FixtureGrid mode='primary'。
 import Link from 'next/link';
-import {
-  CompetitionCard,
-  MatchCard,
-  SampleBanner,
-} from '@/components/Shell';
-import { TruthBadge } from '@/components/TruthBadge';
-import { loadAllPredictions, loadCompetitions, loadManifest, loadOverview } from '@/lib/data';
+import { SampleBanner } from '@/components/Shell';
+import { FixtureGrid } from '@/components/fixture/FixtureGrid';
+import { tryLoadFixtures } from '@/lib/data-fixture';
+import { isUpcomingFixture } from '@/lib/fixtures';
 import { format, getDictionary, type Locale } from '@/lib/i18n';
-import { deriveMatchStage } from '@/lib/status';
-import { isCompetitionEnabled, isCompetitionRouteEnabled } from '@/lib/site-config';
+import { TruthBadge } from '@/components/TruthBadge';
 
 export function OverviewView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  const prefix = locale === 'en' ? '/en' : '';
-  const overview = loadOverview();
-  const preds = loadAllPredictions();
-  const allCompetitions = loadCompetitions();
-  const competitions = allCompetitions.filter((c) => isCompetitionRouteEnabled(c.competition_id));
-  const manifest = loadManifest();
-  const isSample = overview.data_truth_mode_summary === 'SAMPLE_ONLY';
-  const showTournament = isCompetitionEnabled('world_cup') || isCompetitionEnabled('champions_league');
-  const tournamentTarget = isCompetitionEnabled('world_cup') ? 'world_cup_2026' : 'champions_league';
+  const fixturesFile = tryLoadFixtures();
+  const all = fixturesFile?.fixtures ?? [];
+  const upcoming = all.filter(isUpcomingFixture);
+  const truthMode = fixturesFile?.data_truth_mode ?? 'SAMPLE_ONLY';
+  const isSample = truthMode === 'SAMPLE_ONLY';
+  const nearest = upcoming[0];
 
-  // Group matches: PRE first, sorted by kickoff ascending
-  const now = new Date();
-  const upcoming = preds
-    .map((p) => ({ p, info: deriveMatchStage(p.kickoff_utc, { t, locale, now }) }))
-    .filter((x) => x.info.stage !== 'END')
-    .sort((a, b) => new Date(a.p.kickoff_utc).getTime() - new Date(b.p.kickoff_utc).getTime());
-
-  const featured = upcoming.slice(0, 3);
-  const nearest = featured[0];
-  const heroSubtitle = featured.length
+  const heroSubtitle = upcoming.length
     ? format(t.overview.subtitleHasMatches, {
         n: upcoming.length,
-        nearest: nearest?.info.subline || nearest?.info.kickoffLabel || '',
+        nearest: nearest ? new Date(nearest.kickoff_utc).toLocaleString() : '',
       })
     : t.overview.subtitleNoMatches;
-
-  // Per-competition this-week count (within ~7 days from now)
-  const weekMs = 7 * 86_400_000;
-  const thisWeekByComp = preds.reduce<Record<string, number>>((acc, p) => {
-    const ts = new Date(p.kickoff_utc).getTime();
-    if (!Number.isNaN(ts) && ts >= now.getTime() - weekMs && ts <= now.getTime() + weekMs) {
-      acc[p.competition_id] = (acc[p.competition_id] ?? 0) + 1;
-    }
-    return acc;
-  }, {});
 
   return (
     <div className="space-y-6">
@@ -55,61 +32,20 @@ export function OverviewView({ locale }: { locale: Locale }) {
           <h1 className="hero-title">{t.overview.title}</h1>
           <p className="hero-sub">{heroSubtitle}</p>
           <div className="mt-2 flex flex-wrap items-center gap-2" data-testid="truth-badges">
-            <TruthBadge mode={overview.data_truth_mode_summary} locale={locale} />
-            {Object.entries(manifest.data_truth_mode)
-              .filter(([cid]) => isCompetitionRouteEnabled(cid))
-              .map(([cid, mode]) => (
-              <TruthBadge
-                key={cid}
-                mode={String(mode)}
-                locale={locale}
-                label={`${cid}: ${mode}`}
-              />
-            ))}
+            <TruthBadge mode={truthMode} locale={locale} />
           </div>
         </div>
         <div className="hero-actions" aria-label={t.overview.quickActions}>
-          <Link className="hero-action" href={`${prefix}/competitions`}>{t.nav.competitions}</Link>
-          <Link className="hero-action" href={`${prefix}/match-predictor`}>{t.overview.quickMatch}</Link>
-          {showTournament && (
-            <Link className="hero-action" href={`${prefix}/tournament-simulator/${tournamentTarget}`}>{t.overview.quickTournament}</Link>
-          )}
-          <Link className="hero-action" href={`${prefix}/team-comparison`}>{t.overview.quickTeam}</Link>
-          <Link className="hero-action" href={`${prefix}/sentiment`}>{t.overview.quickSentiment}</Link>
+          {/* Phase A: 仅保留 [舆情] quick action（M-1 删除 allTeams） */}
+          <Link className="hero-action" href="/sentiment">{t.overview.heroActions.sentiment}</Link>
         </div>
       </header>
 
       {isSample && <SampleBanner t={t} />}
 
-      <section aria-labelledby="today-h">
-        <h2 id="today-h" className="section-title">{t.overview.todayHighlights}</h2>
-        {featured.length ? (
-          <div className="match-grid">
-            {featured.map(({ p }) => (
-              <MatchCard key={p.prediction_id} p={p} t={t} locale={locale} isSample={isSample} />
-            ))}
-          </div>
-        ) : (
-          <p className="muted">{t.common.noFixtures}</p>
-        )}
-      </section>
-
-      <section aria-labelledby="comp-h">
-        <h2 id="comp-h" className="section-title">{t.overview.browseCompetitions}</h2>
-        <div className="comp-grid">
-          {competitions.map((c) => (
-            <CompetitionCard
-              key={c.competition_id}
-              competitionId={c.competition_id}
-              fallbackName={c.name}
-              format={c.format}
-              thisWeekCount={thisWeekByComp[c.competition_id] ?? 0}
-              isSample={isSample}
-              locale={locale}
-              t={t}
-            />
-          ))}
-        </div>
+      <section aria-labelledby="upcoming-h">
+        <h2 id="upcoming-h" className="section-title">{t.overview.todayHighlights}</h2>
+        <FixtureGrid fixtures={upcoming} mode="primary" t={t} />
       </section>
     </div>
   );

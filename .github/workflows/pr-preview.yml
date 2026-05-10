@@ -1,0 +1,42 @@
+name: pr-preview
+# Phase A preview deployment (D-9):
+#   - PR 触发 → 部署到 SWA preview environment（不影响 main 生产）
+#   - URL 格式: https://victorious-plant-0280bcd00-<PR#>.<region>.azurestaticapps.net
+#   - 用同一个 SWA token (AZURE_STATIC_WEB_APPS_API_TOKEN)，Azure 自动按 PR 号开 preview slot
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  preview-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: pnpm }
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm validate:data && pnpm lint && pnpm typecheck && pnpm test
+      - run: pnpm build
+
+      - name: Deploy to SWA preview
+        id: swa
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          app_location: "out"
+          output_location: ""
+          skip_app_build: true
+          skip_api_build: true
+          deployment_environment: "preview"
+          production_branch: "main"

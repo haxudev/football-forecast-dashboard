@@ -1,0 +1,106 @@
+{
+  "schema_version": "sentiment-list-v1",
+  "generated_at": "2026-05-09T13:20:02.624Z",
+  "data_truth_mode": "SAMPLE_ONLY",
+  "competition_distribution": {
+    "premier_league": 4,
+    "champions_league": 1,
+    "other": 1
+  },
+  "items": [
+    {
+      "item_id": "sent_pl_001",
+      "captured_at": "2025-08-14T10:00:00Z",
+      "published_at": "2025-08-14T08:00:00Z",
+      "competition_id": "premier_league",
+      "team_ids": [
+        "club:eng:liverpool"
+      ],
+      "title": "Liverpool sign new midfielder for upcoming Premier League season",
+      "title_zh": "利物浦签下新中场，备战新赛季英超",
+      "summary": "Liverpool announced their summer signing in a presser at Anfield.",
+      "summary_zh": "利物浦在安菲尔德球场召开发布会，宣布夏窗中场新援加盟。",
+      "source": "theguardian",
+      "url": "https://example.com/sample-pl-001",
+      "sentiment_score": 0.6,
+      "sentiment_label": "POSITIVE",
+      "tags": [
+        "transfer"
+      ],
+      "data_truth_mode": "SAMPLE_ONLY"
+    },
+    {
+      "item_id": "sent_pl_002",
+      "captured_at": "2025-08-13T15:30:00Z",
+      "competition_id": "premier_league",
+      "team_ids": [
+        "club:eng:arsenal",
+        "club:eng:chelsea"
+      ],
+      "title": "Arsenal and Chelsea fans split over derby outlook",
+      "title_zh": "阿森纳与切尔西球迷对德比走向分歧",
+      "summary": "Pre-match social signals show divided fan sentiment.",
+      "summary_zh": "赛前社交信号显示双方球迷情绪分化，部分担忧防线表现。",
+      "source": "twitter:officialaccount",
+      "url": "https://example.com/sample-pl-002",
+      "sentiment_score": 0,
+      "sentiment_label": "MIXED",
+      "tags": [
+        "fan"
+      ],
+      "data_truth_mode": "SAMPLE_ONLY"
+    },
+    {
+      "item_id": "sent_pl_003",
+      "captured_at": "2025-08-12T11:00:00Z",
+      "competition_id": "premier_league",
+      "team_ids": [
+        "club:eng:man_city"
+      ],
+      "title": "Man City coaching staff downplay injury concerns",
+      "title_zh": "曼城教练组淡化伤病困扰",
+      "summary_zh": "主教练在媒体见面会中表示主力门将赛前可参加合练。",
+      "source": "bbc-sport",
+      "url": "https://example.com/sample-pl-003",
+      "sentiment_label": "POSITIVE",
+      "data_truth_mode": "SAMPLE_ONLY"
+    },
+    {
+      "item_id": "sent_pl_004",
+      "captured_at": "2025-08-11T09:00:00Z",
+      "competition_id": "premier_league",
+      "team_ids": [
+        "club:eng:man_united"
+      ],
+      "title": "Manchester United supporters frustrated by transfer pace",
+      "title_zh": "曼联球迷对引援节奏感到沮丧",
+      "summary_zh": "近期社媒讨论中负面情绪占比 47%，关注度集中在中场。",
+      "source": "reddit:reddevils",
+      "url": "https://example.com/sample-pl-004",
+      "sentiment_label": "NEGATIVE",
+      "data_truth_mode": "SAMPLE_ONLY"
+    },
+    {
+      "item_id": "sent_cl_001",
+      "captured_at": "2025-08-10T10:00:00Z",
+      "competition_id": "champions_league",
+      "title": "Real Madrid prepare for Champions League opener",
+      "title_zh": "皇马备战欧冠揭幕战",
+      "source": "marca",
+      "url": "https://example.com/sample-cl-001",
+      "sentiment_label": "POSITIVE",
+      "data_truth_mode": "SAMPLE_ONLY"
+    },
+    {
+      "item_id": "sent_other_001",
+      "captured_at": "2025-08-09T08:00:00Z",
+      "competition_id": "other",
+      "title": "FIFA reveals new ball for global tournaments",
+      "title_zh": "FIFA 公布全球赛事新用球",
+      "source": "fifa",
+      "url": "https://example.com/sample-other-001",
+      "sentiment_label": "NEUTRAL",
+      "data_truth_mode": "SAMPLE_ONLY"
+    }
+  ]
+}

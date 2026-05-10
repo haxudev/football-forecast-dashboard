@@ -1,2 +1,4 @@
-import { TeamComparisonView } from '@/views/TeamComparisonView';
-export default function Page() { return <TeamComparisonView locale="zh" />; }
+import { TeamComparisonPickerView } from '@/views/TeamComparisonPickerView';
+export default function Page() {
+  return <TeamComparisonPickerView locale="zh" />;
+}
