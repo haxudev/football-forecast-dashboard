@@ -507,10 +507,12 @@ h2{font-size:18px;line-height:1.3;font-weight:600}
   margin-left:8px;
 }
 
-/* fixture-grid — Phase B (B-3) 响应式：1440=3 / 768-1439=2 / <768=1 */
+/* fixture-grid — Phase B (B-3) 响应式：
+   默认 grid auto-fit minmax，在宽度充足时自动上 2/3 列。
+   明确断点：<640px=1 / 640-1279=2 / ≥1280=3 (B-3 从 1440 调为 1280，避免 1440 以下 laptop 裂为 1 列)。 */
 .fixture-grid{display:grid;grid-template-columns:1fr;gap:12px}
-@media (min-width:768px){.fixture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (min-width:1440px){.fixture-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:640px){.fixture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1280px){.fixture-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .fixture-grid-section{margin-bottom:20px}
 .fixture-grid-section-h{font-size:13px;color:var(--text-muted);margin:0 0 8px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
 
