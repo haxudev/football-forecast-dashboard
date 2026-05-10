@@ -32,7 +32,7 @@
     "city_zh": null
   },
   "model_version": "football_elo_v1@p2.2.1",
-  "generated_at": "2026-05-10T01:38:00.755975Z",
+  "generated_at": "2026-05-10T01:50:20.671890Z",
   "data_truth_mode": "REAL_DERIVED",
   "data_completeness": "partial",
   "confidence_label": "HIGH",
@@ -44,43 +44,73 @@
   "dimension_status": {
     "dim_1_outcome": {
       "status": "READY",
-      "note": "elo-derived"
+      "tier": "P0",
+      "data_truth_mode": "REAL_DERIVED",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": "football_data_org+clubelo"
     },
     "dim_2_xg": {
       "status": "READY",
-      "note": "elo-derived"
+      "tier": "P0",
+      "data_truth_mode": "REAL_DERIVED",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": "football_data_org+clubelo"
     },
     "dim_3_form": {
       "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     },
     "dim_4_player_availability": {
       "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     },
     "dim_5_h2h": {
       "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     },
     "dim_6_fatigue": {
-      "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+      "status": "MISSING",
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     },
     "dim_7_tactical": {
-      "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+      "status": "MISSING",
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     },
     "dim_8_referee": {
-      "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+      "status": "MISSING",
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     },
-    "dim_9_odds": {
-      "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+    "dim_9_odds_diff": {
+      "status": "MISSING",
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     },
     "dim_10_scenario": {
-      "status": "STUB",
-      "note": "sprint6_5 hotfix: pack from raw matches; full dims pending lakehouse"
+      "status": "MISSING",
+      "tier": "P1",
+      "data_truth_mode": "UNKNOWN",
+      "last_updated": "2026-05-10T01:50:20.671890Z",
+      "source": null
     }
   },
   "win_draw_loss": {
