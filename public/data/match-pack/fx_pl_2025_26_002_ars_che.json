@@ -336,13 +336,17 @@
       ],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_arsenal_0",
-          "name": "Bukayo Saka",
-          "name_zh": "萨卡",
+          "player_id": "player:fd:8279",
+          "name": "Viktor Gyökeres",
+          "name_zh": "约凯雷斯",
           "position": "Right Winger",
           "last5_goals": 3,
           "last5_assists": 4,
-          "avg_rating_last5": 8.3
+          "avg_rating_last5": 8.3,
+          "season_goals": 14,
+          "season_assists": 1,
+          "season_played": 33,
+          "data_truth_mode": "REAL"
         }
       ]
     },
@@ -451,13 +455,17 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_chelsea_0",
-          "name": "Cole Palmer",
-          "name_zh": "帕尔默",
+          "player_id": "player:fd:103125",
+          "name": "João Pedro",
+          "name_zh": "若昂-佩德罗",
           "position": "Attacking Midfielder",
           "last5_goals": 4,
           "last5_assists": 2,
-          "avg_rating_last5": 8.5
+          "avg_rating_last5": 8.5,
+          "season_goals": 15,
+          "season_assists": 5,
+          "season_played": 34,
+          "data_truth_mode": "REAL"
         }
       ]
     },

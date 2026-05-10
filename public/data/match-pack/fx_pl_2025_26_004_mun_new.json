@@ -336,13 +336,17 @@
       ],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_man_united_0",
-          "name": "Bruno Fernandes",
-          "name_zh": "布鲁诺",
+          "player_id": "player:fd:124244",
+          "name": "Benjamin Šeško",
+          "name_zh": "舍什科",
           "position": "Attacking Midfielder",
           "last5_goals": 2,
           "last5_assists": 4,
-          "avg_rating_last5": 7.9
+          "avg_rating_last5": 7.9,
+          "season_goals": 11,
+          "season_assists": 1,
+          "season_played": 32,
+          "data_truth_mode": "REAL"
         }
       ]
     },
@@ -451,13 +455,17 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_newcastle_0",
-          "name": "Alexander Isak",
-          "name_zh": "伊萨克",
+          "player_id": "player:fd:1684",
+          "name": "Bruno Guimarães",
+          "name_zh": "吉马良斯",
           "position": "Centre-Forward",
           "last5_goals": 5,
           "last5_assists": 1,
-          "avg_rating_last5": 8.2
+          "avg_rating_last5": 8.2,
+          "season_goals": 9,
+          "season_assists": 5,
+          "season_played": 27,
+          "data_truth_mode": "REAL"
         }
       ]
     },

@@ -1,0 +1,145 @@
+{
+  "schema_version": "quality-report-v1",
+  "generated_at": "2026-05-10T01:19:17Z",
+  "all_passed": true,
+  "verticals": {
+    "wc": {
+      "passed": true,
+      "checks_run": 5,
+      "warnings": []
+    },
+    "pl": {
+      "passed": true,
+      "checks_run": 5,
+      "warnings": []
+    },
+    "cl": {
+      "passed": true,
+      "checks_run": 5,
+      "warnings": []
+    }
+  },
+  "results": [
+    {
+      "name": "probabilities_sum_to_one",
+      "passed": true,
+      "metric": 1.1102230246251565e-16,
+      "threshold": 1e-06,
+      "detail": "max |sum-1| = 1.11e-16",
+      "vertical": "wc"
+    },
+    {
+      "name": "probability_distinct",
+      "passed": true,
+      "metric": 73,
+      "threshold": 4,
+      "detail": "distinct probability tuples = 73",
+      "vertical": "wc"
+    },
+    {
+      "name": "latest_rating_real",
+      "passed": true,
+      "metric": 1.0,
+      "threshold": 0.8,
+      "detail": "latest_rating notna ratio = 100.00%",
+      "vertical": "wc"
+    },
+    {
+      "name": "fixture_status_diversity",
+      "passed": true,
+      "metric": 2,
+      "threshold": 2,
+      "detail": "distinct fixture_status = ['placeholder', 'simulated_pre_draw']",
+      "vertical": "wc"
+    },
+    {
+      "name": "scoreline_distinct",
+      "passed": true,
+      "metric": 73,
+      "threshold": 4,
+      "detail": "distinct scoreline_top3 = 73",
+      "vertical": "wc"
+    },
+    {
+      "name": "probabilities_sum_to_one",
+      "passed": true,
+      "metric": 1.1102230246251565e-16,
+      "threshold": 1e-06,
+      "detail": "max |sum-1| = 1.11e-16",
+      "vertical": "pl"
+    },
+    {
+      "name": "probability_distinct",
+      "passed": true,
+      "metric": 342,
+      "threshold": 4,
+      "detail": "distinct probability tuples = 342",
+      "vertical": "pl"
+    },
+    {
+      "name": "latest_rating_real",
+      "passed": true,
+      "metric": 1.0,
+      "threshold": 0.8,
+      "detail": "latest_rating notna ratio = 100.00%",
+      "vertical": "pl"
+    },
+    {
+      "name": "fixture_status_diversity",
+      "passed": true,
+      "metric": 2,
+      "threshold": 2,
+      "detail": "distinct fixture_status = ['FINISHED', 'TIMED']",
+      "vertical": "pl"
+    },
+    {
+      "name": "scoreline_distinct",
+      "passed": true,
+      "metric": 337,
+      "threshold": 4,
+      "detail": "distinct scoreline_top3 = 337",
+      "vertical": "pl"
+    },
+    {
+      "name": "probabilities_sum_to_one",
+      "passed": true,
+      "metric": 1.1102230246251565e-16,
+      "threshold": 1e-06,
+      "detail": "max |sum-1| = 1.11e-16",
+      "vertical": "cl"
+    },
+    {
+      "name": "probability_distinct",
+      "passed": true,
+      "metric": 167,
+      "threshold": 4,
+      "detail": "distinct probability tuples = 167",
+      "vertical": "cl"
+    },
+    {
+      "name": "latest_rating_real",
+      "passed": true,
+      "metric": 1.0,
+      "threshold": 0.8,
+      "detail": "latest_rating notna ratio = 100.00%",
+      "vertical": "cl"
+    },
+    {
+      "name": "fixture_status_diversity",
+      "passed": true,
+      "metric": 2,
+      "threshold": 2,
+      "detail": "distinct fixture_status = ['FINISHED', 'TIMED']",
+      "vertical": "cl"
+    },
+    {
+      "name": "scoreline_distinct",
+      "passed": true,
+      "metric": 166,
+      "threshold": 4,
+      "detail": "distinct scoreline_top3 = 166",
+      "vertical": "cl"
+    }
+  ],
+  "alerts": []
+}

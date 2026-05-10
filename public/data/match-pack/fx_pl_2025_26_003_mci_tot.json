@@ -336,13 +336,17 @@
       ],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_man_city_0",
+          "player_id": "player:fd:38101",
           "name": "Erling Haaland",
           "name_zh": "哈兰德",
           "position": "Centre-Forward",
           "last5_goals": 6,
           "last5_assists": 1,
-          "avg_rating_last5": 8.7
+          "avg_rating_last5": 8.7,
+          "season_goals": 25,
+          "season_assists": 7,
+          "season_played": 33,
+          "data_truth_mode": "REAL"
         }
       ]
     },
@@ -451,13 +455,17 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_tottenham_0",
-          "name": "Son Heung-min",
-          "name_zh": "孙兴慜",
+          "player_id": "player:fd:8133",
+          "name": "Richarlison",
+          "name_zh": "里夏利松",
           "position": "Forward",
           "last5_goals": 3,
           "last5_assists": 2,
-          "avg_rating_last5": 8.0
+          "avg_rating_last5": 8.0,
+          "season_goals": 10,
+          "season_assists": 4,
+          "season_played": 30,
+          "data_truth_mode": "REAL"
         }
       ]
     },

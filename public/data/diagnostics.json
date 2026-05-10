@@ -1,12 +1,12 @@
 {
-  "pack_version": "p2.1.0",
+  "pack_version": "p2.2.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:43:58.033906+00:00",
+  "generated_at": "2026-05-10T01:19:17.323214+00:00",
   "model_registry": [
     {
       "model_version": "football_ensemble@local",
       "algorithm_layer": "ensemble",
-      "trained_at": "2026-05-09T08:43:58.033906+00:00",
+      "trained_at": "2026-05-10T01:19:17.323214+00:00",
       "feature_set_hash": "unknown"
     }
   ],
@@ -21,7 +21,7 @@
     "calibration_curve": [],
     "n_matches": 88,
     "fold": 0,
-    "generated_at": "2026-05-09T08:42:30.290379+00:00",
+    "generated_at": "2026-05-10T01:18:00.161050+00:00",
     "code_git_sha": "unknown",
     "rating_source": "eloratings.net",
     "rating_coverage": 1.0
@@ -41,18 +41,18 @@
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 173/641 fixtures (27%) include fallback or sample components.",
-      "severity": "warning"
+      "detail": "Forecast pack truth_mode=REAL_DERIVED; 0/641 fixtures (0%) include fallback or sample components.",
+      "severity": "info"
     }
   ],
-  "data_truth_mode_summary": "MIXED",
+  "data_truth_mode_summary": "REAL_DERIVED",
   "source_freshness_summary": {
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "FRESH",
+    "clubelo": "PARTIAL",
     "football_data_org_cl": "FRESH",
-    "clubelo_cl": "STALE"
+    "clubelo_cl": "PARTIAL"
   },
   "model_version_summary": "football_ensemble@local"
 }

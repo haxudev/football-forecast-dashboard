@@ -336,13 +336,17 @@
       ],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_brighton_0",
-          "name": "Kaoru Mitoma",
-          "name_zh": "三笘薫",
+          "player_id": "player:fd:3328",
+          "name": "Danny Welbeck",
+          "name_zh": "韦尔贝克",
           "position": "Left Winger",
           "last5_goals": 2,
           "last5_assists": 3,
-          "avg_rating_last5": 7.7
+          "avg_rating_last5": 7.7,
+          "season_goals": 13,
+          "season_assists": 1,
+          "season_played": 34,
+          "data_truth_mode": "REAL"
         }
       ]
     },
@@ -451,13 +455,17 @@
       "yellow_watch": [],
       "key_players": [
         {
-          "player_id": "p_real_club_eng_everton_0",
-          "name": "Iliman Ndiaye",
-          "name_zh": "恩迪亚耶",
+          "player_id": "player:fd:125044",
+          "name": "Beto",
+          "name_zh": "贝托",
           "position": "Forward",
           "last5_goals": 3,
           "last5_assists": 1,
-          "avg_rating_last5": 7.5
+          "avg_rating_last5": 7.5,
+          "season_goals": 8,
+          "season_assists": 1,
+          "season_played": 34,
+          "data_truth_mode": "REAL"
         }
       ]
     },

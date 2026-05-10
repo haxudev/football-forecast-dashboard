@@ -1,24 +1,24 @@
 {
-  "pack_version": "p2.1.0",
+  "pack_version": "p2.2.0",
   "schema_version": "forecast-pack-v1",
-  "generated_at": "2026-05-09T08:43:58.033906+00:00",
+  "generated_at": "2026-05-10T01:19:17.323214+00:00",
   "system_status": "healthy",
-  "data_truth_mode_summary": "MIXED",
+  "data_truth_mode_summary": "REAL_DERIVED",
   "model_version_summary": "football_ensemble@local",
   "source_freshness_summary": {
     "elo_national_teams": "FRESH",
     "wikidata_team_master": "FRESH",
     "football_data_org_pl": "FRESH",
-    "clubelo": "FRESH",
+    "clubelo": "PARTIAL",
     "football_data_org_cl": "FRESH",
-    "clubelo_cl": "STALE"
+    "clubelo_cl": "PARTIAL"
   },
   "warnings": [
     {
       "code": "REAL_DATA_PARTIAL",
       "scope": "pack",
-      "detail": "Forecast pack truth_mode=MIXED; 173/641 fixtures (27%) include fallback or sample components.",
-      "severity": "warning"
+      "detail": "Forecast pack truth_mode=REAL_DERIVED; 0/641 fixtures (0%) include fallback or sample components.",
+      "severity": "info"
     }
   ],
   "highlight_fixture_ids": [
