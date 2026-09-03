@@ -74,3 +74,6 @@ The non-dry run exports the pack to `public/data`, then `git pull --ff-only`, `g
 - Charts expose `role="img"` labels and/or table/text fallback.
 - Focus rings are visible through global `:focus-visible` styles.
 - No betting, cashout, value-bet, or wagering UI belongs in P2.
+
+
+<!-- Security scan triggered at 2026-09-03 23:13:32 -->
